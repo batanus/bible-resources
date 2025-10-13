@@ -1,0 +1,422 @@
+name: Update Bible Resources Registry
+
+on:
+  schedule:
+    # Runs every day at 07:00 UTC (approximately 10:00 Chisinau time)
+    - cron: '0 07 * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Download registry with fallback hosts
+        run: |
+          echo "Downloading registry.zip with fallback support..."
+          
+          # List of registry hosts (in priority order)
+          REGISTRY_HOSTS=(
+            "https://mybible.zone/repository/registry/registry.zip"
+            "http://mybible.infoo.pro/registry.zip"
+            "http://mph4.ru/registry.zip"
+            "http://myb.1gb.ru/registry.zip"
+          )
+          
+          DOWNLOADED=false
+          
+          for HOST_URL in "${REGISTRY_HOSTS[@]}"; do
+            echo ""
+            echo "Trying: $HOST_URL"
+            
+            # Try to download with 30 second timeout
+            if curl -L -f -o /tmp/registry.zip "$HOST_URL" --connect-timeout 30 --max-time 30 2>/dev/null; then
+              echo "✅ Successfully downloaded registry.zip from $HOST_URL"
+              DOWNLOADED=true
+              break
+            else
+              echo "❌ Failed to download from $HOST_URL"
+            fi
+          done
+          
+          if [ "$DOWNLOADED" = false ]; then
+            echo "❌ Failed to download registry.zip from all hosts"
+            exit 1
+          fi
+          
+          echo ""
+          echo "✅ Registry download completed"
+          
+      - name: Extract and compare registry
+        id: check_changes
+        run: |
+          echo "Extracting registry.zip..."
+          unzip -o /tmp/registry.zip -d /tmp/
+          
+          # Check if registry.json was extracted
+          if [ ! -f /tmp/registry.json ]; then
+            echo "Error: registry.json not found in archive"
+            exit 1
+          fi
+          
+          echo "Comparing registries..."
+          
+          # Install jq for JSON processing
+          sudo apt-get update && sudo apt-get install -y jq
+          
+          # Check if registries are different
+          if cmp -s registry.json /tmp/registry.json; then
+            echo "No changes detected in registry"
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected in registry!"
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            
+            # Find new or updated modules
+            python3 << 'PYTHON_SCRIPT'
+          import json
+          import sys
+          
+          # Load old and new registries
+          try:
+              with open('registry.json', 'r', encoding='utf-8-sig') as f:
+                  old_registry = json.load(f)
+          except FileNotFoundError:
+              old_registry = {'downloads': []}
+          
+          with open('/tmp/registry.json', 'r', encoding='utf-8-sig') as f:
+              new_registry = json.load(f)
+          
+          # Create lookup dictionaries
+          old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
+          new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
+          
+          # Find new and updated modules
+          new_items = []
+          updated_items = []
+          
+          for abr, new_item in new_modules.items():
+              if abr not in old_modules:
+                  new_items.append(abr)
+              elif old_modules[abr].get('upd') != new_item.get('upd'):
+                  updated_items.append(abr)
+          
+          # Save list of modules to download
+          modules_to_download = new_items + updated_items
+          
+          if modules_to_download:
+              print(f"Found {len(new_items)} new and {len(updated_items)} updated modules")
+              with open('/tmp/modules_to_download.txt', 'w') as f:
+                  f.write('\n'.join(modules_to_download))
+              
+              # Create summary for PR
+              summary = []
+              summary.append(f"## Registry Update Summary\n")
+              summary.append(f"- **New modules:** {len(new_items)}")
+              summary.append(f"- **Updated modules:** {len(updated_items)}")
+              summary.append(f"- **Total changes:** {len(modules_to_download)}\n")
+              
+              if new_items:
+                  summary.append("### 📦 New Modules\n")
+                  for item in new_items[:20]:  # Show first 20
+                      mod = new_modules[item]
+                      summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
+                  if len(new_items) > 20:
+                      summary.append(f"\n_...and {len(new_items) - 20} more_\n")
+              
+              if updated_items:
+                  summary.append("\n### 🔄 Updated Modules\n")
+                  for item in updated_items[:20]:  # Show first 20
+                      mod = new_modules[item]
+                      summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
+                  if len(updated_items) > 20:
+                      summary.append(f"\n_...and {len(updated_items) - 20} more_\n")
+              
+              with open('/tmp/pr_summary.md', 'w') as f:
+                  f.write('\n'.join(summary))
+          else:
+              print("No new or updated modules found (metadata changes only)")
+              # Create summary for metadata-only changes
+              summary = []
+              summary.append("## Registry Update Summary\n")
+              summary.append("- **New modules:** 0")
+              summary.append("- **Updated modules:** 0")
+              summary.append("- **Changes:** Registry metadata updated (version, hosts, etc.)\n")
+              
+              with open('/tmp/pr_summary.md', 'w') as f:
+                  f.write('\n'.join(summary))
+              
+              # Create empty modules list so workflow continues
+              with open('/tmp/modules_to_download.txt', 'w') as f:
+                  f.write('')
+          PYTHON_SCRIPT
+          fi
+          
+      - name: Download new/updated modules
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "Downloading new and updated modules..."
+          
+          # Install jq if not already installed
+          sudo apt-get update && sudo apt-get install -y jq
+          
+          # Read modules to download
+          if [ ! -f /tmp/modules_to_download.txt ]; then
+            echo "No modules to download"
+            exit 0
+          fi
+          
+          # Read the new registry and hosts
+          NEW_REGISTRY="/tmp/registry.json"
+          
+          # Create modules directory if it doesn't exist
+          mkdir -p modules
+          
+          # Statistics
+          TOTAL_MODULES=0
+          SUCCESS_COUNT=0
+          FAILED_COUNT=0
+          
+          # Download each module
+          while IFS= read -r module_abr; do
+            echo ""
+            echo "========================================="
+            echo "Processing module: $module_abr"
+            TOTAL_MODULES=$((TOTAL_MODULES + 1))
+            
+            # Find the module in the new registry
+            MODULE_DATA=$(jq -r --arg abr "$module_abr" '.downloads[] | select(.abr == $abr)' "$NEW_REGISTRY")
+            
+            if [ -z "$MODULE_DATA" ]; then
+              echo "❌ Module $module_abr not found in registry"
+              FAILED_COUNT=$((FAILED_COUNT + 1))
+              continue
+            fi
+            
+            # Get ALL URLs from the module's url array
+            MODULE_URLS=$(echo "$MODULE_DATA" | jq -r '.url[]')
+            URL_COUNT=$(echo "$MODULE_URLS" | wc -l)
+            
+            if [ -z "$MODULE_URLS" ] || [ "$MODULE_URLS" = "null" ]; then
+              echo "❌ No URLs found for module $module_abr"
+              FAILED_COUNT=$((FAILED_COUNT + 1))
+              continue
+            fi
+            
+            echo "Found $URL_COUNT URL(s) for this module"
+            
+            # Get module filename
+            MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
+            OUTPUT_FILE="modules/${MODULE_FILE}.zip"
+            
+            # Try each URL until one succeeds
+            url_index=0
+            download_success=false
+            
+            echo "$MODULE_URLS" | while IFS= read -r MODULE_URL; do
+              url_index=$((url_index + 1))
+              
+              echo ""
+              echo "Trying URL #$url_index: $MODULE_URL"
+              
+              # Resolve URL: check if it starts with http (direct URL) or needs alias resolution
+              if [[ "$MODULE_URL" == http* ]]; then
+                # Direct URL, no resolution needed
+                DOWNLOAD_URL="$MODULE_URL"
+              else
+                # Extract alias and filename from template like "{cdn}100EJ-p.plan"
+                # Find matching host and replace %s with filename
+                DOWNLOAD_URL=""
+                
+                while IFS= read -r host_line; do
+                  alias=$(echo "$host_line" | jq -r '.alias')
+                  path=$(echo "$host_line" | jq -r '.path')
+                  
+                  # Remove curly braces from alias
+                  clean_alias=$(echo "$alias" | tr -d '{}')
+                  alias_pattern="{$clean_alias}"
+                  
+                  # Check if this alias is in the URL
+                  if [[ "$MODULE_URL" == *"$alias_pattern"* ]]; then
+                    # Extract filename by removing the alias pattern
+                    filename=$(echo "$MODULE_URL" | sed "s|$alias_pattern||g")
+                    # Replace %s in path with the filename
+                    DOWNLOAD_URL=$(echo "$path" | sed "s|%s|$filename|g")
+                    break
+                  fi
+                done < <(jq -c '.hosts[]' "$NEW_REGISTRY")
+                
+                # If no match found, use MODULE_URL as is
+                if [ -z "$DOWNLOAD_URL" ]; then
+                  DOWNLOAD_URL="$MODULE_URL"
+                fi
+              fi
+              
+              echo "Resolved URL: $DOWNLOAD_URL"
+              
+              # Try to download with retries for this specific URL
+              max_attempts=3
+              attempt=1
+              url_success=false
+              
+              while [ $attempt -le $max_attempts ]; do
+                echo "  Attempt $attempt of $max_attempts..."
+                
+                if curl -L -f -o "$OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
+                  echo "  ✅ Successfully downloaded from URL #$url_index"
+                  url_success=true
+                  download_success=true
+                  break 2  # Exit both retry loop and URL loop
+                else
+                  echo "  ❌ Failed on attempt $attempt"
+                  if [ $attempt -lt $max_attempts ]; then
+                    echo "  Waiting 5 seconds before retry..."
+                    sleep 5
+                  fi
+                  attempt=$((attempt + 1))
+                fi
+              done
+              
+              if [ "$url_success" = false ]; then
+                echo "  ⚠️  All attempts failed for URL #$url_index, trying next URL..."
+              fi
+            done
+            
+            # Check final result for this module
+            if [ -f "$OUTPUT_FILE" ]; then
+              file_size=$(ls -lh "$OUTPUT_FILE" | awk '{print $5}')
+              echo ""
+              echo "✅ Module $module_abr downloaded successfully ($file_size)"
+              SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+            else
+              echo ""
+              echo "❌ Failed to download $module_abr from all available URLs"
+              FAILED_COUNT=$((FAILED_COUNT + 1))
+            fi
+            
+          done < /tmp/modules_to_download.txt
+          
+          # Print summary
+          echo ""
+          echo "========================================="
+          echo "DOWNLOAD SUMMARY"
+          echo "========================================="
+          echo "Total modules:      $TOTAL_MODULES"
+          echo "Successfully downloaded: $SUCCESS_COUNT"
+          echo "Failed downloads:   $FAILED_COUNT"
+          echo "Success rate:       $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")"
+          echo "========================================="
+          
+          # Save summary for PR
+          cat >> /tmp/pr_summary.md << EOF
+          
+          ## 📊 Download Statistics
+          
+          - **Total modules processed:** $TOTAL_MODULES
+          - **Successfully downloaded:** $SUCCESS_COUNT ✅
+          - **Failed downloads:** $FAILED_COUNT ❌
+          - **Success rate:** $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")
+          EOF
+          
+      - name: Update registry.json
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "Updating registry.json..."
+          cp /tmp/registry.json registry.json
+          
+          # Format JSON with pretty-print
+          python3 << 'PYTHON_FORMAT'
+          import json
+          
+          path = 'registry.json'
+          with open(path, 'r', encoding='utf-8-sig') as src:
+              data = json.load(src)
+          
+          with open(path, 'w', encoding='utf-8') as dst:
+              json.dump(data, dst, ensure_ascii=False, indent=2)
+              dst.write('\n')
+          PYTHON_FORMAT
+
+      - name: Recreate registry.zip with formatted registry
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "Rebuilding registry.zip from formatted registry.json..."
+          rm -f registry.zip
+          zip -j registry.zip registry.json
+          
+      - name: Update registry statistics
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          python3 << 'PYTHON_SCRIPT'
+          import json
+          import os
+          from pathlib import Path
+          
+          # Load registry
+          with open('registry.json', 'r', encoding='utf-8-sig') as f:
+              registry = json.load(f)
+          
+          # Count modules
+          total_modules = len(registry.get('downloads', []))
+          
+          # Calculate total size
+          modules_dir = Path('modules')
+          total_size = 0
+          if modules_dir.exists():
+              for file_path in modules_dir.glob('*.zip'):
+                  total_size += file_path.stat().st_size
+          
+          # Convert to GB
+          size_gb = total_size / (1024 ** 3)
+          
+          # Count unique languages
+          languages = set()
+          for item in registry.get('downloads', []):
+              if 'lng' in item:
+                  languages.add(item['lng'])
+          
+          print(f"Total modules: {total_modules}")
+          print(f"Total size: {size_gb:.1f} GB")
+          print(f"Unique languages: {len(languages)}")
+          
+          # Save stats for README update
+          with open('/tmp/stats.txt', 'w') as f:
+              f.write(f"{total_modules}\n")
+              f.write(f"{size_gb:.1f}\n")
+              f.write(f"{len(languages)}\n")
+          PYTHON_SCRIPT
+          
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update registry and modules'
+          title: '🔄 Registry Update - ${{ github.run_number }}'
+          body-path: /tmp/pr_summary.md
+          branch: registry-update-${{ github.run_number }}
+          delete-branch: true
+          labels: |
+            automated
+            registry-update
+          add-paths: |
+            registry.json
+            registry.zip
+            modules/*.zip
+          
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.check_changes.outputs.has_changes }}" = "true" ]; then
+            echo "✅ Registry update completed. Pull request created."
+          else
+            echo "ℹ️ No changes detected in registry."
+          fi
