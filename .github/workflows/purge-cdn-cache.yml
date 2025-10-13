@@ -1,0 +1,38 @@
+name: Purge CDN Cache
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  purge-cache:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Purge jsDelivr Cache
+        run: |
+          echo "Purging jsDelivr cache..."
+          
+          # Purge main path
+          curl -X GET "https://purge.jsdelivr.net/gh/batanus/bible-resources@main"
+          echo "✓ Purged: https://cdn.jsdelivr.net/gh/batanus/bible-resources@main"
+          
+          # Purge modules path
+          curl -X GET "https://purge.jsdelivr.net/gh/batanus/bible-resources@main/modules"
+          echo "✓ Purged: https://cdn.jsdelivr.net/gh/batanus/bible-resources@main/modules"
+          
+          # Purge registry.zip
+          curl -X GET "https://purge.jsdelivr.net/gh/batanus/bible-resources@main/registry.zip"
+          echo "✓ Purged: https://cdn.jsdelivr.net/gh/batanus/bible-resources@main/registry.zip"
+          
+          echo "jsDelivr cache purge completed!"
+      
+      - name: Summary
+        run: |
+          echo "================================"
+          echo "CDN Cache Purge Summary"
+          echo "================================"
+          echo "✓ jsDelivr: 3 paths purged"
+          echo "================================"
