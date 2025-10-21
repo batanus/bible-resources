@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -81553,6 +81553,15 @@
         "{p4}TYVB%2725"
       ],
       "siz": "3.2M"
+    },
+    {
+      "abr": "NEWTEST",
+      "name": "Creating a brand new test module",
+      "cmt": "(2025-10-21) User proposed: Creating a brand new test module",
+      "upd": "2025-10-21",
+      "url": "https://github.com/batanus/bible-resources/raw/main/modules/NEWTEST.zip",
+      "lang": "unknown",
+      "vlc": 0
     }
   ]
 }
