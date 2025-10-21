@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -81553,6 +81553,15 @@
         "{p4}TYVB%2725"
       ],
       "siz": "3.2M"
+    },
+    {
+      "abr": "FINAL-TEST",
+      "name": "Final verification test",
+      "cmt": "(2025-10-21) User proposed: Final verification test",
+      "upd": "2025-10-21",
+      "url": "https://github.com/batanus/bible-resources/raw/main/modules/FINAL-TEST.zip",
+      "lang": "unknown",
+      "vlc": 0
     }
   ]
 }
