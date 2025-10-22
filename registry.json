@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -81553,6 +81553,18 @@
         "{p4}TYVB%2725"
       ],
       "siz": "3.2M"
+    },
+    {
+      "abr": "TESTFORMAT",
+      "des": "Тестовый модуль для проверки формата",
+      "fil": "TESTFORMAT",
+      "url": [
+        "{cdn}TESTFORMAT",
+        "{cdn2}TESTFORMAT",
+        "{gh}TESTFORMAT"
+      ],
+      "siz": "1К",
+      "lng": "ru"
     }
   ]
 }
