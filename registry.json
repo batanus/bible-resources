@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -18364,8 +18364,8 @@
       "des": "New International Version, 2011",
       "inf": "Biblica provides accurate, readable translations of Scripture. We offer free study tools and community reading experiences to help you engage God’s Word. \n<br/>NIV® Copyright 2011 by Biblica, Inc.®",
       "fil": "NIV",
-      "upd": "2018-12-24",
-      "cmt": "(2017-08-15) Re-created from another source\n(2016-10-16) Info table is fixed\n(2016-09-16) Added Psalm\n(2016-02-18) Code cleaning\n(2016-01-22) Fixed Red Letters Edition\n(2015-12-23) New version 2011\n(2015-11-27) Correction of Red Color Words of Jesus\n(2015-08-17) Description is renewed\n(2015-08-14) Changed to the requirements of MyBible 4.4\n(2014-10-06) Fixed code errors\n(2014-09-04) Red Color Words of Jesus",
+      "upd": "2025-10-22",
+      "cmt": "(2025-10-22) User proposed: Module: NIV, book: 10, chapter: 1, verse: 1\nДракон ewed -> Дракон ewed\n(2017-08-15) Re-created from another source\n(2016-10-16) Info table is fixed\n(2016-09-16) Added Psalm\n(2016-02-18) Code cleaning\n(2016-01-22) Fixed Red Letters Edition\n(2015-12-23) New version 2011\n(2015-11-27) Correction of Red Color Words of Jesus\n(2015-08-17) Description is renewed\n(2015-08-14) Changed to the requirements of MyBible 4.4\n(2014-10-06) Fixed code errors\n(2014-09-04) Red Color Words of Jesus",
       "bkq": "66",
       "url": [
         "{cdn}NIV",
