@@ -9,7 +9,7 @@
     },
     {
       "alias": "cdn2",
-      "path": "https://cdn.statically.io/gh/batanus/bible-resources@main/modules/%s.js",
+      "path": "https://cdn.statically.io/gh/batanus/bible-resources@main/modules/%s.zip",
       "priority": 3,
       "weight": 100
     },
