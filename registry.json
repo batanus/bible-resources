@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -550,8 +550,8 @@
       "lng": "is",
       "des": "An Bíobla Naofa, 1981",
       "fil": "ABN",
-      "upd": "2017-03-19",
-      "cmt": "(2017-03-19) Red-letters corrected\n(2016-09-17) Added Salm\n(2016-02-18) Code cleaning\n(2015-12-20) Chapter\n(2015-12-17) Published",
+      "upd": "2025-10-22",
+      "cmt": "(2025-10-22) User proposed: Testing update to existing module\n(2017-03-19) Red-letters corrected\n(2016-09-17) Added Salm\n(2016-02-18) Code cleaning\n(2015-12-20) Chapter\n(2015-12-17) Published",
       "def": true,
       "bkq": "73",
       "url": [
