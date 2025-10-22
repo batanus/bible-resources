@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -81553,6 +81553,15 @@
         "{p4}TYVB%2725"
       ],
       "siz": "3.2M"
+    },
+    {
+      "abr": "TESTTS",
+      "name": "Testing timestamp in filename",
+      "cmt": "(2025-10-22) User proposed: Testing timestamp in filename",
+      "upd": "2025-10-22",
+      "url": "https://github.com/batanus/bible-resources/raw/main/modules/TESTTS.zip",
+      "lang": "unknown",
+      "vlc": 0
     }
   ]
 }
