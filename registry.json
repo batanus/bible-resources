@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -12183,8 +12183,8 @@
       "lng": "iw",
       "des": "Hebrew Study Bible, The text is the Westminster Leningrad Codex with vowels and cantillation signs, keyed to Strong's numbers, with interlinear and transliteration",
       "fil": "HSB+",
-      "upd": "2019-10-31",
-      "cmt": "(2016-01-29) -\n(2015-12-30) The module is renewed\n(2015-05-08) Code cleaning\n(2015-05-07) Fixed Strong's numbers in Zech.\n(2015-03-29) Refixed\n(2015-03-09) Strong number new code\n(2015-03-05) Коррекция стиля\n(2014-11-25) Fixed English-Hebrew text\n(2014-11-10) Code cleaning\n(2014-10-28) Published",
+      "upd": "2025-10-23",
+      "cmt": "(2025-10-23) User proposed: Module: `HSB+`\nBook: `בראשית (10)`\nChapter: `1`\nVerse: `1`\n\n```\n<e>בְּרֵאשִׁ֖ית</e> <S>7225</S> <n>be-re-Shit</n> In the beginning <e>בָּרָ֣א</e> <S>1254</S> <n>ba-Ra</n> created <e>אֱלֹהִ֑ים</e> <S>430</S> <n>E-lo-Him;</n> God <e>אֵ֥ת</e> <S>853</S> <n>'et</n> <e>הַשָּׁמַ֖יִם</e> <S>8064</S> <n>hash-sha-Ma-yim</n> the heaven <e>וְאֵ֥ת</e> <S>853</S> <n>ve-'Et</n> <e>הָאָֽרֶץ׃</e> <S>776</S> <n>ha-'A-retz.</n> the earth\n``` \n-> \n```\n<e>בְּרֵאשִׁ֖ית</e> <S>7225</S> <n>be-re-Shit</n> In the beginning <e>ddfבָּרָ֣א</e> <S>1254</S> <n>ba-Ra</n> created <e>אֱלֹהִ֑ים</e> <S>430</S> <n>E-lo-Him;</n> God <e>אֵ֥ת</e> <S>853</S> <n>'et</n> <e>הַשָּׁמַ֖יִם</e> <S>8064</S> <n>hash-sha-Ma-yim</n> the heaven <e>וְאֵ֥ת</e> <S>853</S> <n>ve-'Et</n> <e>הָאָֽרֶץ׃</e> <S>776</S> <n>ha-'A-retz.</n> the earth\n```\n(2016-01-29) -\n(2015-12-30) The module is renewed\n(2015-05-08) Code cleaning\n(2015-05-07) Fixed Strong's numbers in Zech.\n(2015-03-29) Refixed\n(2015-03-09) Strong number new code\n(2015-03-05) Коррекция стиля\n(2014-11-25) Fixed English-Hebrew text\n(2014-11-10) Code cleaning\n(2014-10-28) Published",
       "bkq": "39",
       "url": [
         "{cdn}HSB+",
