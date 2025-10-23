@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -80035,8 +80035,8 @@
       "des": "21st Century KJV (1994)",
       "inf": "The 21st Century King James Version (KJ21) is an updated version of the King James Version Bible published in 1994 that stays aligned to the Textus Receptus, and does not remove biblical passages based on Alexandrian Greek manuscripts. In contrast to the New King James Version, it does not alter the language significantly from the 1611 King James Version, retaining Jacobean grammar (including \"thee\" and \"thou\"), but it does attempt to replace some of the vocabulary that might no longer make sense to a modern reader. The reader should notice almost no difference from reading the King James Version except that certain archaic words have been replaced with words that are more understandable in modern English. The translation is directed towards readers who are looking for a very conservative King James update, but reduce the use of obsolete words. A version containing the Apocrypha and without the unusual formatting was released under the name Third Millennium Bible in 1998. Unlike the New King James Version, the 21st Century King James Version does not alter the language significantly from the King James Version. The author has eliminated \"obsolete words\". The changes in words are based on the second edition of the Webster's New International Dictionary. There were no changes related to gender or theology. Recently, it has the capitalization of pronouns much like New King James Version, addressing Deity while maintaining the archaic pronouns. Copyright 1994 by Deuel Enterprises, Inc., Gary, SD 57237. All rights reserved.",
       "fil": "KJ21",
-      "upd": "2024-10-02",
-      "cmt": "(2024-10-01) Published",
+      "upd": "2025-10-23",
+      "cmt": "(2025-10-23) User proposed: Module: `KJ21`\nBook: `Genesis (10)`\nChapter: `1`\nVerse: `1`\n\n```\nIn the beginning God created the heaven and the earth. Тестdada\n``` \n-> \n```\nIn the beginning God created the heaven and the earth. Тестdadaerevan\n```\n(2024-10-01) Published",
       "bkq": "66",
       "url": [
         "{cdn}KJ21",
