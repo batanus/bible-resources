@@ -3,19 +3,19 @@
   "hosts": [
     {
       "alias": "cdn",
-      "path": "https://cdn.jsdelivr.net/gh/batanus/bible-resources@main/modules/%s.zip",
+      "path": "https://cdn.jsdelivr.net/gh/batanus/bible-resources@user-submission/rst+-1761216733969/modules/%s.zip",
       "priority": 3,
       "weight": 100
     },
     {
       "alias": "cdn2",
-      "path": "https://cdn.statically.io/gh/batanus/bible-resources@main/modules/%s.zip",
+      "path": "https://cdn.statically.io/gh/batanus/bible-resources@user-submission/rst+-1761216733969/modules/%s.zip",
       "priority": 3,
       "weight": 100
     },
     {
       "alias": "gh",
-      "path": "https://raw.githubusercontent.com/batanus/bible-resources/main/modules/%s.zip",
+      "path": "https://raw.githubusercontent.com/batanus/bible-resources/user-submission/rst+-1761216733969/modules/%s.zip",
       "priority": 3,
       "weight": 50
     },
