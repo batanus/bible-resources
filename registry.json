@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7497462,
   "hosts": [
     {
       "alias": "cdn",
@@ -22406,7 +22406,8 @@
         "{1gb}RST77",
         "{p4}RST77"
       ],
-      "siz": "2.4M"
+      "siz": "2.4M",
+      "hid": true
     },
     {
       "abr": "RST'94",
@@ -42007,7 +42008,8 @@
         "{1gb}AST",
         "{p4}AST"
       ],
-      "siz": "1.9M"
+      "siz": "1.9M",
+      "hid": true
     },
     {
       "abr": "MHNT'10",
@@ -80578,6 +80580,21 @@
         "{p4}IrOrda.commentaries"
       ],
       "siz": "405K"
+    },
+    {
+      "abr": "IrOrda-Ps",
+      "lng": "ru",
+      "des": "Руководственное пособие к пониманию Псалтири, еп. Ириней (Орда), 1882 г.",
+      "fil": "IrOrda-Ps.commentaries",
+      "upd": "2025-10-24",
+      "cmt": "(2025-10-24) Выложен",
+      "url": [
+        "{mz}IrOrda-Ps.commentaries",
+        "{inf}IrOrda-Ps.commentaries",
+        "{1gb}IrOrda-Ps.commentaries",
+        "{p4}IrOrda-Ps.commentaries"
+      ],
+      "siz": "467K"
     },
     {
       "abr": "KUSB'23",
