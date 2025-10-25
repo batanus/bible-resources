@@ -1,5 +1,10 @@
 name: Update Bible Resources Registry
 
+# Configuration:
+# - MODULES_WITHOUT_HID: List of modules that should NOT have 'hid' property
+#   (defined in "Update registry.json" step)
+#   Current: ['AST', 'RST77']
+
 on:
   schedule:
     # Runs every day at 07:00 UTC (approximately 10:00 Chisinau time)
@@ -69,8 +74,8 @@ jobs:
           
           echo "Comparing registries..."
           
-          # Install jq for JSON processing
-          sudo apt-get update && sudo apt-get install -y jq
+          # Install jq for JSON processing (silently)
+          sudo apt-get update -qq && sudo apt-get install -y jq -qq > /dev/null 2>&1
           
           # Compare registries using JSON structure, not text
           python3 << 'PYTHON_COMPARE'
@@ -144,14 +149,12 @@ jobs:
           
           # Output result
           if has_changes:
-              print("Changes detected in registry!")
-              for reason in change_reasons:
-                  print(f"  - {reason}")
+              print("✅ Changes detected in registry")
               
               with open('/tmp/has_changes.txt', 'w') as f:
                   f.write('true')
           else:
-              print("No changes detected in registry")
+              print("ℹ️ No changes detected")
               with open('/tmp/has_changes.txt', 'w') as f:
                   f.write('false')
           PYTHON_COMPARE
@@ -165,6 +168,7 @@ jobs:
             python3 << 'PYTHON_SCRIPT'
           import json
           import sys
+          import os
           
           # Load old and new registries
           try:
@@ -190,75 +194,245 @@ jobs:
               elif old_modules[abr].get('upd') != new_item.get('upd'):
                   updated_items.append(abr)
           
+          print(f"📊 Analysis: {len(old_modules)} old modules, {len(new_modules)} new modules")
+          print(f"📊 Found: {len(new_items)} new, {len(updated_items)} updated")
+          
           # Save list of modules to download
           modules_to_download = new_items + updated_items
           
-          if modules_to_download:
-              print(f"Found {len(new_items)} new and {len(updated_items)} updated modules")
-              with open('/tmp/modules_to_download.txt', 'w') as f:
-                  f.write('\n'.join(modules_to_download))
-              
-              # Create summary for PR
-              summary = []
-              summary.append(f"## Registry Update Summary\n")
-              summary.append(f"- **New modules:** {len(new_items)}")
-              summary.append(f"- **Updated modules:** {len(updated_items)}")
-              summary.append(f"- **Total changes:** {len(modules_to_download)}\n")
-              
-              if new_items:
-                  summary.append("### 📦 New Modules\n")
-                  for item in new_items[:20]:  # Show first 20
-                      mod = new_modules[item]
-                      summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
-                  if len(new_items) > 20:
-                      summary.append(f"\n_...and {len(new_items) - 20} more_\n")
-              
-              if updated_items:
-                  summary.append("\n### 🔄 Updated Modules\n")
-                  for item in updated_items[:20]:  # Show first 20
-                      mod = new_modules[item]
-                      summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
-                  if len(updated_items) > 20:
-                      summary.append(f"\n_...and {len(updated_items) - 20} more_\n")
-              
-              with open('/tmp/pr_summary.md', 'w') as f:
-                  f.write('\n'.join(summary))
-          else:
-              print("No new or updated modules found (metadata changes only)")
-              # Create summary for metadata-only changes
-              summary = []
-              summary.append("## Registry Update Summary\n")
-              summary.append("- **New modules:** 0")
-              summary.append("- **Updated modules:** 0")
-              summary.append("- **Changes:** Registry metadata updated (version, hosts, etc.)\n")
-              
-              with open('/tmp/pr_summary.md', 'w') as f:
-                  f.write('\n'.join(summary))
-              
-              # Create empty modules list so workflow continues
-              with open('/tmp/modules_to_download.txt', 'w') as f:
-                  f.write('')
+          # Write modules list to GITHUB_OUTPUT
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              if modules_to_download:
+                  # Save as comma-separated string
+                  modules_str = ','.join(modules_to_download)
+                  f.write(f"modules_list={modules_str}\n")
+                  f.write(f"modules_count={len(modules_to_download)}\n")
+                  
+                  print(f"📦 Modules to download ({len(modules_to_download)}): {', '.join(modules_to_download[:10])}")
+                  if len(modules_to_download) > 10:
+                      print(f"   ... and {len(modules_to_download) - 10} more")
+              else:
+                  f.write(f"modules_list=\n")
+                  f.write(f"modules_count=0\n")
+                  print("ℹ️ No new or updated modules found")
+          
+          # Create summary for PR
+          summary = []
+          summary.append(f"## Registry Update Summary\n")
+          summary.append(f"- **New modules:** {len(new_items)}")
+          summary.append(f"- **Updated modules:** {len(updated_items)}")
+          summary.append(f"- **Total changes:** {len(modules_to_download)}\n")
+          
+          if new_items:
+              summary.append("### 📦 New Modules\n")
+              for item in new_items[:20]:  # Show first 20
+                  mod = new_modules[item]
+                  summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
+              if len(new_items) > 20:
+                  summary.append(f"\n_...and {len(new_items) - 20} more_\n")
+          
+          if updated_items:
+              summary.append("\n### 🔄 Updated Modules\n")
+              for item in updated_items[:20]:  # Show first 20
+                  mod = new_modules[item]
+                  summary.append(f"- `{item}` - {mod.get('des', 'No description')}")
+              if len(updated_items) > 20:
+                  summary.append(f"\n_...and {len(updated_items) - 20} more_\n")
+          
+          if not modules_to_download:
+              summary.append("\n### ℹ️ Note\n")
+              summary.append("Registry metadata updated (version, hosts, etc.) but no module downloads required.\n")
+          
+          with open('/tmp/pr_summary.md', 'w') as f:
+              f.write('\n'.join(summary))
           PYTHON_SCRIPT
           else
             echo "No changes detected - skipping module download"
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
           
-      - name: Download new/updated modules
+      - name: Update registry.json
         if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "Merging registries (preserve custom hosts and URLs)..."
+          
+          python3 << 'PYTHON_MERGE'
+          import json
+          import re
+          
+          # List of modules that should NOT have 'hid' property updated
+          # These modules have custom visibility settings that should be preserved
+          MODULES_WITHOUT_HID = ['AST', 'RST77']
+          
+          # Load old registry (with custom hosts and URLs)
+          with open('registry.json', 'r', encoding='utf-8-sig') as f:
+              old_registry = json.load(f)
+          
+          # Load new registry (from external source)
+          with open('/tmp/registry.json', 'r', encoding='utf-8-sig') as f:
+              new_registry = json.load(f)
+          
+          # Merge strategy:
+          # 1. Keep old hosts + add any new hosts from external source
+          # 2. Update module metadata (des, upd, lng, etc.) from new registry
+          # 3. Keep old URLs for existing modules, add CDN URLs + external URLs for new modules
+          
+          # Step 1: Merge hosts
+          old_hosts = {h['alias']: h for h in old_registry.get('hosts', [])}
+          new_hosts = {h['alias']: h for h in new_registry.get('hosts', [])}
+          
+          # Add new hosts that don't exist in old registry
+          merged_hosts = list(old_hosts.values())
+          for alias, host in new_hosts.items():
+              if alias not in old_hosts:
+                  merged_hosts.append(host)
+          
+          # Helper function to parse size string (e.g., "45.2M", "1.5K", "123")
+          def parse_size_mb(size_str):
+              """Parse size string and return size in MB"""
+              if not size_str:
+                  return 0
+              
+              size_str = str(size_str).strip().upper()
+              
+              # Extract number and unit
+              match = re.match(r'^([\d.]+)\s*([KMG]?)$', size_str)
+              if not match:
+                  return 0
+              
+              value = float(match.group(1))
+              unit = match.group(2)
+              
+              # Convert to MB
+              if unit == 'K':
+                  return value / 1024  # KB to MB
+              elif unit == 'M':
+                  return value
+              elif unit == 'G':
+                  return value * 1024  # GB to MB
+              else:
+                  # Assume bytes
+                  return value / (1024 * 1024)
+          
+          # Step 2: Merge modules
+          old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
+          new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
+          
+          merged_downloads = []
+          
+          for abr, new_module in new_modules.items():
+              if abr in old_modules:
+                  # Existing module: update metadata but keep URLs
+                  old_module = old_modules[abr]
+                  merged_module = new_module.copy()
+                  
+                  # Preserve old URLs if they exist
+                  if 'url' in old_module:
+                      merged_module['url'] = old_module['url']
+                  
+                  # Handle 'hid' property for modules in exclusion list
+                  if abr in MODULES_WITHOUT_HID:
+                      # Remove 'hid' property if it exists (preserve custom visibility)
+                      if 'hid' in merged_module:
+                          del merged_module['hid']
+                          print(f"🔓 Removed 'hid' property from {abr} (exclusion list)")
+                  
+                  merged_downloads.append(merged_module)
+              else:
+                  # New module: add CDN URLs at the beginning
+                  merged_module = new_module.copy()
+                  
+                  # Handle 'hid' property for modules in exclusion list
+                  if abr in MODULES_WITHOUT_HID:
+                      # Remove 'hid' property if it exists
+                      if 'hid' in merged_module:
+                          del merged_module['hid']
+                          print(f"🔓 Removed 'hid' property from new module {abr} (exclusion list)")
+                  
+                  # Get module filename
+                  module_file = merged_module.get('fil', '')
+                  
+                  # Get module size and parse it
+                  size_str = merged_module.get('siz', '0')
+                  size_mb = parse_size_mb(size_str)
+                  
+                  # Prepare CDN URLs to prepend
+                  cdn_urls = []
+                  
+                  # Only add {cdn} if size is less than or equal to 50MB
+                  if size_mb <= 50:
+                      cdn_urls.append(f"{{cdn}}{module_file}")
+                  
+                  # Always add {cdn2} and {gh}
+                  cdn_urls.append(f"{{cdn2}}{module_file}")
+                  cdn_urls.append(f"{{gh}}{module_file}")
+                  
+                  # Get existing URLs from external source
+                  existing_urls = merged_module.get('url', [])
+                  
+                  # Prepend CDN URLs to the beginning
+                  merged_module['url'] = cdn_urls + existing_urls
+                  
+                  print(f"✅ Added new module: {abr}")
+                  
+                  merged_downloads.append(merged_module)
+          
+          # Create merged registry
+          merged_registry = {
+              'version': new_registry.get('version', old_registry.get('version', 0)),
+              'hosts': merged_hosts,
+              'downloads': merged_downloads
+          }
+          
+          # Save merged registry with formatting
+          with open('registry.json', 'w', encoding='utf-8') as f:
+              json.dump(merged_registry, f, ensure_ascii=False, indent=2)
+              f.write('\n')
+          
+          print(f"✅ Registry merged: {len(merged_hosts)} hosts, {len(merged_downloads)} modules")
+          PYTHON_MERGE
+          
+      - name: Download new/updated modules
+        if: steps.check_changes.outputs.has_changes == 'true' && steps.check_changes.outputs.modules_count != '0'
         run: |
           echo "Downloading new and updated modules..."
           
-          # Install jq if not already installed
-          sudo apt-get update && sudo apt-get install -y jq
+          # Install jq if not already installed (silently)
+          sudo apt-get update -qq && sudo apt-get install -y jq -qq > /dev/null 2>&1
           
-          # Read modules to download
-          if [ ! -f /tmp/modules_to_download.txt ]; then
-            echo "No modules to download"
+          # Read modules list from output
+          MODULES_LIST="${{ steps.check_changes.outputs.modules_list }}"
+          
+          if [ -z "$MODULES_LIST" ]; then
+            echo "⚠️  Module list is empty"
+            echo ""
+            echo "========================================="
+            echo "DOWNLOAD SUMMARY"
+            echo "========================================="
+            echo "Total modules:      0"
+            echo "Successfully downloaded: 0"
+            echo "Failed downloads:   0"
+            echo "Success rate:       N/A"
+            echo "========================================="
             exit 0
           fi
           
-          # Read the new registry and hosts
+          # Convert comma-separated string to array
+          IFS=',' read -ra MODULES_ARRAY <<< "$MODULES_LIST"
+          
+          echo "📋 Modules to download: ${#MODULES_ARRAY[@]} total"
+          for i in "${!MODULES_ARRAY[@]}"; do
+            if [ $i -lt 5 ]; then
+              echo "  - ${MODULES_ARRAY[$i]}"
+            fi
+          done
+          if [ ${#MODULES_ARRAY[@]} -gt 5 ]; then
+            echo "  ... and $((${#MODULES_ARRAY[@]} - 5)) more"
+          fi
+          echo ""
+          
+          # Use the ORIGINAL external registry (not the merged one with CDN URLs)
+          # because CDN files don't exist yet until this PR is merged
           NEW_REGISTRY="/tmp/registry.json"
           
           # Create modules directory if it doesn't exist
@@ -269,8 +443,10 @@ jobs:
           SUCCESS_COUNT=0
           FAILED_COUNT=0
           
-          # Download each module
-          while IFS= read -r module_abr; do
+          # Download each module from the array
+          for module_abr in "${MODULES_ARRAY[@]}"; do
+            [ -z "$module_abr" ] && continue
+            
             echo ""
             echo "========================================="
             echo "Processing module: $module_abr"
@@ -285,27 +461,28 @@ jobs:
               continue
             fi
             
-            # Get ALL URLs from the module's url array
-            MODULE_URLS=$(echo "$MODULE_DATA" | jq -r '.url[]')
-            URL_COUNT=$(echo "$MODULE_URLS" | wc -l)
+            # Get module filename
+            MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
+            OUTPUT_FILE="modules/${MODULE_FILE}.zip"
             
-            if [ -z "$MODULE_URLS" ] || [ "$MODULE_URLS" = "null" ]; then
+            # Get ALL URLs from the module's url array
+            URL_ARRAY=$(echo "$MODULE_DATA" | jq -r '.url[]' 2>/dev/null || echo "")
+            
+            if [ -z "$URL_ARRAY" ]; then
               echo "❌ No URLs found for module $module_abr"
               FAILED_COUNT=$((FAILED_COUNT + 1))
               continue
             fi
             
+            URL_COUNT=$(echo "$URL_ARRAY" | wc -l | tr -d ' ')
             echo "Found $URL_COUNT URL(s) for this module"
-            
-            # Get module filename
-            MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
-            OUTPUT_FILE="modules/${MODULE_FILE}.zip"
             
             # Try each URL until one succeeds
             url_index=0
             download_success=false
             
-            echo "$MODULE_URLS" | while IFS= read -r MODULE_URL; do
+            while IFS= read -r MODULE_URL; do
+              [ -z "$MODULE_URL" ] && continue
               url_index=$((url_index + 1))
               
               echo ""
@@ -317,9 +494,9 @@ jobs:
                 DOWNLOAD_URL="$MODULE_URL"
               else
                 # Extract alias and filename from template like "{cdn}100EJ-p.plan"
-                # Find matching host and replace %s with filename
                 DOWNLOAD_URL=""
                 
+                # Read hosts and find matching alias
                 while IFS= read -r host_line; do
                   alias=$(echo "$host_line" | jq -r '.alias')
                   path=$(echo "$host_line" | jq -r '.path')
@@ -338,9 +515,10 @@ jobs:
                   fi
                 done < <(jq -c '.hosts[]' "$NEW_REGISTRY")
                 
-                # If no match found, use MODULE_URL as is
+                # If no match found, skip this URL
                 if [ -z "$DOWNLOAD_URL" ]; then
-                  DOWNLOAD_URL="$MODULE_URL"
+                  echo "  ⚠️  Could not resolve URL pattern: $MODULE_URL"
+                  continue
                 fi
               fi
               
@@ -349,33 +527,28 @@ jobs:
               # Try to download with retries for this specific URL
               max_attempts=3
               attempt=1
-              url_success=false
               
               while [ $attempt -le $max_attempts ]; do
-                echo "  Attempt $attempt of $max_attempts..."
+                echo "  📥 Downloading from: $DOWNLOAD_URL"
                 
                 if curl -L -f -o "$OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
                   echo "  ✅ Successfully downloaded from URL #$url_index"
-                  url_success=true
                   download_success=true
                   break 2  # Exit both retry loop and URL loop
                 else
-                  echo "  ❌ Failed on attempt $attempt"
+                  echo "  ❌ Failed (attempt $attempt/$max_attempts)"
                   if [ $attempt -lt $max_attempts ]; then
-                    echo "  Waiting 5 seconds before retry..."
                     sleep 5
                   fi
                   attempt=$((attempt + 1))
                 fi
               done
               
-              if [ "$url_success" = false ]; then
-                echo "  ⚠️  All attempts failed for URL #$url_index, trying next URL..."
-              fi
-            done
+              echo "  ⚠️  All attempts failed for URL #$url_index, trying next URL..."
+            done <<< "$URL_ARRAY"
             
             # Check final result for this module
-            if [ -f "$OUTPUT_FILE" ]; then
+            if [ "$download_success" = true ] && [ -f "$OUTPUT_FILE" ]; then
               file_size=$(ls -lh "$OUTPUT_FILE" | awk '{print $5}')
               echo ""
               echo "✅ Module $module_abr downloaded successfully ($file_size)"
@@ -384,9 +557,11 @@ jobs:
               echo ""
               echo "❌ Failed to download $module_abr from all available URLs"
               FAILED_COUNT=$((FAILED_COUNT + 1))
+              # Clean up partial downloads
+              rm -f "$OUTPUT_FILE"
             fi
             
-          done < /tmp/modules_to_download.txt
+          done
           
           # Print summary
           echo ""
@@ -396,11 +571,16 @@ jobs:
           echo "Total modules:      $TOTAL_MODULES"
           echo "Successfully downloaded: $SUCCESS_COUNT"
           echo "Failed downloads:   $FAILED_COUNT"
-          echo "Success rate:       $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")"
+          if [ $TOTAL_MODULES -gt 0 ]; then
+            echo "Success rate:       $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")"
+          else
+            echo "Success rate:       N/A"
+          fi
           echo "========================================="
           
           # Save summary for PR
-          cat >> /tmp/pr_summary.md << EOF
+          if [ $TOTAL_MODULES -gt 0 ]; then
+            cat >> /tmp/pr_summary.md << EOF
           
           ## 📊 Download Statistics
           
@@ -409,79 +589,8 @@ jobs:
           - **Failed downloads:** $FAILED_COUNT ❌
           - **Success rate:** $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")
           EOF
+          fi
           
-      - name: Update registry.json
-        if: steps.check_changes.outputs.has_changes == 'true'
-        run: |
-          echo "Merging registries (preserve custom hosts and URLs)..."
-          
-          python3 << 'PYTHON_MERGE'
-          import json
-          
-          # Load old registry (with custom hosts and URLs)
-          with open('registry.json', 'r', encoding='utf-8-sig') as f:
-              old_registry = json.load(f)
-          
-          # Load new registry (from external source)
-          with open('/tmp/registry.json', 'r', encoding='utf-8-sig') as f:
-              new_registry = json.load(f)
-          
-          # Merge strategy:
-          # 1. Keep old hosts + add any new hosts from external source
-          # 2. Update module metadata (des, upd, lng, etc.) from new registry
-          # 3. Keep old URLs for existing modules, add URLs for new modules
-          
-          # Step 1: Merge hosts
-          old_hosts = {h['alias']: h for h in old_registry.get('hosts', [])}
-          new_hosts = {h['alias']: h for h in new_registry.get('hosts', [])}
-          
-          # Add new hosts that don't exist in old registry
-          merged_hosts = list(old_hosts.values())
-          for alias, host in new_hosts.items():
-              if alias not in old_hosts:
-                  print(f"Adding new host: {alias}")
-                  merged_hosts.append(host)
-          
-          # Step 2: Merge modules
-          old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
-          new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
-          
-          merged_downloads = []
-          
-          for abr, new_module in new_modules.items():
-              if abr in old_modules:
-                  # Existing module: update metadata but keep URLs
-                  old_module = old_modules[abr]
-                  merged_module = new_module.copy()
-                  
-                  # Preserve old URLs if they exist
-                  if 'url' in old_module:
-                      merged_module['url'] = old_module['url']
-                      print(f"Preserving URLs for module: {abr}")
-                  
-                  merged_downloads.append(merged_module)
-              else:
-                  # New module: use as is
-                  print(f"Adding new module: {abr}")
-                  merged_downloads.append(new_module)
-          
-          # Create merged registry
-          merged_registry = {
-              'version': new_registry.get('version', old_registry.get('version', 0)),
-              'hosts': merged_hosts,
-              'downloads': merged_downloads
-          }
-          
-          # Save merged registry with formatting
-          with open('registry.json', 'w', encoding='utf-8') as f:
-              json.dump(merged_registry, f, ensure_ascii=False, indent=2)
-              f.write('\n')
-          
-          print(f"\n✅ Registry merged successfully")
-          print(f"   Total hosts: {len(merged_hosts)}")
-          print(f"   Total modules: {len(merged_downloads)}")
-          PYTHON_MERGE
-
       - name: Recreate registry.zip with formatted registry
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
@@ -520,9 +629,7 @@ jobs:
               if 'lng' in item:
                   languages.add(item['lng'])
           
-          print(f"Total modules: {total_modules}")
-          print(f"Total size: {size_gb:.1f} GB")
-          print(f"Unique languages: {len(languages)}")
+          print(f"📊 Statistics: {total_modules} modules, {size_gb:.1f} GB, {len(languages)} languages")
           
           # Save stats for README update
           with open('/tmp/stats.txt', 'w') as f:
