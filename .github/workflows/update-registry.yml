@@ -638,13 +638,35 @@ jobs:
               f.write(f"{len(languages)}\n")
           PYTHON_SCRIPT
           
+      - name: Prepare PR title
+        if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_pr
+        run: |
+          # Prepare PR title with module names
+          MODULES_LIST="${{ steps.check_changes.outputs.modules_list }}"
+          MODULES_COUNT="${{ steps.check_changes.outputs.modules_count }}"
+          
+          if [ "$MODULES_COUNT" -le 3 ]; then
+            # Show all modules if 3 or less
+            PR_TITLE="🔄 Registry Update ($MODULES_LIST)"
+          else
+            # Show first 3 modules + count
+            IFS=',' read -ra MODULES_ARRAY <<< "$MODULES_LIST"
+            FIRST_THREE="${MODULES_ARRAY[0]}, ${MODULES_ARRAY[1]}, ${MODULES_ARRAY[2]}"
+            REMAINING=$((MODULES_COUNT - 3))
+            PR_TITLE="🔄 Registry Update ($FIRST_THREE +$REMAINING more)"
+          fi
+          
+          echo "pr_title=$PR_TITLE" >> $GITHUB_OUTPUT
+          
       - name: Create Pull Request
         if: steps.check_changes.outputs.has_changes == 'true'
+        id: create_pr_action
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'chore: update registry and modules'
-          title: '🔄 Registry Update - ${{ github.run_number }}'
+          title: ${{ steps.create_pr.outputs.pr_title }}
           body-path: /tmp/pr_summary.md
           branch: registry-update-${{ github.run_number }}
           delete-branch: true
