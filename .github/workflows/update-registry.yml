@@ -69,8 +69,8 @@ jobs:
           
           echo "Comparing registries..."
           
-          # Install jq for JSON processing
-          sudo apt-get update && sudo apt-get install -y jq
+          # Install jq for JSON processing (silently)
+          sudo apt-get update -qq && sudo apt-get install -y jq -qq > /dev/null 2>&1
           
           # Compare registries using JSON structure, not text
           python3 << 'PYTHON_COMPARE'
@@ -249,12 +249,21 @@ jobs:
         run: |
           echo "Downloading new and updated modules..."
           
-          # Install jq if not already installed
-          sudo apt-get update && sudo apt-get install -y jq
+          # Install jq if not already installed (silently)
+          sudo apt-get update -qq && sudo apt-get install -y jq -qq > /dev/null 2>&1
           
           # Read modules to download
-          if [ ! -f /tmp/modules_to_download.txt ]; then
+          if [ ! -f /tmp/modules_to_download.txt ] || [ ! -s /tmp/modules_to_download.txt ]; then
             echo "No modules to download"
+            echo ""
+            echo "========================================="
+            echo "DOWNLOAD SUMMARY"
+            echo "========================================="
+            echo "Total modules:      0"
+            echo "Successfully downloaded: 0"
+            echo "Failed downloads:   0"
+            echo "Success rate:       N/A"
+            echo "========================================="
             exit 0
           fi
           
@@ -271,6 +280,8 @@ jobs:
           
           # Download each module
           while IFS= read -r module_abr; do
+            [ -z "$module_abr" ] && continue
+            
             echo ""
             echo "========================================="
             echo "Processing module: $module_abr"
@@ -285,27 +296,28 @@ jobs:
               continue
             fi
             
-            # Get ALL URLs from the module's url array
-            MODULE_URLS=$(echo "$MODULE_DATA" | jq -r '.url[]')
-            URL_COUNT=$(echo "$MODULE_URLS" | wc -l)
+            # Get module filename
+            MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
+            OUTPUT_FILE="modules/${MODULE_FILE}.zip"
             
-            if [ -z "$MODULE_URLS" ] || [ "$MODULE_URLS" = "null" ]; then
+            # Get ALL URLs from the module's url array
+            URL_ARRAY=$(echo "$MODULE_DATA" | jq -r '.url[]' 2>/dev/null || echo "")
+            
+            if [ -z "$URL_ARRAY" ]; then
               echo "❌ No URLs found for module $module_abr"
               FAILED_COUNT=$((FAILED_COUNT + 1))
               continue
             fi
             
+            URL_COUNT=$(echo "$URL_ARRAY" | wc -l | tr -d ' ')
             echo "Found $URL_COUNT URL(s) for this module"
-            
-            # Get module filename
-            MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
-            OUTPUT_FILE="modules/${MODULE_FILE}.zip"
             
             # Try each URL until one succeeds
             url_index=0
             download_success=false
             
-            echo "$MODULE_URLS" | while IFS= read -r MODULE_URL; do
+            while IFS= read -r MODULE_URL; do
+              [ -z "$MODULE_URL" ] && continue
               url_index=$((url_index + 1))
               
               echo ""
@@ -317,9 +329,9 @@ jobs:
                 DOWNLOAD_URL="$MODULE_URL"
               else
                 # Extract alias and filename from template like "{cdn}100EJ-p.plan"
-                # Find matching host and replace %s with filename
                 DOWNLOAD_URL=""
                 
+                # Read hosts and find matching alias
                 while IFS= read -r host_line; do
                   alias=$(echo "$host_line" | jq -r '.alias')
                   path=$(echo "$host_line" | jq -r '.path')
@@ -338,9 +350,10 @@ jobs:
                   fi
                 done < <(jq -c '.hosts[]' "$NEW_REGISTRY")
                 
-                # If no match found, use MODULE_URL as is
+                # If no match found, skip this URL
                 if [ -z "$DOWNLOAD_URL" ]; then
-                  DOWNLOAD_URL="$MODULE_URL"
+                  echo "  ⚠️  Could not resolve URL pattern: $MODULE_URL"
+                  continue
                 fi
               fi
               
@@ -349,14 +362,12 @@ jobs:
               # Try to download with retries for this specific URL
               max_attempts=3
               attempt=1
-              url_success=false
               
               while [ $attempt -le $max_attempts ]; do
                 echo "  Attempt $attempt of $max_attempts..."
                 
                 if curl -L -f -o "$OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
                   echo "  ✅ Successfully downloaded from URL #$url_index"
-                  url_success=true
                   download_success=true
                   break 2  # Exit both retry loop and URL loop
                 else
@@ -369,13 +380,11 @@ jobs:
                 fi
               done
               
-              if [ "$url_success" = false ]; then
-                echo "  ⚠️  All attempts failed for URL #$url_index, trying next URL..."
-              fi
-            done
+              echo "  ⚠️  All attempts failed for URL #$url_index, trying next URL..."
+            done <<< "$URL_ARRAY"
             
             # Check final result for this module
-            if [ -f "$OUTPUT_FILE" ]; then
+            if [ "$download_success" = true ] && [ -f "$OUTPUT_FILE" ]; then
               file_size=$(ls -lh "$OUTPUT_FILE" | awk '{print $5}')
               echo ""
               echo "✅ Module $module_abr downloaded successfully ($file_size)"
@@ -384,6 +393,8 @@ jobs:
               echo ""
               echo "❌ Failed to download $module_abr from all available URLs"
               FAILED_COUNT=$((FAILED_COUNT + 1))
+              # Clean up partial downloads
+              rm -f "$OUTPUT_FILE"
             fi
             
           done < /tmp/modules_to_download.txt
@@ -396,11 +407,16 @@ jobs:
           echo "Total modules:      $TOTAL_MODULES"
           echo "Successfully downloaded: $SUCCESS_COUNT"
           echo "Failed downloads:   $FAILED_COUNT"
-          echo "Success rate:       $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")"
+          if [ $TOTAL_MODULES -gt 0 ]; then
+            echo "Success rate:       $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")"
+          else
+            echo "Success rate:       N/A"
+          fi
           echo "========================================="
           
           # Save summary for PR
-          cat >> /tmp/pr_summary.md << EOF
+          if [ $TOTAL_MODULES -gt 0 ]; then
+            cat >> /tmp/pr_summary.md << EOF
           
           ## 📊 Download Statistics
           
@@ -409,6 +425,7 @@ jobs:
           - **Failed downloads:** $FAILED_COUNT ❌
           - **Success rate:** $(awk "BEGIN {printf \"%.1f%%\", ($SUCCESS_COUNT/$TOTAL_MODULES)*100}")
           EOF
+          fi
           
       - name: Update registry.json
         if: steps.check_changes.outputs.has_changes == 'true'
@@ -417,6 +434,7 @@ jobs:
           
           python3 << 'PYTHON_MERGE'
           import json
+          import re
           
           # Load old registry (with custom hosts and URLs)
           with open('registry.json', 'r', encoding='utf-8-sig') as f:
@@ -429,7 +447,7 @@ jobs:
           # Merge strategy:
           # 1. Keep old hosts + add any new hosts from external source
           # 2. Update module metadata (des, upd, lng, etc.) from new registry
-          # 3. Keep old URLs for existing modules, add URLs for new modules
+          # 3. Keep old URLs for existing modules, add CDN URLs + external URLs for new modules
           
           # Step 1: Merge hosts
           old_hosts = {h['alias']: h for h in old_registry.get('hosts', [])}
@@ -441,6 +459,33 @@ jobs:
               if alias not in old_hosts:
                   print(f"Adding new host: {alias}")
                   merged_hosts.append(host)
+          
+          # Helper function to parse size string (e.g., "45.2M", "1.5K", "123")
+          def parse_size_mb(size_str):
+              """Parse size string and return size in MB"""
+              if not size_str:
+                  return 0
+              
+              size_str = str(size_str).strip().upper()
+              
+              # Extract number and unit
+              match = re.match(r'^([\d.]+)\s*([KMG]?)$', size_str)
+              if not match:
+                  return 0
+              
+              value = float(match.group(1))
+              unit = match.group(2)
+              
+              # Convert to MB
+              if unit == 'K':
+                  return value / 1024  # KB to MB
+              elif unit == 'M':
+                  return value
+              elif unit == 'G':
+                  return value * 1024  # GB to MB
+              else:
+                  # Assume bytes
+                  return value / (1024 * 1024)
           
           # Step 2: Merge modules
           old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
@@ -461,9 +506,40 @@ jobs:
                   
                   merged_downloads.append(merged_module)
               else:
-                  # New module: use as is
+                  # New module: add CDN URLs at the beginning
                   print(f"Adding new module: {abr}")
-                  merged_downloads.append(new_module)
+                  merged_module = new_module.copy()
+                  
+                  # Get module filename
+                  module_file = merged_module.get('fil', '')
+                  
+                  # Get module size and parse it
+                  size_str = merged_module.get('siz', '0')
+                  size_mb = parse_size_mb(size_str)
+                  
+                  # Prepare CDN URLs to prepend
+                  cdn_urls = []
+                  
+                  # Only add {cdn} if size is less than or equal to 50MB
+                  if size_mb <= 50:
+                      cdn_urls.append(f"{{cdn}}{module_file}")
+                      print(f"  Added {{cdn}} URL for {abr} (size: {size_str} = {size_mb:.2f}MB)")
+                  else:
+                      print(f"  Skipped {{cdn}} URL for {abr} (size: {size_str} = {size_mb:.2f}MB > 50MB)")
+                  
+                  # Always add {cdn2} and {gh}
+                  cdn_urls.append(f"{{cdn2}}{module_file}")
+                  cdn_urls.append(f"{{gh}}{module_file}")
+                  
+                  # Get existing URLs from external source
+                  existing_urls = merged_module.get('url', [])
+                  
+                  # Prepend CDN URLs to the beginning
+                  merged_module['url'] = cdn_urls + existing_urls
+                  
+                  print(f"  Total URLs for {abr}: {len(merged_module['url'])} ({len(cdn_urls)} CDN + {len(existing_urls)} external)")
+                  
+                  merged_downloads.append(merged_module)
           
           # Create merged registry
           merged_registry = {
