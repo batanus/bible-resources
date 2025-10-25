@@ -1,5 +1,5 @@
 {
-  "version": 7467202,
+  "version": 7467203,
   "hosts": [
     {
       "alias": "cdn",
@@ -15500,8 +15500,8 @@
       "lng": "pt",
       "des": "A Bíblia Livre",
       "fil": "Livre",
-      "upd": "2018-01-10",
-      "cmt": "(2018-01-10) Books abbreviations corrected\n(2017-04-05) RLE corrected\n(2016-10-15) Info table is fixed\n(2016-09-17) Added Salmo\n(2015-01-18) Fixa os nomes dos livros da Biblia\n(2014-11-16) Published",
+      "upd": "2025-10-25",
+      "cmt": "(2025-10-25) User proposed: Module: `Livre`\nBook: `O Livro dos Salmos (230)`\nChapter: `1`\nVerse: `1`\n\n```\nBem-aventurado o homem que não anda no conselho dos maus, a-à-tête nem fica parado no caminho dos pecadores, nem se senta junto dos escarnecedores.ddd\n``` \n-> \n```\nLl\n```\n(2018-01-10) Books abbreviations corrected\n(2017-04-05) RLE corrected\n(2016-10-15) Info table is fixed\n(2016-09-17) Added Salmo\n(2015-01-18) Fixa os nomes dos livros da Biblia\n(2014-11-16) Published",
       "bkq": "32",
       "url": [
         "{cdn}Livre",
