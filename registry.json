@@ -1,5 +1,5 @@
 {
-  "version": 7497462,
+  "version": 7503276,
   "hosts": [
     {
       "alias": "cdn",
@@ -77489,7 +77489,7 @@
       "des": "Новый лингвистический и экзегетический ключ к греческому Новому Завету, Клеон Роджерс",
       "inf": "Клеон Л. Роджерс-младший <br/>\nКлеон Л. Роджерс III <br/>\n«Библия для всех», Санкт-Петербург, 2001 \n",
       "fil": "Роджерс.commentaries",
-      "upd": "2025-10-03",
+      "upd": "2025-10-28",
       "cmt": "(2023-03-24) Выложен",
       "url": [
         "{cdn}Роджерс.commentaries",
@@ -81090,6 +81090,82 @@
       "siz": "14.3M"
     },
     {
+      "abr": "CHomil-pt",
+      "lng": "pt",
+      "des": "O Comentário Homilético Completo do Pregador",
+      "inf": "O Comentário Homilético Completo do Pregador”, de Joseph Exell, William Jones, George Barlow, W. Frank Scott e outros, foi publicado em 37 volumes como um recurso para preparação de sermões e estudo, em 1892",
+      "fil": "CHomil-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}CHomil-pt.commentaries",
+        "{cdn2}CHomil-pt.commentaries",
+        "{gh}CHomil-pt.commentaries",
+        "{mz}CHomil-pt.commentaries",
+        "{inf}CHomil-pt.commentaries",
+        "{1gb}CHomil-pt.commentaries",
+        "{p4}CHomil-pt.commentaries"
+      ],
+      "siz": "28.8M"
+    },
+    {
+      "abr": "Ellicott-pt",
+      "lng": "pt",
+      "des": "Comentário de Ellicott sobre toda a Bíblia",
+      "inf": "Charles John Ellicott (1819–1905) foi um teólogo, erudito bíblico e bispo da Igreja da Inglaterra. Seu ministério foi profundamente marcado por sua dedicação à exegese bíblica, à educação eclesiástica e à preservação da ortodoxia doutrinária anglicana durante um período de intenso debate teológico.",
+      "fil": "Ellicott-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}Ellicott-pt.commentaries",
+        "{cdn2}Ellicott-pt.commentaries",
+        "{gh}Ellicott-pt.commentaries",
+        "{mz}Ellicott-pt.commentaries",
+        "{inf}Ellicott-pt.commentaries",
+        "{1gb}Ellicott-pt.commentaries",
+        "{p4}Ellicott-pt.commentaries"
+      ],
+      "siz": "8.9M"
+    },
+    {
+      "abr": "PPett-pt",
+      "lng": "pt",
+      "des": "Comentário de Peter Pett sobre a Bíblia",
+      "inf": "Traduzido via Google Translator",
+      "fil": "PPett-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}PPett-pt.commentaries",
+        "{cdn2}PPett-pt.commentaries",
+        "{gh}PPett-pt.commentaries",
+        "{mz}PPett-pt.commentaries",
+        "{inf}PPett-pt.commentaries",
+        "{1gb}PPett-pt.commentaries",
+        "{p4}PPett-pt.commentaries"
+      ],
+      "siz": "13.6M"
+    },
+    {
+      "abr": "JSutcliffe-pt",
+      "lng": "pt",
+      "des": "Comentário de Joseph Sutcliffe sobre o Antigo e o Novo Testamento",
+      "inf": "Comentário de Joseph Sutcliffe sobre o Antigo e o Novo Testamento",
+      "fil": "JSutcliffe-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}JSutcliffe-pt.commentaries",
+        "{cdn2}JSutcliffe-pt.commentaries",
+        "{gh}JSutcliffe-pt.commentaries",
+        "{mz}JSutcliffe-pt.commentaries",
+        "{inf}JSutcliffe-pt.commentaries",
+        "{1gb}JSutcliffe-pt.commentaries",
+        "{p4}JSutcliffe-pt.commentaries"
+      ],
+      "siz": "3M"
+    },
+    {
       "abr": "NUBD",
       "lng": "en",
       "des": "The New Unger’s Bible Dictionary<BR>Merrill F. Unger <BR>R.K. HARRISON Editor <BR>HOWARD F. VOS CYRIL J. BARBER Contributing Editors <BR>Unger, M. F., Harrison, R. K., Vos, H. F., Barber, C. J., & Unger, M. F. (1988). <BR>The new Unger's Bible dictionary.<BR>Revision of: Unger's Bible dictionary. 3rd ed. c1966. (Rev. and updated ed.). Chicago: Moody Press.<BR>Because the Bible came into being in a different age, many readers have difficulty understanding its details. A Bible dictionary, defining and clarifying unfamiliar names, places, and objects, is an indispensable tool for the Bible student. Since its introduction in 1957, the Unger's Bible Dictionary has proved its value as an authoritative reference work. Prepared by Merrill F. Unger, Th.D., Ph.D., this volume has been a long‐standing favorite among students of the Bible. Today, after years of exhaustive revisions and updates, The New Unger's Bible Dictionary offers up‐to‐date scholarship. Cross‐referencing and bibliographies make this information easily accessible, no matter which Bible translation you choose. Due to copyright constraints this edition does not include photographs.<BR><b>Book Description</b> <BR>This has been one of the best‐selling Bible dictionaries on the market since its introduction almost 50 years ago. Now, this timehonored classic is more valuable than ever. Packed with current scholarship, more than 67,000 entries are supplemented with detailed essays, colorful photography and maps, and dozens of charts and illustrations to enhance your understanding of God’s Word.<BR><b>About the Author</b><BR><b>MERRILL F. UNGER</b> (A.B., Ph.D., Johns Hopkins University; Th.M., Th.D., Dallas Theological Seminary) was a pastor and a professor of Old Testament Studies at Dallas Theological Seminary. He was the author of many books as well as several invaluable reference works including Unger’s Bible Handbook.",
@@ -81571,6 +81647,26 @@
         "{p4}TYVB%2725"
       ],
       "siz": "3.2M"
+    },
+    {
+      "abr": "Remedio",
+      "lng": "es",
+      "des": "El Remedio, 2020",
+      "inf": "El Nuevo Testamento ampliado y parafraseado por Timothy R. Jennings, MD y traducido por Nicolás Bertoa <br/>\r\n© 2020 Come And Reason Ministries, todos los derechos reservados. Se concede permiso para copiar/pegar y/o compartir versículos en/a otros medios.",
+      "fil": "Remedio",
+      "upd": "2025-10-28",
+      "cmt": "(2025-10-28) Published",
+      "bkq": "29",
+      "url": [
+        "{cdn}Remedio",
+        "{cdn2}Remedio",
+        "{gh}Remedio",
+        "{mz}Remedio",
+        "{inf}Remedio",
+        "{1gb}Remedio",
+        "{p4}Remedio"
+      ],
+      "siz": "872K"
     }
   ]
 }
