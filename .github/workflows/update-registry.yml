@@ -662,7 +662,7 @@ jobs:
       - name: Create Pull Request
         if: steps.check_changes.outputs.has_changes == 'true'
         id: create_pr_action
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'chore: update registry and modules'
@@ -673,6 +673,9 @@ jobs:
           labels: |
             automated
             registry-update
+          reviewers: |
+            batanus
+            Copilot
           add-paths: |
             registry.json
             registry.zip
