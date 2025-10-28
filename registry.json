@@ -1,5 +1,5 @@
 {
-  "version": 7497462,
+  "version": 7501865,
   "hosts": [
     {
       "alias": "cdn",
@@ -81088,6 +81088,82 @@
         "{p4}AClarke-pt.commentaries"
       ],
       "siz": "14.3M"
+    },
+    {
+      "abr": "CHomil-pt",
+      "lng": "pt",
+      "des": "O Comentário Homilético Completo do Pregador",
+      "inf": "O Comentário Homilético Completo do Pregador”, de Joseph Exell, William Jones, George Barlow, W. Frank Scott e outros, foi publicado em 37 volumes como um recurso para preparação de sermões e estudo, em 1892",
+      "fil": "CHomil-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}CHomil-pt.commentaries",
+        "{cdn2}CHomil-pt.commentaries",
+        "{gh}CHomil-pt.commentaries",
+        "{mz}CHomil-pt.commentaries",
+        "{inf}CHomil-pt.commentaries",
+        "{1gb}CHomil-pt.commentaries",
+        "{p4}CHomil-pt.commentaries"
+      ],
+      "siz": "28.8M"
+    },
+    {
+      "abr": "Ellicott-pt",
+      "lng": "pt",
+      "des": "Comentário de Ellicott sobre toda a Bíblia",
+      "inf": "Charles John Ellicott (1819–1905) foi um teólogo, erudito bíblico e bispo da Igreja da Inglaterra. Seu ministério foi profundamente marcado por sua dedicação à exegese bíblica, à educação eclesiástica e à preservação da ortodoxia doutrinária anglicana durante um período de intenso debate teológico.",
+      "fil": "Ellicott-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}Ellicott-pt.commentaries",
+        "{cdn2}Ellicott-pt.commentaries",
+        "{gh}Ellicott-pt.commentaries",
+        "{mz}Ellicott-pt.commentaries",
+        "{inf}Ellicott-pt.commentaries",
+        "{1gb}Ellicott-pt.commentaries",
+        "{p4}Ellicott-pt.commentaries"
+      ],
+      "siz": "8.9M"
+    },
+    {
+      "abr": "PPett-pt",
+      "lng": "pt",
+      "des": "Comentário de Peter Pett sobre a Bíblia",
+      "inf": "Traduzido via Google Translator",
+      "fil": "PPett-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}PPett-pt.commentaries",
+        "{cdn2}PPett-pt.commentaries",
+        "{gh}PPett-pt.commentaries",
+        "{mz}PPett-pt.commentaries",
+        "{inf}PPett-pt.commentaries",
+        "{1gb}PPett-pt.commentaries",
+        "{p4}PPett-pt.commentaries"
+      ],
+      "siz": "13.6M"
+    },
+    {
+      "abr": "JSutcliffe-pt",
+      "lng": "pt",
+      "des": "Comentário de Joseph Sutcliffe sobre o Antigo e o Novo Testamento",
+      "inf": "Comentário de Joseph Sutcliffe sobre o Antigo e o Novo Testamento",
+      "fil": "JSutcliffe-pt.commentaries",
+      "upd": "2025-10-27",
+      "cmt": "(2025-10-27) Published",
+      "url": [
+        "{cdn}JSutcliffe-pt.commentaries",
+        "{cdn2}JSutcliffe-pt.commentaries",
+        "{gh}JSutcliffe-pt.commentaries",
+        "{mz}JSutcliffe-pt.commentaries",
+        "{inf}JSutcliffe-pt.commentaries",
+        "{1gb}JSutcliffe-pt.commentaries",
+        "{p4}JSutcliffe-pt.commentaries"
+      ],
+      "siz": "3M"
     },
     {
       "abr": "NUBD",
