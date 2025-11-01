@@ -1,5 +1,5 @@
 {
-  "version": 7503276,
+  "version": 7507549,
   "hosts": [
     {
       "alias": "cdn",
@@ -81667,6 +81667,66 @@
         "{p4}Remedio"
       ],
       "siz": "872K"
+    },
+    {
+      "abr": "ESTCV'22",
+      "lng": "et",
+      "des": "Pühakiri kaasaegses eesti keeles™",
+      "inf": "Uus Testament, Pühakiri kaasaegses eesti keeles™ © 2022 Biblica, Inc. Kasutatud Biblica loal. Kõik õigused kaitstud kogu maailmas. New Testament, Estonian Contemporary Version™ Copyright © 2022 by Biblica, Inc. Used with permission. All rights reserved worldwide. <br/>\r\nEstonian — Eesti keel",
+      "fil": "ESTCV'22",
+      "upd": "2025-10-31",
+      "cmt": "(2025-10-31) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}ESTCV'22",
+        "{cdn2}ESTCV'22",
+        "{gh}ESTCV'22",
+        "{mz}ESTCV%2722",
+        "{inf}ESTCV%2722",
+        "{1gb}ESTCV%2722",
+        "{p4}ESTCV%2722"
+      ],
+      "siz": "488K"
+    },
+    {
+      "abr": "RUNCB'25",
+      "lng": "rn",
+      "des": "Bibiliya mu Kirundi coroshe",
+      "inf": "Kirundi Contemporary Bible 2025 – <br/>\r\nBibiliya mu Kirundi coroshe™ Uburenganzira © 2021, 2025 bwa Biblica, Inc. Vyakoreshejwe bitangiwe uruhusha. Uburenganzira bwose kwʼisi yose ni ubwa Biblica.   Kirundi Contemporary Bible™ Copyright © 2021, 2025 by Biblica, Inc. Used with permission. All rights reserved worldwide. <br/>\r\nRundi — Ikirundi",
+      "fil": "RUNCB'25",
+      "upd": "2025-10-31",
+      "cmt": "(2025-10-31) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}RUNCB'25",
+        "{cdn2}RUNCB'25",
+        "{gh}RUNCB'25",
+        "{mz}RUNCB%2725",
+        "{inf}RUNCB%2725",
+        "{1gb}RUNCB%2725",
+        "{p4}RUNCB%2725"
+      ],
+      "siz": "2M"
+    },
+    {
+      "abr": "TRUP'24",
+      "lng": "tru",
+      "des": "ܗ̄ܘ ܟܬܒܐ ܩܕܝܫܐ",
+      "inf": "ܗ̄ܘ ܟܬܒܐ ܩܕܝܫܐ <br/>\r\nSuryoyo Bible © 2024 Aramaic Bible Translation <br/>\r\nAramaic Bible Translation, Inc. <br/>\r\nTuroyo",
+      "fil": "TRUP'24",
+      "upd": "2025-10-31",
+      "cmt": "(2025-10-31) Published",
+      "bkq": "35",
+      "url": [
+        "{cdn}TRUP'24",
+        "{cdn2}TRUP'24",
+        "{gh}TRUP'24",
+        "{mz}TRUP%2724",
+        "{inf}TRUP%2724",
+        "{1gb}TRUP%2724",
+        "{p4}TRUP%2724"
+      ],
+      "siz": "1.1M"
     }
   ]
 }
