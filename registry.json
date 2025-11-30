@@ -1,5 +1,5 @@
 {
-  "version": 7507549,
+  "version": 7547726,
   "hosts": [
     {
       "alias": "cdn",
@@ -68457,6 +68457,45 @@
       "siz": "550K"
     },
     {
+      "abr": "PeshEs",
+      "lng": "es",
+      "des": "La Biblia Peshita",
+      "fil": "PeshEs",
+      "upd": "2025-11-28",
+      "cmt": "(2025-11-28) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}PeshEs",
+        "{cdn2}PeshEs",
+        "{gh}PeshEs",
+        "{mz}PeshEs",
+        "{inf}PeshEs",
+        "{1gb}PeshEs",
+        "{p4}PeshEs"
+      ],
+      "siz": "2M"
+    },
+    {
+      "abr": "PWL",
+      "lng": "af",
+      "des": "PWL - Peshitta in Afrikaans",
+      "inf": "Pad van Waarheid tot die Lewe (PWL)",
+      "fil": "PWL",
+      "upd": "2025-11-28",
+      "cmt": "(2025-11-28) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}PWL",
+        "{cdn2}PWL",
+        "{gh}PWL",
+        "{mz}PWL",
+        "{inf}PWL",
+        "{1gb}PWL",
+        "{p4}PWL"
+      ],
+      "siz": "2.3M"
+    },
+    {
       "abr": "myJBZ'20",
       "lng": "my",
       "des": "Judson Bible in Zawgyi Version",
@@ -81164,6 +81203,25 @@
         "{p4}JSutcliffe-pt.commentaries"
       ],
       "siz": "3M"
+    },
+    {
+      "abr": "CSimeon-pt",
+      "lng": "pt",
+      "des": "Comentários \"Horae Homileticae\" de Charles Simeon",
+      "inf": "Os comentários Horae Homileticae de Charles Simeon são um comentário abrangente sobre toda a Bíblia, publicado em vários volumes, que oferece esboços de sermões e exposições scripturais para pregadores e leigos. A obra visa instruir sobre a composição de sermões e a aplicação da Bíblia à vida diária, com foco na exposição de textos bíblicos para exaltar Jesus e promover a santidade.",
+      "fil": "CSimeon-pt.commentaries",
+      "upd": "2025-11-28",
+      "cmt": "(2025-11-28) Published",
+      "url": [
+        "{cdn}CSimeon-pt.commentaries",
+        "{cdn2}CSimeon-pt.commentaries",
+        "{gh}CSimeon-pt.commentaries",
+        "{mz}CSimeon-pt.commentaries",
+        "{inf}CSimeon-pt.commentaries",
+        "{1gb}CSimeon-pt.commentaries",
+        "{p4}CSimeon-pt.commentaries"
+      ],
+      "siz": "10.7M"
     },
     {
       "abr": "NUBD",
