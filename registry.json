@@ -1,5 +1,5 @@
 {
-  "version": 7547728,
+  "version": 7547729,
   "hosts": [
     {
       "alias": "cdn",
@@ -81797,6 +81797,18 @@
       ],
       "siz": "5K",
       "lng": "ru"
+    },
+    {
+      "abr": "qerqereeeqxfc",
+      "des": "Sasseeqr",
+      "fil": "qer.plan",
+      "url": [
+        "{cdn}qer.plan",
+        "{cdn2}qer.plan",
+        "{gh}qer.plan"
+      ],
+      "siz": "5K",
+      "lng": "en"
     }
   ]
 }
