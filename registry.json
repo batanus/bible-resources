@@ -1,5 +1,5 @@
 {
-  "version": 7547728,
+  "version": 7547729,
   "hosts": [
     {
       "alias": "cdn",
@@ -81797,6 +81797,18 @@
       ],
       "siz": "5K",
       "lng": "ru"
+    },
+    {
+      "abr": "Add",
+      "des": "Daft",
+      "fil": "Add.plan",
+      "url": [
+        "{cdn}Add.plan",
+        "{cdn2}Add.plan",
+        "{gh}Add.plan"
+      ],
+      "siz": "5K",
+      "lng": "en"
     }
   ]
 }
