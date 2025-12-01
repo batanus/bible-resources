@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -81787,16 +81787,18 @@
       "siz": "1.1M"
     },
     {
-      "abr": "Библиохронос",
-      "des": "Хронологический план чтения.",
-      "fil": "Биб.plan",
+      "abr": "Bib-Chronos Bozhenko 2025",
+      "des": "БИБЛИОХРОНОС под редакцией Боженко В.Ю.",
+      "fil": "Bib-Chronos.plan",
       "url": [
-        "{cdn}Биб.plan",
-        "{cdn2}Биб.plan",
-        "{gh}Биб.plan"
+        "{cdn}Bib-Chronos.plan",
+        "{cdn2}Bib-Chronos.plan",
+        "{gh}Bib-Chronos.plan"
       ],
       "siz": "1K",
-      "custom": true
+      "custom": true,
+      "inf": "Хронологический порядок библейский событий.",
+      "upd": "2025-12-01"
     }
   ]
 }
