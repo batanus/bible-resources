@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -81796,6 +81796,19 @@
         "{gh}Биб.plan"
       ],
       "siz": "1K"
+    },
+    {
+      "abr": "ARD",
+      "des": "Артифический план Даля",
+      "inf": "Очень занятный план великолепного теста",
+      "fil": "ARD.plan",
+      "url": [
+        "{cdn}ARD.plan",
+        "{cdn2}ARD.plan",
+        "{gh}ARD.plan"
+      ],
+      "siz": "5K",
+      "lng": "ru"
     }
   ]
 }
