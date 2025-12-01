@@ -1,5 +1,5 @@
 {
-  "version": 7547728,
+  "version": 7547729,
   "hosts": [
     {
       "alias": "cdn",
@@ -81794,6 +81794,18 @@
         "{cdn}Нио.plan",
         "{cdn2}Нио.plan",
         "{gh}Нио.plan"
+      ],
+      "siz": "5K",
+      "lng": "ru"
+    },
+    {
+      "abr": "Нр",
+      "des": "Ер",
+      "fil": "Нр.plan",
+      "url": [
+        "{cdn}Нр.plan",
+        "{cdn2}Нр.plan",
+        "{gh}Нр.plan"
       ],
       "siz": "5K",
       "lng": "ru"
