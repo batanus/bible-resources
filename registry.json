@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -81796,7 +81796,9 @@
         "{gh}Биб.plan"
       ],
       "siz": "1K",
-      "custom": true
+      "custom": true,
+      "cmt": "(2025-12-02) User proposed: the",
+      "upd": "2025-12-02"
     }
   ]
 }
