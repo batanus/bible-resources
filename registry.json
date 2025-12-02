@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -81797,6 +81797,19 @@
       ],
       "siz": "1K",
       "custom": true
+    },
+    {
+      "abr": "trfgs",
+      "des": "Sfgfsgsfg",
+      "inf": "Sfgsfgsfg",
+      "fil": "trfgs.plan",
+      "url": [
+        "{cdn}trfgs.plan",
+        "{cdn2}trfgs.plan",
+        "{gh}trfgs.plan"
+      ],
+      "siz": "0K",
+      "lng": "en"
     }
   ]
 }
