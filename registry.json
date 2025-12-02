@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -81797,6 +81797,19 @@
       ],
       "siz": "1K",
       "custom": true
+    },
+    {
+      "abr": "Bib-Сhronos Bozhenko 2025",
+      "des": "БИБЛИОХРОНОС под редакцией Боженко В.Ю.",
+      "inf": "Хронологический порядок библейский событий. ",
+      "fil": "Bib-chrono Bozhenko 2025.plan",
+      "url": [
+        "{cdn}Bib-chrono Bozhenko 2025.plan",
+        "{cdn2}Bib-chrono Bozhenko 2025.plan",
+        "{gh}Bib-chrono Bozhenko 2025.plan"
+      ],
+      "siz": "1K",
+      "lng": "ru"
     }
   ]
 }
