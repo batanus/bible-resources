@@ -104,25 +104,17 @@ jobs:
           old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
           new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
           
-          # Check for actual changes
-          has_changes = False
+          # Check for meaningful changes (ignore version-only changes)
           change_reasons = []
-          
-          # Version change
-          if old_version != new_version:
-              has_changes = True
-              change_reasons.append(f"Version: {old_version} → {new_version}")
           
           # New hosts
           new_host_aliases = set(new_hosts.keys()) - set(old_hosts.keys())
           if new_host_aliases:
-              has_changes = True
               change_reasons.append(f"New hosts: {', '.join(new_host_aliases)}")
           
           # New modules
           new_module_ids = set(new_modules.keys()) - set(old_modules.keys())
           if new_module_ids:
-              has_changes = True
               change_reasons.append(f"New modules: {len(new_module_ids)}")
           
           # Updated modules (check metadata, not URLs)
@@ -144,17 +136,26 @@ jobs:
                   updated_modules.append(abr)
           
           if updated_modules:
-              has_changes = True
               change_reasons.append(f"Updated modules: {len(updated_modules)}")
           
-          # Output result
+          # Add version to reasons if there are meaningful changes
+          if change_reasons and old_version != new_version:
+              change_reasons.insert(0, f"Version: {old_version} → {new_version}")
+          
+          # Output result: only create PR if there are meaningful changes
+          has_changes = bool(change_reasons)
+          
           if has_changes:
               print("✅ Changes detected in registry")
+              print(f"📝 Change reasons: {', '.join(change_reasons)}")
               
               with open('/tmp/has_changes.txt', 'w') as f:
                   f.write('true')
           else:
-              print("ℹ️ No changes detected")
+              if old_version != new_version:
+                  print("ℹ️ Only version changed, no meaningful updates (hosts, modules)")
+              else:
+                  print("ℹ️ No changes detected")
               with open('/tmp/has_changes.txt', 'w') as f:
                   f.write('false')
           PYTHON_COMPARE
@@ -276,6 +277,7 @@ jobs:
           # 1. Keep old hosts + add any new hosts from external source
           # 2. Update module metadata (des, upd, lng, etc.) from new registry
           # 3. Keep old URLs for existing modules, add CDN URLs + external URLs for new modules
+          # 4. Preserve modules marked as custom: true even if they're removed from external registry
           
           # Step 1: Merge hosts
           old_hosts = {h['alias']: h for h in old_registry.get('hosts', [])}
@@ -319,6 +321,7 @@ jobs:
           new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
           
           merged_downloads = []
+          removed_custom_modules = []
           
           for abr, new_module in new_modules.items():
               if abr in old_modules:
@@ -377,6 +380,20 @@ jobs:
                   
                   merged_downloads.append(merged_module)
           
+          # Step 3: Check for modules removed from external registry
+          # If they have custom: true flag, preserve them
+          for abr, old_module in old_modules.items():
+              if abr not in new_modules:
+                  # Module was removed from external registry
+                  if old_module.get('custom', False):
+                      # Preserve custom modules
+                      print(f"💾 Preserved custom module: {abr} (custom: true)")
+                      merged_downloads.append(old_module)
+                      removed_custom_modules.append(abr)
+                  else:
+                      # Module removed (not custom)
+                      print(f"🗑️  Removed module: {abr}")
+          
           # Create merged registry
           merged_registry = {
               'version': new_registry.get('version', old_registry.get('version', 0)),
@@ -388,6 +405,9 @@ jobs:
           with open('registry.json', 'w', encoding='utf-8') as f:
               json.dump(merged_registry, f, ensure_ascii=False, indent=2)
               f.write('\n')
+          
+          if removed_custom_modules:
+              print(f"\n⚠️  Preserved custom modules: {', '.join(removed_custom_modules)}")
           
           print(f"✅ Registry merged: {len(merged_hosts)} hosts, {len(merged_downloads)} modules")
           PYTHON_MERGE
