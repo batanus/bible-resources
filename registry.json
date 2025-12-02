@@ -81787,26 +81787,14 @@
       "siz": "1.1M"
     },
     {
-      "abr": "Библиохронос",
-      "des": "Хронологический план чтения.",
-      "fil": "Биб.plan",
-      "url": [
-        "{cdn}Биб.plan",
-        "{cdn2}Биб.plan",
-        "{gh}Биб.plan"
-      ],
-      "siz": "1K",
-      "custom": true
-    },
-    {
-      "abr": "Bib-Сhronos Bozhenko 2025",
+      "abr": "Bib-Chronos Bozhenko 2025",
       "des": "БИБЛИОХРОНОС под редакцией Боженко В.Ю.",
-      "inf": "Хронологический порядок библейский событий. ",
-      "fil": "Bib-chrono Bozhenko 2025.plan",
+      "inf": "Хронологический порядок библейских событий.",
+      "fil": "Bib-Chronos Bozhenko 2025.plan",
       "url": [
-        "{cdn}Bib-chrono Bozhenko 2025.plan",
-        "{cdn2}Bib-chrono Bozhenko 2025.plan",
-        "{gh}Bib-chrono Bozhenko 2025.plan"
+        "{cdn}Bib-Chronos Bozhenko 2025.plan",
+        "{cdn2}Bib-Chronos Bozhenko 2025.plan",
+        "{gh}Bib-Chronos Bozhenko 2025.plan"
       ],
       "siz": "1K",
       "lng": "ru"
