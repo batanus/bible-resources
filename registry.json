@@ -1,5 +1,5 @@
 {
-  "version": 7547729,
+  "version": 7547730,
   "hosts": [
     {
       "alias": "cdn",
@@ -125,8 +125,8 @@
         }
       ],
       "fil": "10CD-p.plan",
-      "upd": "2016-12-23",
-      "cmt": "(2014-08-10) Extracted from MyBible application and published as a downloadable module.",
+      "upd": "2025-12-02",
+      "cmt": "(2025-12-02) User proposed: Add 1-50 genesis\n(2014-08-10) Extracted from MyBible application and published as a downloadable module.",
       "bkq": "bbl",
       "url": [
         "{cdn}10CD-p.plan",
