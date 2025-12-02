@@ -276,6 +276,7 @@ jobs:
           # 1. Keep old hosts + add any new hosts from external source
           # 2. Update module metadata (des, upd, lng, etc.) from new registry
           # 3. Keep old URLs for existing modules, add CDN URLs + external URLs for new modules
+          # 4. Preserve modules marked as custom: true even if they're removed from external registry
           
           # Step 1: Merge hosts
           old_hosts = {h['alias']: h for h in old_registry.get('hosts', [])}
@@ -319,6 +320,7 @@ jobs:
           new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
           
           merged_downloads = []
+          removed_custom_modules = []
           
           for abr, new_module in new_modules.items():
               if abr in old_modules:
@@ -377,6 +379,20 @@ jobs:
                   
                   merged_downloads.append(merged_module)
           
+          # Step 3: Check for modules removed from external registry
+          # If they have custom: true flag, preserve them
+          for abr, old_module in old_modules.items():
+              if abr not in new_modules:
+                  # Module was removed from external registry
+                  if old_module.get('custom', False):
+                      # Preserve custom modules
+                      print(f"💾 Preserved custom module: {abr} (custom: true)")
+                      merged_downloads.append(old_module)
+                      removed_custom_modules.append(abr)
+                  else:
+                      # Module removed (not custom)
+                      print(f"🗑️  Removed module: {abr}")
+          
           # Create merged registry
           merged_registry = {
               'version': new_registry.get('version', old_registry.get('version', 0)),
@@ -388,6 +404,9 @@ jobs:
           with open('registry.json', 'w', encoding='utf-8') as f:
               json.dump(merged_registry, f, ensure_ascii=False, indent=2)
               f.write('\n')
+          
+          if removed_custom_modules:
+              print(f"\n⚠️  Preserved custom modules: {', '.join(removed_custom_modules)}")
           
           print(f"✅ Registry merged: {len(merged_hosts)} hosts, {len(merged_downloads)} modules")
           PYTHON_MERGE

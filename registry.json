@@ -81795,7 +81795,8 @@
         "{cdn2}Биб.plan",
         "{gh}Биб.plan"
       ],
-      "siz": "1K"
+      "siz": "1K",
+      "custom": true
     }
   ]
 }
