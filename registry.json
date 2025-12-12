@@ -1,5 +1,5 @@
 {
-  "version": 7547733,
+  "version": 7547734,
   "hosts": [
     {
       "alias": "cdn",
@@ -81797,7 +81797,9 @@
         "{gh}Bib-Chronos Bozhenko 2025.plan"
       ],
       "siz": "14K",
-      "lng": "ru"
+      "lng": "ru",
+      "cmt": "(2025-12-11) User proposed: Хронологический порядок библейских событий.",
+      "upd": "2025-12-11"
     }
   ]
 }
