@@ -1,0 +1,15 @@
+{
+  "url": "https://cdn.jsdelivr.net/gh/batanus/bible-resources@main/Medvedev.registry.json",
+  "file_name": "Medvedev.registry.json",
+  "description": "Additional modules by Dmitrii Medvedev",
+  "modules": [
+    {
+      "download_url": "https://cdn.jsdelivr.net/gh/batanus/bible-resources@main/modules/Bib-Chronos%20Bozhenko%202025.plan.zip",
+      "file_name": "Bib-Chronos-Bozhenko-2025.plan",
+      "language_code": "ru",
+      "description": "Хронологический порядок библейских событий.",
+      "update_date": "2025-12-11",
+      "update_info": "(2020-12-11) Published"
+    }
+  ]
+}
