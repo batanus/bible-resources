@@ -124,9 +124,21 @@ jobs:
               new_mod = new_modules[abr]
               
               # Compare only metadata fields (not URLs)
+              # Check upd separately to handle local newer versions
+              old_upd = old_mod.get('upd', '')
+              new_upd = new_mod.get('upd', '')
+              
+              upd_changed = False
+              if old_upd != new_upd:
+                  # If old_upd is greater (newer) than new_upd, ignore the change (we have a newer version locally)
+                  if old_upd > new_upd:
+                      upd_changed = False
+                  else:
+                      upd_changed = True
+
               metadata_changed = (
                   old_mod.get('des') != new_mod.get('des') or
-                  old_mod.get('upd') != new_mod.get('upd') or
+                  upd_changed or
                   old_mod.get('lng') != new_mod.get('lng') or
                   old_mod.get('fil') != new_mod.get('fil') or
                   old_mod.get('siz') != new_mod.get('siz')
@@ -192,8 +204,16 @@ jobs:
           for abr, new_item in new_modules.items():
               if abr not in old_modules:
                   new_items.append(abr)
-              elif old_modules[abr].get('upd') != new_item.get('upd'):
-                  updated_items.append(abr)
+              else:
+                  old_upd = old_modules[abr].get('upd', '')
+                  new_upd = new_item.get('upd', '')
+                  
+                  if old_upd != new_upd:
+                      if old_upd > new_upd:
+                          # Local version is newer, ignore update
+                          pass
+                      else:
+                          updated_items.append(abr)
           
           print(f"📊 Analysis: {len(old_modules)} old modules, {len(new_modules)} new modules")
           print(f"📊 Found: {len(new_items)} new, {len(updated_items)} updated")
@@ -325,8 +345,19 @@ jobs:
           
           for abr, new_module in new_modules.items():
               if abr in old_modules:
-                  # Existing module: update metadata but keep URLs
                   old_module = old_modules[abr]
+                  
+                  # Check if local version is newer
+                  old_upd = old_module.get('upd', '')
+                  new_upd = new_module.get('upd', '')
+                  
+                  if old_upd > new_upd:
+                      # Local version is newer, keep it as is
+                      print(f"🛡️ Keeping local version of {abr} (local upd {old_upd} > remote upd {new_upd})")
+                      merged_downloads.append(old_module)
+                      continue
+
+                  # Existing module: update metadata but keep URLs
                   merged_module = new_module.copy()
                   
                   # Preserve old URLs if they exist
