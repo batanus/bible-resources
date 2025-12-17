@@ -1,5 +1,5 @@
 {
-  "version": 7547740,
+  "version": 7547741,
   "hosts": [
     {
       "alias": "cdn",
@@ -81800,6 +81800,19 @@
       "lng": "ru",
       "cmt": "(2025-12-11) User proposed: Хронологический порядок библейских событий.",
       "upd": "2025-12-11"
+    },
+    {
+      "abr": "Propósito de 5 dias",
+      "des": "Restauração",
+      "inf": "Se encontrar",
+      "fil": "Propósito de 5 dias.plan",
+      "url": [
+        "{cdn}Propósito de 5 dias.plan",
+        "{cdn2}Propósito de 5 dias.plan",
+        "{gh}Propósito de 5 dias.plan"
+      ],
+      "siz": "1K",
+      "lng": "pt"
     }
   ]
 }
