@@ -1,5 +1,5 @@
 {
-  "version": 7547740,
+  "version": 7583928,
   "hosts": [
     {
       "alias": "cdn",
@@ -23915,7 +23915,7 @@
       "lng": "en",
       "des": "Smith's Literal Translation",
       "fil": "SLT",
-      "upd": "2024-12-26",
+      "upd": "2025-12-23",
       "cmt": "(2022-06-22) 1Ths 4:13 hating → having\n(2019-04-02) Jn 16:30 earnest → camest \n(2017-02-24) Red Letter Edition\n(2016-10-15) Info table is fixed\n(2016-09-16) Added Psalm\n(2014-08-26) Published",
       "bkq": "66",
       "url": [
@@ -42601,7 +42601,7 @@
       "des": "The Passion Translation, 2017",
       "inf": "The Passion Translation <br/>\r\nCopyright © 2017 BroadStreet Publishing® Group, LLC <br/>\r\nBroadStreet Publishing Group",
       "fil": "TPT",
-      "upd": "2018-02-18",
+      "upd": "2025-12-23",
       "cmt": "(2018-02-17) Published",
       "bkq": "30",
       "url": [
@@ -42614,6 +42614,27 @@
         "{p4}TPT"
       ],
       "siz": "1.5M",
+      "hid": true
+    },
+    {
+      "abr": "TPT'20",
+      "lng": "en",
+      "des": "The Passion Translation",
+      "inf": "The Passion Translation® is a registered trademark of Passion & Fire Ministries, Inc.\r\nCopyright © 2020 Passion & Fire Ministries, Inc. <br/>\r\nBroadStreet Publishing Group <br/>\r\nEnglish",
+      "fil": "TPT'20",
+      "upd": "2025-12-23",
+      "cmt": "(2025-12-23) Published",
+      "bkq": "51",
+      "url": [
+        "{cdn}TPT'20",
+        "{cdn2}TPT'20",
+        "{gh}TPT'20",
+        "{mz}TPT%2720",
+        "{inf}TPT%2720",
+        "{1gb}TPT%2720",
+        "{p4}TPT%2720"
+      ],
+      "siz": "2.9M",
       "hid": true,
       "lic": "*"
     },
@@ -51646,16 +51667,16 @@
     },
     {
       "abr": "ÖAB'26-p",
-      "des": "ÖAB-Bibelleseplan 2025",
+      "des": "ÖAB Bible reading plan 2026",
       "lds": [
         {
           "lng": "en",
-          "des": "Ecumenical Study Group for Bible Reading 2025"
+          "des": "Ecumenical Study Group for Bible Reading 2026"
         }
       ],
       "inf": "<b>Ökumenische Arbeitsgemeinschaft für Bibellesen</b>\n<br/>\nDer ÖAB-Bibelleseplan richtet sich an Leserinnen und Leser, die in täglichen überschaubaren Leseportionen systematisch die Bibel kennen lernen wollen. Der Plan führt in vier Jahren einmal durch das Neue Testament und in acht Jahren durch alle Bücher des Alten Testamentes. Der Einstieg in den Leseplan ist jederzeit möglich.",
       "fil": "ÖAB'26-p.plan",
-      "upd": "2025-09-16",
+      "upd": "2025-12-23",
       "cmt": "(2025-09-16) Published",
       "url": [
         "{cdn}ÖAB'26-p.plan",
@@ -51670,16 +51691,16 @@
     },
     {
       "abr": "ÖAB'27-p",
-      "des": "ÖAB-Bibelleseplan 2025",
+      "des": "ÖAB Bible reading plan 2027",
       "lds": [
         {
           "lng": "en",
-          "des": "Ecumenical Study Group for Bible Reading 2025"
+          "des": "Ecumenical Study Group for Bible Reading 2027"
         }
       ],
       "inf": "<b>Ökumenische Arbeitsgemeinschaft für Bibellesen</b>\n<br/>\nDer ÖAB-Bibelleseplan richtet sich an Leserinnen und Leser, die in täglichen überschaubaren Leseportionen systematisch die Bibel kennen lernen wollen. Der Plan führt in vier Jahren einmal durch das Neue Testament und in acht Jahren durch alle Bücher des Alten Testamentes. Der Einstieg in den Leseplan ist jederzeit möglich.",
       "fil": "ÖAB'27-p.plan",
-      "upd": "2025-09-16",
+      "upd": "2025-12-23",
       "cmt": "(2025-09-16) Published",
       "url": [
         "{cdn}ÖAB'27-p.plan",
@@ -77162,7 +77183,7 @@
       "des": "Қазақ тіліндегі Библия, 2023",
       "inf": "<b>Библия</b> – собрание книг и писем, которые являются Священным Писанием.\n<p/>\nВторое издание перевода Библии на казахский язык является переработанным изданием KTB 2019 года. Глубокая проработка проведена в книгах Нового Завета, Псалмах и Притчах в рамках грамматической, словарной и языковой части текста. За его основу взят русский текст Синодального перевода Библии. Было обращено внимание на грамотное построение текстов в рамках современной грамматики и синтаксиса казахского языка, проведена работа над звучанием текста. В первую очередь текст остался дословным и в то же время он звучит по-казахски. В работе над вторым изданием участвовали переводчики, литературные редакторы, теологические редакторы, служители церквей и простые читатели, дающие обратную связь. Вклад всех этих людей оказался неоценимым в подготовке издания. Издание еще не завершено, и в связи с этим редакционная коллегия просит всех, кому дорог и ценен перевод Библии на литературный казахский язык, проявить терпение, сдержанность и присылать на сайт <a href=\"https://ktb.biblemission.kz\">ktb.biblemission.kz</a> свои комментарии, пожелания и правки на перевод любого из стихов Библии. С Божьей помощью и при искреннем участии еще многих неравнодушных читателей и специалистов ожидается подготовка полного издания Библии. \n<p/>\n<h2>О переводе</h2>\n<b>Данному переводу Библии на казахский язык характерны следующие черты:</b>\n<p/> \n1. Использовался опыт и материалы следующих изданий: тексты Библии на еврейском, арамейском и греческом языках, Русский Синодальный Перевод Библии 1876; King James Kazakh Version 2001; Киелі Кітап 2010; Кыргыз тилиндеги Библия 2004, также другие переводы. Кроме этого были использованы общедоступные онлайн ресурсы.\n<p/>\n2. Список имен и титулов Бога был сформирован и утвержден переводчиками и редколлегией совместно с теологами и служителями церквей. Переводчики следовали этому списку в процессе работы над текстом. \n<p/>\n3. В переводе личность Иисуса Христа, в соответствии с историческими текстами, не искажается, а доносится читателю как личность Сына Божьего, Мессии, имеющего Божественную и человеческую природу. \n<p/>\nОрганизация перевода и издательства осуществлена Библейской Миссией, по поручению и с благословения Союза Церквей ЕХБ Казахстана. \n<p/>\n<b>Каждый человек имеет право на Библию на своем родном языке!</b> \n<p/>\nСайт перевода  (<a href=\"https://ktb.biblemission.kz/\">https://ktb.biblemission.kz/</a>)\n<br/>© Союз Церквей ЕХБ Казахстана, 2022.\n<br/>© Библейская Миссия, 2018, 2019, 2022, 2023\n\n",
       "fil": "KTB'23",
-      "upd": "2023-04-14",
+      "upd": "2025-12-23",
       "cmt": "(2023-04-14) Версия от 31.03.2023\n(2023-02-03) Published",
       "bkq": "66",
       "url": [
@@ -80111,11 +80132,11 @@
       "abr": "AlexBlend",
       "lng": "ru",
       "des": "Комментарии раввина Александра Бленда к отдельным книгам Нового Завета",
-      "inf": "Модуль на текущий момент содержит только часть книг Нового Завета. Остальные находятся в работе.<br>\r\nОбратите внимание, акцент раввином Александром Блендом был сделан не столько на переводе Писания, сколько на комментариях к нему. <br>\r\nТак как была попытка сохранить всю оригинальность книг с комментариями на Писания, внесенные правки на комментируемые стихи Александром Блендом также были сохранены, чтобы максимально точно донести суть до читателя. Это также причина по которой может не хватать стихов в модуле библии.\r\n(Матф.: в 1 и 15 главах). <br>\r\nПоэтому рекомендуется читать книги этого модуля вместе с комментариями раввина Александра Бленда (уже включены в модуль). <br>\r\nМатериалы используются с разрешения alexblend.net <br>\r\nПо всем вопросам, замечаниям и предложениям обращаться на эл.адрес sailarsful@gmail.com",
+      "inf": "Модуль на текущий момент содержит только часть книг Нового Завета. Остальные находятся в работе.<br>\nОбратите внимание, акцент раввином Александром Блендом был сделан не столько на переводе Писания, сколько на комментариях к нему. Поэтому в некоторых книгах используется авторский перевод от А. Бленда. <br>\nТак как была попытка сохранить всю оригинальность книг с комментариями на Писания, внесенные правки на комментируемые стихи Александром Блендом также были сохранены, чтобы максимально точно донести суть до читателя. Это также причина по которой может не хватать стихов в модуле библии.\n(Матф.: в 1 и 15 главах). <br>\nПоэтому рекомендуется читать книги этого модуля вместе с комментариями раввина Александра Бленда (уже включены в модуль). <br>\nМатериалы используются с разрешения alexblend.net <br>\nПо всем вопросам, замечаниям и предложениям обращаться на эл.адрес sailarsful@gmail.com",
       "fil": "AlexBlend",
-      "upd": "2025-04-24",
-      "cmt": "(2024-12-23) добавлено Послание к Римлянам\n(2024-10-14) Выложен",
-      "bkq": "3",
+      "upd": "2025-12-23",
+      "cmt": "(2025-12-22) Добавлены комментарии на книги Послание к Колоссянам и Послание к Евреям (+ сами книги).\n(2024-12-23) добавлено Послание к Римлянам\n(2024-10-14) Выложен",
+      "bkq": "5",
       "url": [
         "{cdn}AlexBlend",
         "{cdn2}AlexBlend",
@@ -80125,7 +80146,7 @@
         "{1gb}AlexBlend",
         "{p4}AlexBlend"
       ],
-      "siz": "1.2M"
+      "siz": "887K"
     },
     {
       "abr": "BWM'55",
@@ -81787,19 +81808,23 @@
       "siz": "1.1M"
     },
     {
-      "abr": "BiblioChronos Bozhenko 2025",
-      "des": "БИБЛИОХРОНОС под редакцией Боженко В.Ю.",
-      "inf": "Хронологический порядок библейских событий.",
-      "fil": "Bib-Chronos-Bozhenko-2025.plan",
+      "abr": "WC-sk",
+      "lng": "sk",
+      "des": "Devotions | World Challenge",
+      "inf": "<strong>World Challenge</strong><br/>\n<i>Live a Better Life, Make a Better World Through Jesus Christ</i><br/>\n1125 Kelly Johnson Blvd, Suite 321<br/>\nColorado Springs, CO 80920<br/>\nTel: (719) 487-7888 | Fax: (719) 896-5410",
+      "fil": "WC-sk.devotions",
+      "upd": "2025-12-23",
+      "cmt": "(2025-12-22) Published",
       "url": [
-        "{cdn}Bib-Chronos-Bozhenko-2025.plan",
-        "{cdn2}Bib-Chronos-Bozhenko-2025.plan",
-        "{gh}Bib-Chronos-Bozhenko-2025.plan"
+        "{cdn}WC-sk.devotions",
+        "{cdn2}WC-sk.devotions",
+        "{gh}WC-sk.devotions",
+        "{mz}WC-sk.devotions",
+        "{inf}WC-sk.devotions",
+        "{1gb}WC-sk.devotions",
+        "{p4}WC-sk.devotions"
       ],
-      "siz": "14K",
-      "lng": "ru",
-      "cmt": "(2025-12-11) User proposed: Хронологический порядок библейских событий.",
-      "upd": "2025-12-11"
+      "siz": "606K"
     }
   ]
 }
