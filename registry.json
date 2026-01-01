@@ -1,5 +1,5 @@
 {
-  "version": 7592701,
+  "version": 7592702,
   "hosts": [
     {
       "alias": "cdn",
@@ -80904,8 +80904,8 @@
       ],
       "inf": "Read the entire Bible in one year in three daily portions. This plan is unique because it allows you to see Bible passages being arranged to highlight certain biblical truths. For better clarity, the book of Jeremiah is presented in chronological order.",
       "fil": "BRP-1y.plan",
-      "upd": "2025-04-03",
-      "cmt": "(2025-04-03) Published",
+      "upd": "2026-01-01",
+      "cmt": "(2026-01-01) User proposed: Read the entire Bible in one year in three daily portions. This plan is unique because it allows you to see Bible passages being arranged to highlight certain biblical truths. For better clarity, the book of Jeremiah is presented in chronological order.\n(2025-04-03) Published",
       "url": [
         "{cdn}BRP-1y.plan",
         "{cdn2}BRP-1y.plan",
