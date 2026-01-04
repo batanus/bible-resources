@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "version": 7592703,
-=======
-  "version": 7592702,
->>>>>>> d166301 (Update registry for module: Библия или Вечное Евангелие)
+  "version": 7592704,
   "hosts": [
     {
       "alias": "cdn",
