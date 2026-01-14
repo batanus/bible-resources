@@ -1,5 +1,5 @@
 {
-  "version": 7592705,
+  "version": 7612941,
   "hosts": [
     {
       "alias": "cdn",
@@ -13151,7 +13151,7 @@
       "des": "Jamieson, Fausset & Brown Commentary",
       "inf": "Commentary Critical and Explanatory on the Whole Bible, Robert Jamieson, A. R. Fausset and David Brown, 1871",
       "fil": "JFB-c.commentaries",
-      "upd": "2021-08-02",
+      "upd": "2026-01-12",
       "cmt": "(2017-01-05) -\n(2017-01-01) Links and style cleaning\n(2016-12-16) Links and style cleaning\n(2016-10-13) Code and links correction\n(2015-08-13) Code and links cleaning\n(2015-03-06) Fixed links for Android 5.0\n(2015-01-18) Fixed Strong's numbers links\n(2014-06-20) Published",
       "url": [
         "{cdn}JFB-c.commentaries",
@@ -13162,7 +13162,7 @@
         "{1gb}JFB-c.commentaries",
         "{p4}JFB-c.commentaries"
       ],
-      "siz": "9.7M"
+      "siz": "9.8M"
     },
     {
       "abr": "JFB-ES-c",
@@ -79071,8 +79071,8 @@
       "des": "БІБЛІЯ Сучасний переклад",
       "inf": "Ukrainian Contemporary Version 2023 – <br/>\nБІБЛІЯ Сучасний переклад © Українське Біблійне Товариство (2020-2023)  <br/>\nUkrainian Bible Society <br/>\nОпубліковано з дозволу автора <br/>\nUkrainian — Українська\n",
       "fil": "CUV'23",
-      "upd": "2025-12-27",
-      "cmt": "(2025-12-27) User proposed: Module: `CUV'23`\nBook: `2 ХРОНІК (140)`\nChapter: `15`\nVerse: `14`\n\n```\nВони, голосно вигукуючи, заприсяглися у цьому ГОСПОДУ під радісні<i>звуки</i> труб і сурем.\n``` \n-> \n```\nВони, голосно вигукуючи, заприсяглися у цьому ГОСПОДУ під радісні<i> звуки</i> труб і сурем.\n```\n(2025-12-16) User proposed: Module: `CUV'23`\nBook: `2 ХРОНІК (140)`\nChapter: `3`\nVerse: `4`\n\n```\nДовжина притвору спереду <i>Храму</i> була<i>за</i> шириною Храму, тобто двадцять ліктів; так само й заввишки він мав двадцять<f>[6]</f> <i>ліктів</i>. Соломон покрив його зсередини чистим золотом.\n``` \n-> \n```\nДовжина притвору спереду <i>Храму</i> була<i> за</i> шириною Храму, тобто двадцять ліктів; так само й заввишки він мав двадцять<f>[6]</f> <i>ліктів</i>. Соломон покрив його зсередини чистим золотом.\n```\n(2023-12-21) Выложен",
+      "upd": "2026-01-12",
+      "cmt": "(2023-12-21) Выложен",
       "bkq": "66",
       "url": [
         "{cdn}CUV'23",
@@ -81825,6 +81825,46 @@
         "{p4}WC-sk.devotions"
       ],
       "siz": "606K"
+    },
+    {
+      "abr": "FILLL",
+      "lng": "fi",
+      "des": "Lars Lewi Leptoni Raamattu",
+      "inf": "Raamatun käännöstyöryhmä nimeltään Lars Lewi Leptoni on julkaissut 2025 uuden suomennoksen Raamatusta. Tämä avoin, vapaa ja ilmainen LLL Raamattu on pyrkinyt olemaan mahdollisimman tarkka ja uskollinen kreikkalaiselle, heprealaiselle ja aramelaiselle alkutekstille ja mahdollisimman hyvää suomen kieltä. Kielten rakenteen erilaisuudesta johtuen tämäkään käännös ei voi olla ”täydellinen”.<br/>   Pohjateksteinä ovat olleet raamatunkääntäjä Pentti Mäkisen (1935–2023) tekemät tekstit. Hän on ollut myös tekstien tarkastaja ja tärkein kommentoija lopullista tekstimuotoa varten. <br/>  Käännöksessä on tarkoituksellisesti pyritty säilyttämään raamatullisia termejä, joista jotkin voivat olla nykylukijalle ensi alkuun vieraita, mutta koska Raamattu selittää itse itsensä, kannustakoon tämä seikka lukijaa syvempään Raamatun tutkimiseen lähtien Jeesuksen Kristuksen evankeliumista ja Uuden testamentin kirjoituksista.<br/>   Edelleen yhteys Vanhan testamentin ja Uuden testamentin tekstien välillä on olennaisen tärkeä, sillä koko Vanha testamentti todistaa esikuvien ja profetioiden avulla luvatusta Messiaasta, Jeesuksesta Kristuksesta.<br/>  Toivomme tämän käännöksen olevan Jumalan siunaukseksi kaikille lukijoille, ennen kaikkea maamme nuorisolle, että he voisivat jo lapsuudestaan ja nuoruudestaan saakka tulla tuntemaan Raamatun pyhiä kirjoituksia.<br/>  LLL Raamattu 2025 netissä https://shalom-linkkikokoelma.webnode.fi/uusi-raamatunkaannos/   <br/>  ‎©‎ Lars Lewi Leptoni (LLL) is a group of Bible translators. LLL Raamattu is Free and Open Bible.",
+      "fil": "FILLL",
+      "upd": "2026-01-12",
+      "cmt": "(2026-01-12) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}FILLL",
+        "{cdn2}FILLL",
+        "{gh}FILLL",
+        "{mz}FILLL",
+        "{inf}FILLL",
+        "{1gb}FILLL",
+        "{p4}FILLL"
+      ],
+      "siz": "1.8M"
+    },
+    {
+      "abr": "FIJKR",
+      "lng": "fi",
+      "des": "Jumalan Kansan Pyhä Raamattu",
+      "inf": "FIJKR on Jumalan Kansan Pyhä Raamattu: <br/> Vanha testamentti: <br/> XI yleisen Kirkolliskokouksen vuonna 1933 käytäntöön ottama suomennos, käännös ja kieli korjattuna.<br/> Uusi testamentti: <br/> XII yleisen Kirkolliskokouksen vuonna 1938 käytäntöön ottama suomennos, käännös ja kieli korjattuna.",
+      "fil": "FIJKR",
+      "upd": "2026-01-12",
+      "cmt": "(2026-01-12) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}FIJKR",
+        "{cdn2}FIJKR",
+        "{gh}FIJKR",
+        "{mz}FIJKR",
+        "{inf}FIJKR",
+        "{1gb}FIJKR",
+        "{p4}FIJKR"
+      ],
+      "siz": "1.8M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
