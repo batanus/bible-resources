@@ -1,5 +1,5 @@
 {
-  "version": 7612941,
+  "version": 7617290,
   "hosts": [
     {
       "alias": "cdn",
@@ -10696,7 +10696,7 @@
       "lng": "en",
       "des": "John Gill's Exposition of the Entire Bible, 1763",
       "fil": "Gill-c.commentaries",
-      "upd": "2019-04-04",
+      "upd": "2026-01-15",
       "cmt": "(2019-04-04) Luke 10:19 theft mission and commission → their mission and commission\n(2016-12-16) Links and style cleaning\n(2016-11-25) zipped\n(2016-10-13) Code and links correction\n(2015-03-06) Fixed links for Android 5.0\n(2014-11-12) Published",
       "url": [
         "{cdn}Gill-c.commentaries",
@@ -80316,7 +80316,7 @@
       "des": "Библия Болеслава Гёце (SK)",
       "inf": "Библия Гёце — это Синодальный перевод Библии издания пастора Б. Гёце в новой редакции издательства Samenkorn (SK).\n<br/>Публикуется с разрешения издательства „Samenkorn“.\n<br/>Синодальный перевод издания Б. Геце.\n<br/>© 2024. Новая обработанная редакция.\n<br/>Библия Болеслава Гёце (SK)",
       "fil": "Гёце-SK",
-      "upd": "2025-12-15",
+      "upd": "2026-01-16",
       "cmt": "(2025-12-15) User proposed: Module: `Гёце-SK`\nBook: `Притчи (240)`\nChapter: `15`\nVerse: `33`\n\n```\nСтрах ГОСПОДЕНЬ научает мудро сти, и славе предшествует смирение. <f>ⓑ</f> \n``` \n-> \n```\nСтрах ГОСПОДЕНЬ научает мудрости, и славе предшествует смирение. <f>ⓑ</f> \n```\n(2025-12-12) User proposed: Module: `Гёце-SK`\nBook: `Бытие (10)`\nChapter: `1`\nVerse: `1`\n\n```\nВ начале сотворил Бог небо<f>[1]</f> и землю. <f>ⓐ</f> \n``` \n-> \n```\nВ начале сотворил Бог небо<f>[1]</f> и землю. <f>ⓐ</f>\n```\n(2025-12-11) User proposed: Module: `Гёце-SK`\nBook: `Притчи (240)`\nChapter: `10`\nVerse: `28`\n\n```\nОжидание праведников — радость, а надежда нечестивых погибнет. <f>ⓤ</f> \n``` \n-> \n```\nОжидание праведников — радость, а надежда нечестивых погибнет. <f>ⓤ</f>\n```\n(2024-11-13) Выложен",
       "bkq": "66",
       "url": [
@@ -81863,6 +81863,27 @@
         "{inf}FIJKR",
         "{1gb}FIJKR",
         "{p4}FIJKR"
+      ],
+      "siz": "1.8M"
+    },
+    {
+      "abr": "CTDB'77",
+      "lng": "Tedim Chin",
+      "reg": "Myanmar",
+      "des": "Tedim Bible",
+      "inf": "Tedim Bible © Bible Society of Myanmar, 1977. <br/>\r\nTedim Chin — Chin: Tedim",
+      "fil": "CTDB'77",
+      "upd": "2026-01-15",
+      "cmt": "(2026-01-15) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}CTDB'77",
+        "{cdn2}CTDB'77",
+        "{gh}CTDB'77",
+        "{mz}CTDB%2777",
+        "{inf}CTDB%2777",
+        "{1gb}CTDB%2777",
+        "{p4}CTDB%2777"
       ],
       "siz": "1.8M"
     },
