@@ -1,5 +1,5 @@
 {
-  "version": 7617290,
+  "version": 7622931,
   "hosts": [
     {
       "alias": "cdn",
@@ -24515,9 +24515,9 @@
     {
       "abr": "Str-ES",
       "lng": "es",
-      "des": "Diccionario Strong",
+      "des": "Diccionario Strong ampliado en el ámbito filológico",
       "fil": "Str-ES.dictionary",
-      "upd": "2020-01-15",
+      "upd": "2026-01-19",
       "cmt": "(2020-01-15) Styles and colors were corrected\n(2017-01-11) 4.6.0 version\n(2016-11-20) Code correction for the new version\n(2016-09-25) cognate_strong_numbers\n(2015-03-03) Published",
       "def": true,
       "aln": "es",
@@ -24530,7 +24530,7 @@
         "{1gb}Str-ES.dictionary",
         "{p4}Str-ES.dictionary"
       ],
-      "siz": "1.6M"
+      "siz": "5.5M"
     },
     {
       "abr": "Strong",
@@ -27554,11 +27554,10 @@
     {
       "abr": "VineAT-es",
       "lng": "es",
-      "des": "Diccionario Antiguo Testamento VINE He-Es",
+      "des": "Diccionario Expositivo de Palabras del Antiguo Testamento Exhaustivo de Vine",
       "fil": "VineAT-es.dictionary",
-      "upd": "2017-01-12",
+      "upd": "2026-01-19",
       "cmt": "(2017-01-12) 4.6.0 version\n(2016-10-13) Code and links correction\n(2016-06-22) Published",
-      "bkq": "ot",
       "aln": "es",
       "url": [
         "{cdn}VineAT-es.dictionary",
@@ -27569,7 +27568,7 @@
         "{1gb}VineAT-es.dictionary",
         "{p4}VineAT-es.dictionary"
       ],
-      "siz": "609K"
+      "siz": "3.6M"
     },
     {
       "abr": "VIN-el+",
@@ -27613,11 +27612,10 @@
     {
       "abr": "VineNT-es",
       "lng": "es",
-      "des": "Diccionario Vine Nuevo Testamento VINE Gr-Es",
+      "des": "Diccionario Expositivo de Palabras del Nuevo Testamento Exhaustivo de Vine",
       "fil": "VineNT-es.dictionary",
-      "upd": "2017-01-12",
+      "upd": "2026-01-19",
       "cmt": "(2017-01-12) 4.6.0 version\n(2017-01-01) Links and style cleaning\n(2016-10-13) Code and links correction\n(2016-06-22) Published",
-      "bkq": "nl",
       "aln": "es",
       "url": [
         "{cdn}VineNT-es.dictionary",
@@ -27628,7 +27626,7 @@
         "{1gb}VineNT-es.dictionary",
         "{p4}VineNT-es.dictionary"
       ],
-      "siz": "1.6M"
+      "siz": "5M"
     },
     {
       "abr": "VineOT",
@@ -53360,7 +53358,8 @@
         "{1gb}ITBY%2B",
         "{p4}ITBY%2B"
       ],
-      "siz": "6.4M"
+      "siz": "6.4M",
+      "hid": true
     },
     {
       "abr": "ITBY2+",
@@ -59107,11 +59106,11 @@
     {
       "abr": "Barclay-es",
       "lng": "es",
-      "des": "Comentario Al Nuevo Testamento de William Barclay",
-      "inf": "Traductor de la obra completa: Alberto Araujo\n<br/>Copyright © por C. William Barclay. Publicado originalmente en 1970 y actualizado en 1991 por The Saint Andrew Press, 121 George Street, Edinburgh, EH2 4YN, Escocia\n<br/>Copyright © 2006 por Editorial CLIE para la versión española\n",
-      "fil": "Barclay-es.commentaries",
-      "upd": "2020-03-24",
+      "des": "Palabras Griegas del Nuevo Testamento de William Barclay",
+      "fil": "Barclay-es.dictionary",
+      "upd": "2026-01-19",
       "cmt": "(2020-03-24) Published",
+      "aln": "es",
       "url": [
         "{cdn}Barclay-es.commentaries",
         "{cdn2}Barclay-es.commentaries",
@@ -59121,7 +59120,7 @@
         "{1gb}Barclay-es.commentaries",
         "{p4}Barclay-es.commentaries"
       ],
-      "siz": "3.6M"
+      "siz": "218K"
     },
     {
       "abr": "ADA'77",
@@ -80132,10 +80131,10 @@
       "abr": "AlexBlend",
       "lng": "ru",
       "des": "Комментарии раввина Александра Бленда к отдельным книгам Нового Завета",
-      "inf": "Модуль на текущий момент содержит только часть книг Нового Завета. Остальные находятся в работе.<br>\nОбратите внимание, акцент раввином Александром Блендом был сделан не столько на переводе Писания, сколько на комментариях к нему. Поэтому в некоторых книгах используется авторский перевод от А. Бленда. <br>\nТак как была попытка сохранить всю оригинальность книг с комментариями на Писания, внесенные правки на комментируемые стихи Александром Блендом также были сохранены, чтобы максимально точно донести суть до читателя. Это также причина по которой может не хватать стихов в модуле библии.\n(Матф.: в 1 и 15 главах). <br>\nПоэтому рекомендуется читать книги этого модуля вместе с комментариями раввина Александра Бленда (уже включены в модуль). <br>\nМатериалы используются с разрешения alexblend.net <br>\nПо всем вопросам, замечаниям и предложениям обращаться на эл.адрес sailarsful@gmail.com",
+      "inf": "Комментарии раввина Александра Бленда на некоторые книги Нового Завета (скоро ТаНаХ).<br>\nОбратите внимание, акцент раввином Александром Блендом был сделан не столько на переводе Писания, сколько на комментариях к нему. Поэтому в некоторых книгах используется авторский перевод от А. Бленда. <br>\nТак как была попытка сохранить всю оригинальность книг с комментариями на Писания, внесенные правки на комментируемые стихи Александром Блендом также были сохранены, чтобы максимально точно донести суть до читателя. Это также причина по которой может не хватать стихов в модуле библии (AlexBlend).\n(Матф.: в 1 и 15 главах). <br>\nПоэтому рекомендуется читать книги этого модуля вместе с комментариями А. Бленда (уже включены в модуль). <br>\nМатериалы используются с разрешения alexblend.com <br>\nПо всем вопросам, замечаниям и предложениям обращаться на эл.адрес sailarsful@gmail.com",
       "fil": "AlexBlend",
-      "upd": "2025-12-23",
-      "cmt": "(2025-12-22) Добавлены комментарии на книги Послание к Колоссянам и Послание к Евреям (+ сами книги).\n(2024-12-23) добавлено Послание к Римлянам\n(2024-10-14) Выложен",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Добавлены комментарии на 1-е Послание Иоанна. \n(2025-12-22) Добавлены комментарии на книги Послание к Колоссянам и Послание к Евреям (+ сами книги).\n(2024-12-23) добавлено Послание к Римлянам\n(2024-10-14) Выложен",
       "bkq": "5",
       "url": [
         "{cdn}AlexBlend",
@@ -80146,7 +80145,7 @@
         "{1gb}AlexBlend",
         "{p4}AlexBlend"
       ],
-      "siz": "887K"
+      "siz": "1.4M"
     },
     {
       "abr": "BWM'55",
@@ -81886,6 +81885,263 @@
         "{p4}CTDB%2777"
       ],
       "siz": "1.8M"
+    },
+    {
+      "abr": "Ana+",
+      "lng": "ru",
+      "des": "Танах в подстрочном переводе на русский язык (Бытие - Малахия)",
+      "inf": "<center>\nБелинский А.В., Суханицкий С.С., Щерба А.В., Кривенко Е.В.\n<br><i><small>© Белинский Александр Владимирович, Ларри Пирс, 2016-2023, Болгария, <a href=\"http://onlinebible.github.io/itby-bible.html\">http://onlinebible.github.io</a></small></i>\n</center>",
+      "fil": "Ana+",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Выложен",
+      "bkq": "39",
+      "dep": "СтрДв",
+      "url": [
+        "{cdn}Ana+",
+        "{cdn2}Ana+",
+        "{gh}Ana+",
+        "{mz}Ana%2B",
+        "{inf}Ana%2B",
+        "{1gb}Ana%2B",
+        "{p4}Ana%2B"
+      ],
+      "siz": "5.2M"
+    },
+    {
+      "abr": "AnaTra+",
+      "lng": "ru",
+      "des": "Танах в подстрочном переводе на русский язык с транскрипцией (Бытие - Малахия)",
+      "inf": "<center>\nБелинский А.В., Суханицкий С.С., Щерба А.В., Кривенко Е.В.\n<br><i><small>© Белинский Александр Владимирович, Ларри Пирс, 2016-2023, Болгария, <a href=\"http://onlinebible.github.io/itby-bible.html\">http://onlinebible.github.io</a></small></i>\n</center>",
+      "fil": "AnaTra+",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Выложен",
+      "bkq": "39",
+      "dep": "СтрДв",
+      "url": [
+        "{cdn}AnaTra+",
+        "{cdn2}AnaTra+",
+        "{gh}AnaTra+",
+        "{mz}AnaTra%2B",
+        "{inf}AnaTra%2B",
+        "{1gb}AnaTra%2B",
+        "{p4}AnaTra%2B"
+      ],
+      "siz": "6.8M"
+    },
+    {
+      "abr": "AnaLit+",
+      "lng": "ru",
+      "des": "Танах в дословном переводе на русский язык (Бытие - Малахия)",
+      "inf": "<center>\nБелинский А.В., Суханицкий С.С., Щерба А.В., Кривенко Е.В.\n<br><i><small>© Белинский Александр Владимирович, Ларри Пирс, 2016-2023, Болгария, <a href=\"http://onlinebible.github.io/itby-bible.html\">http://onlinebible.github.io</a></small></i>\n</center>",
+      "fil": "AnaLit+",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Выложен",
+      "bkq": "39",
+      "dep": "СтрДв",
+      "url": [
+        "{cdn}AnaLit+",
+        "{cdn2}AnaLit+",
+        "{gh}AnaLit+",
+        "{mz}AnaLit%2B",
+        "{inf}AnaLit%2B",
+        "{1gb}AnaLit%2B",
+        "{p4}AnaLit%2B"
+      ],
+      "siz": "4.6M"
+    },
+    {
+      "abr": "PRLR",
+      "lng": "ru",
+      "des": "Новый Завет \"Жемчужина\"",
+      "inf": "<center>\n<h2>Новый Завет \"Жемчужина\"</h2>\n<p>Жемчужина — Буквальный перевод книг Нового Завета с греческого языка с учетом научных текстологических исследований, осуществленных в течение последних полутора веков.</p>\n</center>\n\n",
+      "fil": "PRLR",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Выложен",
+      "bkq": "27",
+      "url": [
+        "{cdn}PRLR",
+        "{cdn2}PRLR",
+        "{gh}PRLR",
+        "{mz}PRLR",
+        "{inf}PRLR",
+        "{1gb}PRLR",
+        "{p4}PRLR"
+      ],
+      "siz": "908K"
+    },
+    {
+      "abr": "Károli+",
+      "lng": "hu",
+      "des": "Szent Szellemes Károli Strong's számokkal, Jézus szavai pirossal, bemerítés",
+      "inf": "Károli, bemerítés, Szent Szellem, Jézus szavai pirossal, Strong's számokkal",
+      "fil": "Károli+",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}Károli+",
+        "{cdn2}Károli+",
+        "{gh}Károli+",
+        "{mz}K%C3%A1roli%2B",
+        "{inf}K%C3%A1roli%2B",
+        "{1gb}K%C3%A1roli%2B",
+        "{p4}K%C3%A1roli%2B"
+      ],
+      "siz": "2.8M"
+    },
+    {
+      "abr": "Névtelen+",
+      "lng": "hu",
+      "des": "Névtelen Biblia Strong's számokkal, morfológiai kódokkal, Jézus beszéde pirossal",
+      "inf": "Névtelen Biblia Strong's számokkal, morfológiai kódokkal, Jézus beszéde pirossal",
+      "fil": "Névtelen+",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}Névtelen+",
+        "{cdn2}Névtelen+",
+        "{gh}Névtelen+",
+        "{mz}N%C3%A9vtelen%2B",
+        "{inf}N%C3%A9vtelen%2B",
+        "{1gb}N%C3%A9vtelen%2B",
+        "{p4}N%C3%A9vtelen%2B"
+      ],
+      "siz": "1018K"
+    },
+    {
+      "abr": "Chávez",
+      "lng": "es",
+      "des": "Diccionario de hebreo bíblico de Moisés Chávez",
+      "fil": "Chávez.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Chávez.dictionary",
+        "{cdn2}Chávez.dictionary",
+        "{gh}Chávez.dictionary",
+        "{mz}Ch%C3%A1vez.dictionary",
+        "{inf}Ch%C3%A1vez.dictionary",
+        "{1gb}Ch%C3%A1vez.dictionary",
+        "{p4}Ch%C3%A1vez.dictionary"
+      ],
+      "siz": "1.1M"
+    },
+    {
+      "abr": "Tuggy",
+      "lng": "es",
+      "des": "Léxico Griego-Español del Nuevo Testamento de Alfred E. Tuggy",
+      "fil": "Tuggy.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Tuggy.dictionary",
+        "{cdn2}Tuggy.dictionary",
+        "{gh}Tuggy.dictionary",
+        "{mz}Tuggy.dictionary",
+        "{inf}Tuggy.dictionary",
+        "{1gb}Tuggy.dictionary",
+        "{p4}Tuggy.dictionary"
+      ],
+      "siz": "1.1M"
+    },
+    {
+      "abr": "Tamez",
+      "lng": "es",
+      "des": "Diccionario conciso Griego-Español del Nuevo Testamento de Elsa Tamez",
+      "fil": "Tamez.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Tamez.dictionary",
+        "{cdn2}Tamez.dictionary",
+        "{gh}Tamez.dictionary",
+        "{mz}Tamez.dictionary",
+        "{inf}Tamez.dictionary",
+        "{1gb}Tamez.dictionary",
+        "{p4}Tamez.dictionary"
+      ],
+      "siz": "282K"
+    },
+    {
+      "abr": "Str-Plus",
+      "lng": "es",
+      "des": "Diccionario Strong ampliado en el ámbito filológico",
+      "fil": "Str-Plus.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Str-Plus.dictionary",
+        "{cdn2}Str-Plus.dictionary",
+        "{gh}Str-Plus.dictionary",
+        "{mz}Str-Plus.dictionary",
+        "{inf}Str-Plus.dictionary",
+        "{1gb}Str-Plus.dictionary",
+        "{p4}Str-Plus.dictionary"
+      ],
+      "siz": "5.5M"
+    },
+    {
+      "abr": "Kittel",
+      "lng": "es",
+      "des": "Compendio del Diccionario Teológico del Nuevo Testamento",
+      "inf": "<head>\n<style><!--span.B\t{font-weight:bold}span.I\t{font-style:italic} table.MsoNormalTable\t{mso-style-parent:\"\";\tline-height:107%;\tfont-size:11.0pt;\tfont-family:\"Calibri\",sans-serif;\t}--></style></head>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n<b><span lang=\"EN-US\" style=\"font-size: 16.0pt\">Gerhard Kittel y Gerhard \nFriedrich</span></b><span lang=\"EN-US\" style=\"font-size: 16.0pt\">,</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n<span style=\"font-size: 16.0pt\">editores en alemán </span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n<span style=\"font-size: 16.0pt\">Geoffrey W. Bromiley, traductor al inglés</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n<b><i><span style=\"font-size:24.0pt\">&nbsp;</span></i></b></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n<i><span lang=\"EN-US\" style=\"font-size: 24.0pt\">Compendio del</span></i></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:9.0pt;text-align:center\">\n<span style=\"font-size: 34.0pt; text-transform: uppercase\">Diccionario teológico</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:36.0pt;text-align:center\">\n<span style=\"font-size: 20.0pt; text-transform: uppercase\">Del Nuevo Testamento</span></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center\"><b>\n<span lang=\"X-NONE\" style=\"font-size:16.0pt\">&nbsp;</span></b><font color=\"#800000\" face=\"Times New Roman\"><b>-----------------------------------------------------------</b></font></p>\n<p align=\"center\"><font size=\"4\" color=\"#0000FF\" face=\"Times New Roman\">Edición Digital presentada por</font></p><p align=\"center\"><b><font color=\"#800000\" style=\"font-size: 54pt\" face=\"Times New Roman\">EBH</font></b></p><p align=\"center\"><b><font size=\"6\" color=\"#800000\" face=\"Times New Roman\">EQUIPO BIBLIOTECA HISPANA</font></b></p><p align=\"center\"><font size=\"5\" color=\"#800000\" face=\"Times New Roman\">Internacional</font></p><span LANG=\"ES-GT\"><font FACE=\"Times New Roman\"><p ALIGN=\"CENTER\" DIR=\"LTR\"><font color=\"#0000FF\" size=\"4\">Este módulo no está vinculado con los propietarios del copyright.</font></p><p ALIGN=\"CENTER\" DIR=\"LTR\"><font color=\"#0000FF\" size=\"4\">Solo para uso personal. Prohibida su venta o utilización comercial.</font></font></span><font face=\"Times New Roman\" color=\"#0000FF\" size=\"4\">,</font></p><p ALIGN=\"CENTER\" DIR=\"LTR\"><font face=\"Times New Roman\" color=\"#0000FF\" size=\"4\">&nbsp;por lo que rogamos, adquirir la obra impresa.</font></p><p align=\"center\"><font color=\"#800000\" face=\"Times New Roman\"><b>-----------------------------------------------------------</b></font></p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:9.0pt;text-align:center\">\n2002</p>\n<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:9.0pt;text-align:center\">\n<span style=\"font-size: 11.0pt\">Título original en alemán: <i>Theologisches \nWörterbuch Zum Neuen Testament</i></span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">Editores: Gerhard Kittel y Gerhard \nFriedrich</span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Publicado en \nnueve volúmenes por W. Kohlhammer Verlag</span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">(Stuttgart, Germany © 1933–1973)</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">Título en inglés: <i><u>\n<span style=\"color:blue\">Theological Dictionary of the New Testament: Abridged \nin one volume</span></u></i></span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Traductor y \neditor: Geoffrey W. Bromiley</span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">Publicado por William B. Eerdmans \nPublishing Company, Grand Rapids, Michigan © 1985</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">Título en español: <i>Compendio del Diccionario \nteológico del Nuevo Testamento</i></span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Editor \ngeneral: Alejandro Pimentel</span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Traductores: \nCarlos Alonso Vargas y el equipo de la Comunidad Kairós de Buenos Aires, \nArgentina</span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Diseño de \ncubierta: Ron Huizinga</span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Cover photo: \nMel Curtis/PhotoDisc</span></p>\n<p class=\"MsoNormal\" align=\"center\"><span style=\"font-size: 11.0pt\">Diseño de \ncaracteres hebreos y griegos: Michael S. Bushel © BibleWorks</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">Libros Desafío forma parte de CRC Publications, \ncasa editora de la Iglesia Cristiana Reformada en Norteamérica, Grand Rapids, \nMichigan, EE.UU.</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">Publicado por</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">LIBROS DESAFÍO</span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">2850 Kalamazoo Ave. SE</span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">Grand Rapids, Michigan 49560</span></p>\n<p class=\"MsoNormal\" align=\"center\">\n<span lang=\"EN-US\" style=\"font-size: 11.0pt\">EE.UU.</span></p>\n<p class=\"MsoNormal\" align=\"center\"><u>\n<span lang=\"EN-US\" style=\"font-size: 11.0pt; color: blue\">info@librosdesafio.org</span></u></p>\n<p class=\"MsoNormal\" align=\"center\"><u>\n<span lang=\"EN-US\" style=\"font-size: 11.0pt; color: blue\">www.librosdesafio.org</span></u></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">© 2002 Derechos reservados</span></p>\n<p class=\"MsoNormal\" style=\"margin-top:9.0pt\" align=\"center\">\n<span style=\"font-size: 11.0pt\">ISBN 1-5588-425-7</span></p>\n<p align=\"center\"><font color=\"#800000\" face=\"Times New Roman\"><b>-----------------------------------------------------------</b></font></p><p class=\"BODY\" style=\"margin-top: 6.7pt\" align=\"center\"><u><span lang=\"X-NONE\" style=\"font-family: Times New Roman; color: black; font-weight: 700\">D</span><span style=\"font-family: Times New Roman; color: black; font-weight: 700\">ATOS DEL MÓDULO</span></u></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Etiqueta</b>: \nKITTEL</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Tipo</b>: Lexico</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Canon</b>: 66 Libros</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Denominación</b>: Evangélica</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Características</b>: Lexico Griego</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Versión</b>: 18</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Fuente</b>: Impresa \ny Digital</font></p>  <p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Compilador</b>: CuatroSeresVivientes</font></p><p align=\"center\"><font face=\"Times New Roman\" size=\"4\"><b>Revisión</b>: 04 de Junio de 2018</font></p><p align=\"center\"><font face=\"Times New Roman\"><b><font size=\"4\">Email</font></b><font size=\"4\">:</font></font><span LANG=\"X-NONE\"><a href=\"e.sword.biblioteca.hispana.int@gmail.com\" style=\"text-decoration: none\"><font size=\"4\" FACE=\"Times New Roman\" COLOR=\"#0000ff\"> e.sword.biblioteca.hispana.int@gmail.com</font></a></span></p><p align=\"center\"><a href=\"cuatroseresvivientes@yahoo.com.ar\" style=\"text-decoration: none\"><span LANG=\"X-NONE\"><font FACE=\"Times New Roman\" COLOR=\"#0000ff\" size=\"4\">cuatroseresvivientes@yahoo.com.ar</font></span></a></p><p align=\"left\"><font face=\"Times New Roman\">Este módulo ha sido creado por un particular para Equipo Biblioteca Hispana con el fin de llevar la palabra de Dios a todas las naciones de habla hispana y no pretende de ningún modo lucrar con ella. Solo para uso personal. Prohibida su venta. Esperamos le sea de bendición.</font></p><p align=\"left\"><font face=\"Times New Roman\">Este módulo contiene:<br></font><span lang=\"X-NONE\" style=\"font-family: Times New Roman\">1.- Diccionario con las palabras </span>\n<span style=\"font-family: Times New Roman\">G</span><span lang=\"X-NONE\" style=\"font-family: Times New Roman\">riegas.</span></p><p align=\"left\">\n<span style=\"font-family: Times New Roman\">ESTE MÓDULO HA SIDO ADAPTADO \nSIGUIENDO LA NUMERACIÓN DEL DR. STRONG.</span></p><p align=\"center\"><font color=\"#800000\" face=\"Times New Roman\"><b>-----------------------------------------------------------</b></font></p>\n<html xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\" xmlns=\"http://www.w3.org/TR/REC-html40\"><body><div class=WordSection1><p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:justify;line-height:150%;mso-pagination:none;tab-stops:36.0pt 72.0pt 108.0pt 144.0pt 180.0pt 216.0pt 252.0pt 288.0pt 324.0pt 360.0pt 396.0pt 432.0pt 468.0pt 504.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span lang=X-NONEstyle='line-height:150%;font-family:\"Times New Roman\";mso-bidi-font-family:Georgia;color:black;mso-ansi-language:X-NONE;mso-fareast-language:X-NONE'>Acerca de la Obra</span></b></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n\t<i><span lang=\"EN-US\" style=\"font-size: 24.0pt\">Compendio del</span></i></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:9.0pt;text-align:center\">\n\t<span style=\"font-size: 34.0pt; text-transform: uppercase\">Diccionario \n\tteológico</span></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:36.0pt;text-align:center\">\n\t<span style=\"font-size: 20.0pt; text-transform: uppercase\">Del Nuevo \n\tTestamento</span></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n\t<b><span lang=\"EN-US\" style=\"font-size: 16.0pt\">Gerhard Kittel y Gerhard \n\tFriedrich</span></b><span lang=\"EN-US\" style=\"font-size: 16.0pt\">,</span></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n\t<span style=\"font-size: 16.0pt\">editores en alemán </span></p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:18.0pt;text-align:center\">\n\t<span style=\"font-size: 16.0pt\">Geoffrey W. Bromiley, traductor al inglés</span></p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">&nbsp;</p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:9.0pt;text-align:center\">\n\t<b><span style=\"font-size: 18.0pt\">Prólogo del editor general</span></b></p>\n\t<p class=\"MsoNormal\" style=\"margin-top:18.0pt\">Libros Desafío se complace en \n\tpresentar este <i>Compendio del diccionario teológico del Nuevo Testamento</i>, \n\tque gracias a la elogiable labor preliminar de Carlos Alonso Vargas y la \n\tComunidad Kairós de Buenos Aires, Argentina, llega ahora al público \n\tcristiano hispanohablante.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Nos hemos esmerado por \n\tproducir una fiel traducción del ya conocido y bastante difundido <i><u>\n\t<span style=\"color:blue\">Theological Dictionary of the New Testament</span></u></i> \n\t(versión abreviada en un volumen), obra que Geoffrey Bromiley tradujera y \n\tadaptara del original en alemán. La estructura y el contenido de esta \n\tpresente obra concuerda básicamente con su contraparte en inglés. Sin \n\tembargo, para ofrecer el máximo beneficio a nuestro público hispanohablante, \n\themos decidido descartar los términos transliterados del griego y hebreo, y \n\treemplazarlos por sus alfabetos originales (tal como aparecen en la obra \n\tcompleta de nueve volúmenes).</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Existen dos razones \n\tprincipales que sustentan nuestra decisión editorial. En primer lugar, el \n\tsistema de transliteración que impera en el mundo de la erudición bíblica \n\tfue, como es de esperar, diseñado para las necesidades fonéticas del lector \n\tanglohablante. Este sistema permite que dicho lector no solo pronuncie con \n\trelativa cercanía los términos hebreos y griegos, sino que también hace \n\tposible la identificación general de los caracteres originales. Obviamente, \n\teste sistema es inadecuado para el lector hispanohablante. Por ejemplo, \n\texisten desaciertos fonéticos muy arraigados en el orbe hispano debido a \n\teste problema de transliteraciones: leemos y pronunciamos <i>Kyrios, Theós y \n\tchárisma</i>, pero en realidad –según la fonología castellana– se debería \n\tleer y pronunciar <i>Kúrios, Zeós y járisma</i>. En esta obra, no \n\tpretendemos presentar un nuevo sistema de transliteración castellana; otras \n\torganizaciones ya realizan esfuerzos en esta área (véase la Biblia Nueva \n\tVersión Internacional © 1999 y su escueto glosario, en el que ya aparecen \n\tacertadas transliteraciones castellanas).</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">En segundo lugar, esta obra \n\tposee una importancia y magnitud tal que merece la inclusión de los \n\tcaracteres originales. Hemos considerado que el lector promedio de esta obra \n\tes aquel que desea profundizar sus estudios de la Palabra de Dios, y quiere \n\texplorar a fondo la terminología teológica. Merece, por lo tanto, incluir \n\tlos términos griegos en este compendio (y en muy escaso número los términos \n\thebreos). Creemos que, en lugar de confundir al lector y estudiante con una \n\ttabla de transliteraciones inadecuada, el cambio les servirá de incentivo \n\tpara que se familiaricen con las lenguas originales de la Biblia.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Por todo ello, nos aunamos al \n\tdeseo que el Dr. Bromiley expresara en su prólogo: que sirva «para ampliar y \n\tprofundizar nuestro entendimiento y el mensaje del Nuevo Testamento, de tal \n\tmanera que podamos contribuir a la proclamación del evangelio y a la \n\tedificación de la iglesia».</p>\n\t<p class=\"MsoNormal\" align=\"right\" style=\"margin-top:9.0pt;text-align:right\">\n\tAlejandro Pimentel</p>\n\t<p class=\"MsoNormal\" align=\"center\" style=\"margin-top:72.0pt;text-align:center\">\n\t<b><span style=\"font-size: 18.0pt\">Prólogo de la edición inglesa</span></b></p>\n\t<p class=\"MsoNormal\" style=\"margin-top:18.0pt\">Muchos años de uso han \n\treafirmado la importancia del <i><u><span style=\"color:blue\">Theological \n\tDictionary of the New Testament</span></u> (TDNT)</i>, tanto en su edición \n\ten alemán (<i>Theologisches Wörterbuch zum Neuen Testament</i>) como en su \n\ttraducción al inglés. Al mismo tiempo, debido al volumen y carácter técnico \n\tde gran parte de su contenido, muchos estudiantes de la Biblia no han podido \n\taprovechar la iluminante información que ofrece. Para superar estas \n\tdificultades se ha producido el presente compendio de los nueve volúmenes \n\toriginales. Esperamos ofrecer este «Little Kittel» (apelativo por el que se \n\tle conoce en inglés) a un público cristiano mucho más extenso.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">El propósito del <i><u>\n\t<span style=\"color:blue\">TDNT</span></u></i> consiste en servir de lazo \n\tentre la lexicografía común y la labor expositiva, en especial a nivel \n\tteológico. Se incluye en el análisis de cada término del Nuevo Testamento \n\tque posee importancia religiosa o teológica, datos de fondo pertenecientes \n\tal griego secular; el papel que juega en el Antiguo Testamento, tanto en el \n\ttexto hebreo como en la Septuaginta; el uso que se le da en fuentes tales \n\tcomo Filón, Josefo, la literatura pseudoepigráfica y rabínica; y por último, \n\tel uso variado en el Nuevo Testamento y, de ser apropiado, en los Padres \n\tApostólicos.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">En la preparación de este \n\tcompendio, cuya extensión equivale aproximadamente a una sexta parte del \n\toriginal, se realizaron los siguientes cambios. Todas las palabras griegas, \n\tincluyendo las que se hallan en las entradas principales, han sido \n\ttransliteradas. Y si bien el orden alfabético de las entradas es el mismo \n\tque en la obra original (por ende, no concuerda con el alfabeto latino), sus \n\tsignificados más prominentes (y especialmente los neotestamentarios) han \n\tsido añadidos entre corchetes para facilitar una referencia rápida. Estos \n\tsignificados han sido colocados también en los encabezamientos en la parte \n\tsuperior de cada página y en la Tabla de palabras clave. Los índices que \n\taparecen en cada volumen de la obra original han sido reemplazados por una \n\tTabla de palabras clave en griego.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Toda información de carácter \n\tfilológico, arqueológico y secundario ha sido drásticamente abreviada. Se ha \n\treducido el número de referencias a una cantidad suficiente. También se han \n\texcluido tanto las notas al pie como las bibliografías; estudiantes que \n\tdeseen mayor información deberán consultar la obra original. Este compendio \n\tse enfoca en el uso bíblico y, especialmente, neotestamentario de los \n\ttérminos; de esta forma, los campos de la terminología clásica, helenística, \n\tapocalíptica, rabínica y patrística reciben una atención más somera. En la \n\tesfera bíblica propiamente dicha, se le otorga énfasis al significado \n\tteológico, de conformidad con el propósito principal de la obra.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Con el fin de posibilitar una \n\tfácil transición para aquellos que deseen una información más detallada, \n\themos incluido al final de cada artículo o sección las respectivas \n\treferencias de volumen y página de la obra completa en inglés. También se \n\tofrecen los nombres de los autores, como reconocimiento de que la presente \n\tobra no es la original sino un extracto de la labor de sus autores. Sin \n\tembargo, sus nombres aparecen entre corchetes (incluyendo las páginas de \n\treferencia), para indicar que estos eruditos, cuya mayoría ya ha fallecido, \n\tno asumen responsabilidad por esta versión abreviada. Todo estudiante que \n\tdesee citar la presente versión, deberá tener presente este hecho cuando se \n\trefiera a esta versión. Desde luego, nos hemos esmerado por reflejar \n\tfielmente las contribuciones e interpretaciones de los autores, teniendo en \n\tcuenta las limitaciones de este compendio.</p>\n\t<p class=\"MsoNormal\" style=\"margin-top:9.0pt\">Confiamos que este compendio \n\tservirá para ampliar y profundizar nuestro entendimiento y el mensaje del \n\tNuevo Testamento, de tal manera que podamos contribuir a la proclamación del \n\tevangelio y a la edificación de la iglesia.</p>\n\t<p class=\"MsoNormal\" align=\"right\" style=\"margin-top:9.0pt;text-align:right\">\n\tGeoffrey W. Bromiley</div></body></html>",
+      "fil": "Kittel.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Kittel.dictionary",
+        "{cdn2}Kittel.dictionary",
+        "{gh}Kittel.dictionary",
+        "{mz}Kittel.dictionary",
+        "{inf}Kittel.dictionary",
+        "{1gb}Kittel.dictionary",
+        "{p4}Kittel.dictionary"
+      ],
+      "siz": "2.4M"
+    },
+    {
+      "abr": "Swanson",
+      "lng": "es",
+      "des": "Diccionario de idiomas bíblicos de James Swanson",
+      "fil": "Swanson.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Swanson.dictionary",
+        "{cdn2}Swanson.dictionary",
+        "{gh}Swanson.dictionary",
+        "{mz}Swanson.dictionary",
+        "{inf}Swanson.dictionary",
+        "{1gb}Swanson.dictionary",
+        "{p4}Swanson.dictionary"
+      ],
+      "siz": "2.8M"
+    },
+    {
+      "abr": "Vine-es",
+      "lng": "es",
+      "des": "Diccionario expositivo de palabras del Antiguo y Nuevo Testamento exhaustivo de Vine",
+      "fil": "Vine-es.dictionary",
+      "upd": "2026-01-19",
+      "cmt": "(2026-01-19) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}Vine-es.dictionary",
+        "{cdn2}Vine-es.dictionary",
+        "{gh}Vine-es.dictionary",
+        "{mz}Vine-es.dictionary",
+        "{inf}Vine-es.dictionary",
+        "{1gb}Vine-es.dictionary",
+        "{p4}Vine-es.dictionary"
+      ],
+      "siz": "2.8M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
