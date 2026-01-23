@@ -1,5 +1,5 @@
 {
-  "version": 7622931,
+  "version": 7626967,
   "hosts": [
     {
       "alias": "cdn",
@@ -82142,6 +82142,47 @@
         "{p4}Vine-es.dictionary"
       ],
       "siz": "2.8M"
+    },
+    {
+      "abr": "FUVN'10",
+      "lng": "Fulani",
+      "reg": "Nigeria",
+      "des": "Fulfulde, Nigeria",
+      "inf": "Fulfulde, Nigeria (Latin Script) NT – Fulfulde, Nigeria <br/>\r\n© 2010, Bible League. All rights reserved. <br/>\r\nWycliffe Bible Translators, Inc. <br/>\r\nFulani — Fulfulde Caka Nigeria",
+      "fil": "FUVN'10",
+      "upd": "2026-01-22",
+      "cmt": "(2026-01-22) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}FUVN'10",
+        "{cdn2}FUVN'10",
+        "{gh}FUVN'10",
+        "{mz}FUVN%2710",
+        "{inf}FUVN%2710",
+        "{1gb}FUVN%2710",
+        "{p4}FUVN%2710"
+      ],
+      "siz": "550K"
+    },
+    {
+      "abr": "PEV'21",
+      "lng": "en",
+      "des": "Plain English Version",
+      "inf": "Plain English Version (Aboriginal) – Plain English Version <br/>\r\n<em>© 2021, Wycliffe Bible Translators, Inc. All rights reserved.</em> <br/>\r\nEnglish",
+      "fil": "PEV'21",
+      "upd": "2026-01-22",
+      "cmt": "(2026-01-22) Published",
+      "bkq": "25",
+      "url": [
+        "{cdn}PEV'21",
+        "{cdn2}PEV'21",
+        "{gh}PEV'21",
+        "{mz}PEV%2721",
+        "{inf}PEV%2721",
+        "{1gb}PEV%2721",
+        "{p4}PEV%2721"
+      ],
+      "siz": "680K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
