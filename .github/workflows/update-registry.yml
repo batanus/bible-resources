@@ -682,13 +682,16 @@ jobs:
         id: verify_git_status
         if: steps.check_candidates_for_update.outputs.has_changes == 'true'
         run: |
-          # Check for changes in registry.json
-          if git diff --quiet registry.json; then
+          # Check for changes in registry.json (ignoring version updates)
+          # We use git diff -I to ignore changes that only affect the "version" line
+          if git diff --quiet -I'"version":' registry.json; then
             REGISTRY_CHANGED=false
-            echo "registry.json matches existing file byte-for-byte."
+            echo "registry.json matches existing file (ignoring version changes)."
+            # Revert any version-only changes to keep git clean
+            git checkout registry.json 2>/dev/null || true
           else
             REGISTRY_CHANGED=true
-            echo "registry.json has been modified."
+            echo "registry.json has meaningful changes."
           fi
           
           # Check for changes in modules directory
