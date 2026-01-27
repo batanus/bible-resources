@@ -1,5 +1,5 @@
 {
-  "version": 7626968,
+  "version": 7633105,
   "hosts": [
     {
       "alias": "cdn",
@@ -35532,6 +35532,27 @@
         "{1gb}ASND",
         "{p4}ASND"
       ],
+      "siz": "2.1M",
+      "hid": true
+    },
+    {
+      "abr": "OASD'25",
+      "lng": "tl",
+      "des": "Biblica Open Ang Salita ng Diyos, 2025",
+      "inf": "Biblica® Open Ang Salita ng Diyos™ Karapatang-sipi © 2009, 2011, 2014, 2025 ng Biblica, Inc. ‌‌ Biblica® Open Tagalog Contemporary Bible™ Copyright © 2009, 2011, 2014, 2025 by Biblica, Inc. ‌‌ Ang “Biblica” ay ang tatak-pangkalakal na nakarehistro sa Biblica, Inc. sa United States Patent at Trademark Office. Ginamit nang may pahintulot. ‌‌ “Biblica” is a trademark registered in the United States Patent and Trademark Office by Biblica, Inc. Used with permission. <br/>\r\nTagalog — Filipino",
+      "fil": "OASD'25",
+      "upd": "2026-01-26",
+      "cmt": "(2026-01-26) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}OASD'25",
+        "{cdn2}OASD'25",
+        "{gh}OASD'25",
+        "{mz}OASD%2725",
+        "{inf}OASD%2725",
+        "{1gb}OASD%2725",
+        "{p4}OASD%2725"
+      ],
       "siz": "2.1M"
     },
     {
@@ -45133,7 +45154,28 @@
         "{1gb}%D0%A0%D0%9E%D0%91%2718",
         "{p4}%D0%A0%D0%9E%D0%91%2718"
       ],
-      "siz": "2.1M"
+      "siz": "2.1M",
+      "hid": true
+    },
+    {
+      "abr": "РОБ'20",
+      "lng": "ru",
+      "des": "Русская Открытая Библия, 2020",
+      "inf": "<h2>Русская Открытая Библия</h2>\n<br/>Russian Open Bible aligned to unfoldingWord® Greek New Testament\n<br/>creator: Door43 World Missions Community\n<br/>contributor:\n<br/> - Ivan Pavlii, PhD in World Literature, Baku Slavic University\n<br/> - Maria Karyakina, PhD, University of Pretoria, MTh in New Testament, University of South Africa\n<br/> - Aleksey Voskresenskiy, MTh in New Testament, University of Cardiff, Wales\n<br/> - Yuri Tamurkin, BTh,  St.Petersburg Christian University\n<br/> - Anna Savitskaya\n<br/> - Samuel Kim\n<br/> - Door43 World Missions Community\n<br/>modified: 2020-10-12\n",
+      "fil": "РОБ'20",
+      "upd": "2026-01-26",
+      "cmt": "(2026-01-26) Выложен",
+      "bkq": "66",
+      "url": [
+        "{cdn}РОБ'20",
+        "{cdn2}РОБ'20",
+        "{gh}РОБ'20",
+        "{mz}%D0%A0%D0%9E%D0%91%2720",
+        "{inf}%D0%A0%D0%9E%D0%91%2720",
+        "{1gb}%D0%A0%D0%9E%D0%91%2720",
+        "{p4}%D0%A0%D0%9E%D0%91%2720"
+      ],
+      "siz": "2M"
     },
     {
       "abr": "УТТ",
