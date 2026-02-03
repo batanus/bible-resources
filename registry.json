@@ -1,5 +1,5 @@
 {
-  "version": 7637135,
+  "version": 7637136,
   "hosts": [
     {
       "alias": "cdn",
@@ -82239,6 +82239,19 @@
       "cmt": "(2026-01-02) User proposed: Хронологический порядок библейских событий.\n(2025-12-11) User proposed: Хронологический порядок библейских событий.",
       "upd": "2026-01-02",
       "custom": true
+    },
+    {
+      "abr": "Lectura completa ",
+      "des": "Biblia 2026",
+      "inf": "Leer la Biblia completa en un año",
+      "fil": "Lectura completa .plan",
+      "url": [
+        "{cdn}Lectura completa .plan",
+        "{cdn2}Lectura completa .plan",
+        "{gh}Lectura completa .plan"
+      ],
+      "siz": "4K",
+      "lng": "es"
     }
   ]
 }
