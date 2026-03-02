@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "migrated-pr-198"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 1
+verse_number: 7
+old_text: "Начало мудрости — страх ГОСПО ДЕНЬ; только глупцы презирают мудрость и наставление. <f>ⓒ</f> "
+new_text: "Начало мудрости — страх ГОСПОДЕНЬ; только глупцы презирают мудрость и наставление. <f>ⓒ</f> "
+submitted_at: "2026-03-01"
