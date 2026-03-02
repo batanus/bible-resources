@@ -1,0 +1,172 @@
+name: Apply Module Update From YAML
+
+on:
+  pull_request_target:
+    types: [labeled]
+
+jobs:
+  apply-from-yaml:
+    if: github.event.label.name == 'apply-module-change' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Validate PR proposal file
+        id: validate
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pr.number,
+              per_page: 100
+            });
+
+            const yamlRegex = /^proposals\/module-updates\/[^/]+\.ya?ml$/;
+            const yamlFiles = files.filter((file) => yamlRegex.test(file.filename));
+
+            let error = '';
+            if (files.length !== 1) {
+              error = `PR must contain exactly one changed file, found ${files.length}.`;
+            } else if (yamlFiles.length !== 1) {
+              error = 'PR must contain exactly one YAML file in proposals/module-updates/.';
+            }
+
+            core.setOutput('valid', error ? 'false' : 'true');
+            core.setOutput('proposal_path', yamlFiles[0]?.filename || '');
+            core.setOutput('error', error);
+
+      - name: Comment invalid proposal
+        if: steps.validate.outputs.valid != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: `❌ Cannot apply proposal: ${process.env.ERROR_MESSAGE}`
+            });
+        env:
+          ERROR_MESSAGE: ${{ steps.validate.outputs.error }}
+
+      - name: Stop on invalid proposal
+        if: steps.validate.outputs.valid != 'true'
+        run: exit 1
+
+      - name: Checkout PR head branch
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.event.pull_request.head.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --disable-pip-version-check pyyaml
+
+      - name: Apply YAML proposal
+        id: apply
+        run: |
+          set -euo pipefail
+          python .github/scripts/apply_module_update_from_yaml.py --proposal-path "${{ steps.validate.outputs.proposal_path }}" > /tmp/apply-summary.json
+          cat /tmp/apply-summary.json
+          python - "$GITHUB_OUTPUT" <<'PY'
+          import json
+          import sys
+
+          output_path = sys.argv[1]
+          with open('/tmp/apply-summary.json', 'r', encoding='utf-8') as handle:
+              data = json.load(handle)
+
+          with open(output_path, 'a', encoding='utf-8') as out:
+              out.write(f"proposal_path={data.get('proposal_path', '')}\n")
+              out.write(f"module_zip_path={data.get('module_zip_path', '')}\n")
+              out.write(f"module_file={data.get('module_file', '')}\n")
+              out.write(f"book_number={data.get('book_number', '')}\n")
+              out.write(f"chapter_number={data.get('chapter_number', '')}\n")
+              out.write(f"verse_number={data.get('verse_number', '')}\n")
+              out.write(f"updated_rows={data.get('updated_rows', '')}\n")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add "${{ steps.apply.outputs.module_zip_path }}" registry.json registry.zip
+
+          if git diff --cached --quiet; then
+            echo "No changes staged after applying proposal" >&2
+            exit 1
+          fi
+
+          git commit -m "Apply module update proposal: ${{ steps.apply.outputs.proposal_path }}"
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+
+      - name: Comment success
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = [
+              '✅ YAML proposal applied successfully.',
+              `- Proposal: \`${process.env.PROPOSAL_PATH}\``,
+              `- Module ZIP: \`${process.env.MODULE_ZIP_PATH}\``,
+              `- Verse: ${process.env.BOOK_NUMBER}:${process.env.CHAPTER_NUMBER}:${process.env.VERSE_NUMBER}`,
+              `- Updated rows: ${process.env.UPDATED_ROWS}`
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body
+            });
+        env:
+          PROPOSAL_PATH: ${{ steps.apply.outputs.proposal_path }}
+          MODULE_ZIP_PATH: ${{ steps.apply.outputs.module_zip_path }}
+          BOOK_NUMBER: ${{ steps.apply.outputs.book_number }}
+          CHAPTER_NUMBER: ${{ steps.apply.outputs.chapter_number }}
+          VERSE_NUMBER: ${{ steps.apply.outputs.verse_number }}
+          UPDATED_ROWS: ${{ steps.apply.outputs.updated_rows }}
+
+      - name: Remove apply label
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                name: 'apply-module-change'
+              });
+            } catch (error) {
+              core.warning(`Could not remove label: ${error.message}`);
+            }
+
+      - name: Comment failure
+        if: failure() && steps.validate.outputs.valid == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '❌ Failed to apply YAML proposal. Check workflow logs for details.'
+            });
