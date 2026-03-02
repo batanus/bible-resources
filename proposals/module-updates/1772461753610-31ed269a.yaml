@@ -1,0 +1,13 @@
+schema_version: 1
+proposal_type: "module_verse_update"
+request_id: "1772461753610-31ed269a"
+module_name: "Радостная Весть. Новый Завет в переводе с древнегреческого"
+short_name: "РВ'05"
+requested_file_name: "РВ'05"
+book_number: 470
+chapter_number: 10
+verse_number: 12
+new_text: |-
+  Войдя в дом, пожелайте ему мира, охо
+submitted_at: "2026-03-02T14:29:13.611Z"
+source: "chat-gpt-proxy-server:/api/propose-module-change"
