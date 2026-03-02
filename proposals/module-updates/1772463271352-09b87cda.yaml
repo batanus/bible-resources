@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1772463271352-09b87cda"
+module_name: "Подстрочный перевод Ветхого и Нового Заветов на русский язык, (рус.)"
+short_name: "VIN-ru+"
+requested_file_name: "VIN-ru+"
+book_number: 470
+chapter_number: 10
+verse_number: 12
+old_text: "<J><n>εἰσερχόμενοι</n> Входящие<S>1525</S><m>V-PNP-NPM</m> <n>δὲ</n> же<S>1161</S><m>CONJ</m> <n>εἰς</n> в<S>1519</S><m>PREP</m> <n>τὴν</n><S>3588</S><m>T-ASF</m> <n>οἰκίαν</n> дом<S>3614</S><m>N-ASF</m> <n>ἀσπάσασθε</n> поприветствуйте<S>782</S><m>V-ADM-2P</m> <n>αὐτήν·</n> его;<S>846</S><m>P-ASF</m></J>"
+new_text: "Тест ой"
+submitted_at: "2026-03-02T14:54:31.353Z"
