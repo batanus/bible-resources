@@ -1,5 +1,5 @@
 {
-  "version": 7684558,
+  "version": 7686272,
   "hosts": [
     {
       "alias": "cdn",
@@ -14598,7 +14598,8 @@
         "{1gb}KRPT",
         "{p4}KRPT"
       ],
-      "siz": "298K"
+      "siz": "298K",
+      "hid": true
     },
     {
       "abr": "KRUS",
