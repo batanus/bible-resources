@@ -1,5 +1,5 @@
 {
-  "version": 7686276,
+  "version": 7687431,
   "hosts": [
     {
       "alias": "cdn",
@@ -59147,11 +59147,11 @@
     {
       "abr": "Barclay-es",
       "lng": "es",
-      "des": "Palabras Griegas del Nuevo Testamento de William Barclay",
-      "fil": "Barclay-es.dictionary",
-      "upd": "2026-01-19",
+      "des": "Comentario Al Nuevo Testamento de William Barclay",
+      "inf": "Traductor de la obra completa: Alberto Araujo\n<br/>Copyright © por C. William Barclay. Publicado originalmente en 1970 y actualizado en 1991 por The Saint Andrew Press, 121 George Street, Edinburgh, EH2 4YN, Escocia\n<br/>Copyright © 2006 por Editorial CLIE para la versión española\n",
+      "fil": "Barclay-es.commentaries",
+      "upd": "2026-03-05",
       "cmt": "(2020-03-24) Published",
-      "aln": "es",
       "url": [
         "{cdn}Barclay-es.commentaries",
         "{cdn2}Barclay-es.commentaries",
@@ -59161,7 +59161,7 @@
         "{1gb}Barclay-es.commentaries",
         "{p4}Barclay-es.commentaries"
       ],
-      "siz": "218K"
+      "siz": "3.6M"
     },
     {
       "abr": "ADA'77",
@@ -82224,6 +82224,25 @@
         "{p4}PEV%2721"
       ],
       "siz": "680K"
+    },
+    {
+      "abr": "BarclayPG",
+      "lng": "es",
+      "des": "Palabras Griegas del Nuevo Testamento de William Barclay",
+      "fil": "BarclayPG.dictionary",
+      "upd": "2026-03-05",
+      "cmt": "(2026-03-05) Published",
+      "aln": "es",
+      "url": [
+        "{cdn}BarclayPG.dictionary",
+        "{cdn2}BarclayPG.dictionary",
+        "{gh}BarclayPG.dictionary",
+        "{mz}BarclayPG.dictionary",
+        "{inf}BarclayPG.dictionary",
+        "{1gb}BarclayPG.dictionary",
+        "{p4}BarclayPG.dictionary"
+      ],
+      "siz": "218K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
