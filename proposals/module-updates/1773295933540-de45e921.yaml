@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1773295933540-de45e921"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 12
+verse_number: 17
+old_text: "Кто говорит то, что знает, тот го ворит правду; а у свидетеля ложного — обман. <f>ⓛ</f> "
+new_text: "Кто говорит то, что знает, тот говорит правду; а у свидетеля ложного — обман. <f>ⓛ</f> "
+submitted_at: "2026-03-12T06:12:13.540Z"
