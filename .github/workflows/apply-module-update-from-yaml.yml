@@ -67,6 +67,25 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge latest main into PR branch
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin main
+
+          commits_behind="$(git rev-list --count HEAD..origin/main)"
+          if [ "${commits_behind}" -eq 0 ]; then
+            echo "Branch already includes the latest origin/main"
+            exit 0
+          fi
+
+          git merge --no-ff --no-edit origin/main
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -103,8 +122,6 @@ jobs:
       - name: Commit and push changes
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add "${{ steps.apply.outputs.module_zip_path }}" registry.json registry.zip
 
@@ -168,5 +185,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.payload.pull_request.number,
-              body: '❌ Failed to apply YAML proposal. Check workflow logs for details.'
+              body: '❌ Failed to sync the branch with `main` or apply the YAML proposal. Check workflow logs for details.'
             });
