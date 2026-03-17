@@ -82313,7 +82313,8 @@
         "{gh}ПСЛ1.plan"
       ],
       "siz": "1K",
-      "lng": "ru"
+      "lng": "ru",
+      "custom": true
     }
   ]
 }
