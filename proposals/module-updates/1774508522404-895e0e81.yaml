@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1774508522404-895e0e81"
+module_name: "Восстановительный перевод Библии, 2014"
+short_name: "ВоП"
+requested_file_name: "ВоП"
+book_number: 240
+chapter_number: 26
+verse_number: 5
+old_text: "Отвечай глупцу по его безрассудств, Чтобы он не был мудрым в своих глазах."
+new_text: "Отвечай глупцу по его безрассудству, Чтобы он не был мудрым в своих глазах."
+submitted_at: "2026-03-26T07:02:02.404Z"
