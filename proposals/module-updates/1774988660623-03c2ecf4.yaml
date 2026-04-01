@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1774988660623-03c2ecf4"
+module_name: "Восстановительный перевод Библии, 2014"
+short_name: "ВоП"
+requested_file_name: "ВоП"
+book_number: 500
+chapter_number: 16
+verse_number: 10
+old_text: "О <f> а </f>праведности — потому что <f> б </f>Я иду к Отцу и вы уже не видите Меня;"
+new_text: "О <f> а </f>праведности — потому что <f> б </f>Я иду к Отцу и вы уже не увидите Меня;"
+submitted_at: "2026-03-31T20:24:20.623Z"
