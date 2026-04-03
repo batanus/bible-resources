@@ -1,5 +1,5 @@
 {
-  "version": 7726307,
+  "version": 7726308,
   "hosts": [
     {
       "alias": "cdn",
@@ -82315,6 +82315,20 @@
       "siz": "1K",
       "lng": "ru",
       "custom": true
+    },
+    {
+      "abr": "Нз&Вз",
+      "des": "Нз&Вз",
+      "inf": "Новый Завет утром и Ветхий Завет вечером",
+      "fil": "Нз&Вз.plan",
+      "url": [
+        "{cdn}Нз&Вз.plan",
+        "{cdn2}Нз&Вз.plan",
+        "{gh}Нз&Вз.plan"
+      ],
+      "siz": "7K",
+      "custom": true,
+      "lng": "ru"
     }
   ]
 }
