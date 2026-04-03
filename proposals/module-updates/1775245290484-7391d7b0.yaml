@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1775245290484-7391d7b0"
+module_name: "Библия или Вечное Евангелие"
+short_name: "GRT"
+requested_file_name: "GRT"
+book_number: 510
+chapter_number: 10
+verse_number: 6
+old_text: "Он гостит у некого Симонакожевника, дом которого находится у моря. Он скажет тебе, что тебе надлежит делать»."
+new_text: "Он гостит у некого Симона-кожевника, дом которого находится у моря. Он скажет тебе, что тебе надлежит делать»."
+submitted_at: "2026-04-03T19:41:30.484Z"
