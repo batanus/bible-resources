@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1775125901444-87bffcc5"
+module_name: "La Biblia de las Américas, 1997"
+short_name: "LBLA+"
+requested_file_name: "LBLA+"
+book_number: 470
+chapter_number: 17
+verse_number: 21
+old_text: "Pero esta clase no sale sino con oración y ayuno."
+new_text: "[Pero esta clase no sale sino con oración y ayuno]."
+submitted_at: "2026-04-02T10:31:41.444Z"

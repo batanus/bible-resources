@@ -1,5 +1,5 @@
 {
-  "version": 7726310,
+  "version": 7726311,
   "hosts": [
     {
       "alias": "cdn",
@@ -57471,8 +57471,8 @@
       "des": "La Biblia de las Américas, 1997",
       "inf": "Copyright © 1986, 1995, 1997 by The Lockman Foundation",
       "fil": "LBLA+",
-      "upd": "2019-11-25",
-      "cmt": "(2019-11-25) Published",
+      "upd": "2026-04-06",
+      "cmt": "(2026-04-06) User proposed: Module: `LBLA+`\nBook: `Mateo (470)`\nChapter: `17`\nVerse: `21`\n\n```\nPero esta clase no sale sino con oración y ayuno.\n```\n->\n```\n[Pero esta clase no sale sino con oración y ayuno].\n```\n(2019-11-25) Published",
       "bkq": "66",
       "url": [
         "{cdn}LBLA+",
