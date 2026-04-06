@@ -1,5 +1,5 @@
 {
-  "version": 7726309,
+  "version": 7726310,
   "hosts": [
     {
       "alias": "cdn",
@@ -15084,8 +15084,8 @@
       "des": "La Biblia de las Américas, 1997",
       "inf": "Copyright © 1986, 1995, 1997 by The Lockman Foundation",
       "fil": "LBLA",
-      "upd": "2017-04-06",
-      "cmt": "(2017-04-06) Re-created from another source\n(2017-03-08) Mk 12 added missed verses\n(2017-03-04) Red letter edition\n(2016-09-17) Added Salmo\n(2015-04-03) fixed Abbreviations books of the Bible",
+      "upd": "2026-04-06",
+      "cmt": "(2026-04-06) User proposed: Module: `LBLA`\nBook: `Mateo (470)`\nChapter: `17`\nVerse: `21`\n\n```\n<J> <f>[9]</f>Pero esta clase no sale sino con oración y ayuno <f>ⓢ</f>.</J>\n```\n->\n```\n<J> <f>[9]</f>[Pero esta clase no sale sino con oración y ayuno] <f>ⓢ</f>.</J>\n```\n(2017-04-06) Re-created from another source\n(2017-03-08) Mk 12 added missed verses\n(2017-03-04) Red letter edition\n(2016-09-17) Added Salmo\n(2015-04-03) fixed Abbreviations books of the Bible",
       "bkq": "66",
       "url": [
         "{cdn}LBLA",

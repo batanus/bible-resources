@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1775126553892-42183ffa"
+module_name: "La Biblia de las Américas, 1997"
+short_name: "LBLA"
+requested_file_name: "LBLA"
+book_number: 470
+chapter_number: 17
+verse_number: 21
+old_text: "<J> <f>[9]</f>Pero esta clase no sale sino con oración y ayuno <f>ⓢ</f>.</J>"
+new_text: "<J> <f>[9]</f>[Pero esta clase no sale sino con oración y ayuno] <f>ⓢ</f>.</J>"
+submitted_at: "2026-04-02T10:42:33.892Z"
