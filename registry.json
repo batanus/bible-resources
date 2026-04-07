@@ -1,5 +1,5 @@
 {
-  "version": 7726311,
+  "version": 7733630,
   "hosts": [
     {
       "alias": "cdn",
@@ -52846,7 +52846,7 @@
       "des": "Svenska Reformationsbibeln 2026",
       "inf": "Svenska Reformationsbibeln 2026\r\n SRB © 1998, 2015, Stiftelsen Svenska Reformationsbibelsällskapet",
       "fil": "RFB",
-      "upd": "2026-03-11",
+      "upd": "2026-04-06",
       "cmt": "(2026-03-11) Published",
       "def": true,
       "bkq": "66",
@@ -53310,7 +53310,7 @@
       "des": "كَلِمَةُ يَهْوَهْ إِيلْوهِيم إلَهُ آبْرَاهَام وَإِسْحاق وَيَعْقُوب.",
       "inf": "Smith Van Dyck Bible with original Names of our God.",
       "fil": "SVDONG",
-      "upd": "2026-03-11",
+      "upd": "2026-04-06",
       "cmt": "(2026-03-11) Published",
       "bkq": "66",
       "url": [
@@ -53322,7 +53322,7 @@
         "{1gb}SVDONG",
         "{p4}SVDONG"
       ],
-      "siz": "2.1M"
+      "siz": "2.2M"
     },
     {
       "abr": "LTRK",
@@ -75929,8 +75929,7 @@
         "{1gb}%D0%95%D0%A6%D0%97%D0%96-1%D0%B3.plan",
         "{p4}%D0%95%D0%A6%D0%97%D0%96-1%D0%B3.plan"
       ],
-      "siz": "17K",
-      "hid": true
+      "siz": "17K"
     },
     {
       "abr": "ЕЦЗЖ-366д",
