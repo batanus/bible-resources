@@ -1,5 +1,5 @@
 {
-  "version": 7733630,
+  "version": 7733631,
   "hosts": [
     {
       "alias": "cdn",
@@ -82314,6 +82314,20 @@
       "siz": "1K",
       "lng": "ru",
       "custom": true
+    },
+    {
+      "abr": "Altes Testament ",
+      "des": "Morgens",
+      "inf": "Je 1 Kapitel  ",
+      "fil": "Altes Testament .plan",
+      "url": [
+        "{cdn}Altes Testament .plan",
+        "{cdn2}Altes Testament .plan",
+        "{gh}Altes Testament .plan"
+      ],
+      "siz": "9K",
+      "custom": true,
+      "lng": "de"
     }
   ]
 }
