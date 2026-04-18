@@ -1,5 +1,5 @@
 {
-  "version": 7733630,
+  "version": 7733631,
   "hosts": [
     {
       "alias": "cdn",
@@ -1581,8 +1581,8 @@
       "lng": "de",
       "des": "German Textbibel AT, 1906",
       "fil": "AT",
-      "upd": "2017-07-26",
-      "cmt": "(2017-07-26) Books updated\n(2016-09-17) Added Psalm\n(2014-07-17) Published",
+      "upd": "2026-04-18",
+      "cmt": "(2026-04-18) User proposed: Je 1 Kapitel\n(2017-07-26) Books updated\n(2016-09-17) Added Psalm\n(2014-07-17) Published",
       "bkq": "39",
       "url": [
         "{cdn}AT",
