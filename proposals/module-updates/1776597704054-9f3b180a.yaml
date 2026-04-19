@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1776597704054-9f3b180a"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 19
+verse_number: 5
+old_text: "Лжесвидетель не останется нена казанным, и кто говорит ложь, не спа сётся. <f>ⓔ</f> "
+new_text: "Лжесвидетель не останется ненаказанным, и кто говорит ложь, не спасётся. <f>ⓔ</f> "
+submitted_at: "2026-04-19T11:21:44.054Z"
