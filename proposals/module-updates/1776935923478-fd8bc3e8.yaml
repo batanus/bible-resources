@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1776935923478-fd8bc3e8"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 23
+verse_number: 20
+old_text: "Не будь между упивающимися вином, между пресыщающимися мя сом, <f>ⓙ</f> "
+new_text: "Не будь между упивающимися вином, между пресыщающимися мясом, <f>ⓙ</f> "
+submitted_at: "2026-04-23T09:18:43.478Z"
