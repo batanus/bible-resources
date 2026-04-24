@@ -1,5 +1,5 @@
 {
-  "version": 7753877,
+  "version": 7753878,
   "hosts": [
     {
       "alias": "cdn",
@@ -82334,6 +82334,20 @@
       "siz": "1K",
       "lng": "ru",
       "custom": true
+    },
+    {
+      "abr": "Morgens ",
+      "des": "Altes Testament",
+      "inf": "Jeden Tag 1 Kapitel ",
+      "fil": "Morgens .plan",
+      "url": [
+        "{cdn}Morgens .plan",
+        "{cdn2}Morgens .plan",
+        "{gh}Morgens .plan"
+      ],
+      "siz": "10K",
+      "custom": true,
+      "lng": "de"
     }
   ]
 }
