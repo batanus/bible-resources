@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1777526468757-45200ac1"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 30
+verse_number: 32
+old_text: "Если ты в заносчивости своей сделал глупость и помыслил злое, то поло жи руку на уста;"
+new_text: "Если ты в заносчивости своей сделал глупость и помыслил злое, то положи руку на уста;"
+submitted_at: "2026-04-30T05:21:08.757Z"
