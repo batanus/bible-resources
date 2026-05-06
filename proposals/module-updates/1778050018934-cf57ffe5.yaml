@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1778050018934-cf57ffe5"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 6
+verse_number: 6
+old_text: "Пойди к муравью, ленивец, посмо три на действие<f>[1]</f> его и будь мудрым."
+new_text: "Пойди к муравью, ленивец, посмотри на действие<f>[1]</f> его и будь мудрым."
+submitted_at: "2026-05-06T06:46:58.934Z"
