@@ -1,5 +1,5 @@
 {
-  "version": 7753902,
+  "version": 7753903,
   "hosts": [
     {
       "alias": "cdn",
@@ -82334,6 +82334,20 @@
       "siz": "1K",
       "lng": "ru",
       "custom": true
+    },
+    {
+      "abr": "BI30",
+      "des": "Bíblia Inteira 30",
+      "inf": "Leitura Mensal Completa da Bíblia",
+      "fil": "BI30.plan",
+      "url": [
+        "{cdn}BI30.plan",
+        "{cdn2}BI30.plan",
+        "{gh}BI30.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "pt"
     }
   ]
 }
