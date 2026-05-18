@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1778911290156-5f878a4c"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 16
+verse_number: 32
+old_text: "Долготерпеливый лучше храбро го, и владеющий собой лучше завоева теля города. <f>ⓤ</f> "
+new_text: "Долготерпеливый лучше храброго, и владеющий собой лучше завоевателя города. <f>ⓤ</f> "
+submitted_at: "2026-05-16T06:01:30.156Z"
