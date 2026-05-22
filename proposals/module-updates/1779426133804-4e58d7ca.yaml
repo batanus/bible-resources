@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1779426133804-4e58d7ca"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 22
+verse_number: 6
+old_text: "Наставь юношу в начале пути его: он не уклонится от него, когда и соста рится. <f>ⓔ</f> "
+new_text: "Наставь юношу в начале пути его: он не уклонится от него, когда и состарится. <f>ⓔ</f> "
+submitted_at: "2026-05-22T05:02:13.804Z"
