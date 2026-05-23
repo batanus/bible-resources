@@ -1,5 +1,5 @@
 {
-  "version": 7753910,
+  "version": 7753911,
   "hosts": [
     {
       "alias": "cdn",
@@ -82346,6 +82346,20 @@
         "{gh}BI30.plan"
       ],
       "siz": "1K",
+      "custom": true,
+      "lng": "pt"
+    },
+    {
+      "abr": "P5",
+      "des": "Pentateuco",
+      "inf": "Leitura dos 5 livros do Pentateuco",
+      "fil": "P5.plan",
+      "url": [
+        "{cdn}P5.plan",
+        "{cdn2}P5.plan",
+        "{gh}P5.plan"
+      ],
+      "siz": "2K",
       "custom": true,
       "lng": "pt"
     }
