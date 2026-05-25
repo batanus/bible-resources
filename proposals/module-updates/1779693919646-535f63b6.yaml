@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1779693919646-535f63b6"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 25
+verse_number: 21
+old_text: "Если голоден враг твой, накор ми его хлебом; и если он жаждет, напои его водой: <f>ⓜ</f> "
+new_text: "Если голоден враг твой, накорми его хлебом; и если он жаждет, напои его водой: <f>ⓜ</f> "
+submitted_at: "2026-05-25T07:25:19.646Z"
