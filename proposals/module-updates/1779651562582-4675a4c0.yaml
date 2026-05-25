@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1779651562582-4675a4c0"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 690
+chapter_number: 4
+verse_number: 5
+old_text: "Они от мира, потому и говорят помирски, и мир слушает их. <f>ⓔ</f> "
+new_text: "Они от мира, потому и говорят по-мирски, и мир слушает их. <f>ⓔ</f> "
+submitted_at: "2026-05-24T19:39:22.582Z"
