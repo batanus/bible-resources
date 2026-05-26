@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1779693127634-be7ad69c"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 25
+verse_number: 11
+old_text: "Золотые яблоки в серебряных прозрачных<f>[1]</f> сосудах — слово, сказан ное прилично.<f>[2]</f> <f>ⓕ</f> "
+new_text: "Золотые яблоки в серебряных прозрачных<f>[1]</f> сосудах — слово, сказанное прилично.<f>[2]</f> <f>ⓕ</f> "
+submitted_at: "2026-05-25T07:12:07.634Z"
