@@ -1,5 +1,5 @@
 {
-  "version": 7753912,
+  "version": 7804229,
   "hosts": [
     {
       "alias": "cdn",
@@ -28068,8 +28068,8 @@
       "des": "World English Bible (with Strong's numbers)",
       "inf": "cWEB is the Crossword Project version of the World English Bible. Several glaring and undisputable errors in the text have been corrected (incorrect numbers, missing words, especially the Old Testament, and a few corrections in the New Testament). The error corrections do not affect doctrine or alter the meaning of the text. They do make the text readable by restoring proper sentence structure. These changes are placed in the public domain. In addition, Strong's numbers are now included. The Strong's numbers were added to the WEB as part of the CrossWord Project, copyright Wade Maxfield, and the changes are released for any purpose. The original source used as the reference had errors in some Strong's numbers. This was noted about halfway through, and corrected to some extent. Please notifiy us of any errors you find at <a href=\"mailto:thecrosswordproject@gmail.com\">thecrosswordproject@gmail.com</a>  <a href=\"http://www.crosswordproject.com\">http://www.crosswordproject.com</a>\n<br/>\n<br/>The original copyright notice placing the World English Bible in the public domain follows: The World English Bible is a Modern English update of the American Standard Version of 1901. The translation and review is currently in progress, so please check back from time to time for updates. This translation is in the Public Domain, so feel free to copy, publish (for free or for a price), and use it. You don't need to pay any royalties or even to ask for any additional permission. You already have permission to publish, copy, and distribute the World English Bible as much as you want to in any form (spoken, written, paper, electronic, etc.). We do ask that you update your copy that you publish periodically until the World English Bible editing is done, as a courtesy to your readers (and not as a requirement). If you make any changes to the text of the World English Bible, we do ask that you not call it the World English Bible any more, to avoid confusion, unless you get specific permission from us to do so.",
       "fil": "WEB+",
-      "upd": "2022-04-01",
-      "cmt": "(2019-01-12) Some errors have been fixed\n(2017-02-16) Red Letter Edition\n(2016-04-09) Mark 3:28 added missed part, Mark 3:29 'a eternal' → 'aN eternal', Mark 3:30 'a unclean' → 'aN unclean'\n(2015-07-15) Published",
+      "upd": "2026-05-25",
+      "cmt": "(2026-03-25) Strong's numbers were corrected in Gen 41:1\n(2019-01-12) Some errors have been fixed\n(2017-02-16) Red Letter Edition\n(2016-04-09) Mark 3:28 added missed part, Mark 3:29 'a eternal' → 'aN eternal', Mark 3:30 'a unclean' → 'aN unclean'\n(2015-07-15) Published",
       "bkq": "66",
       "url": [
         "{cdn}WEB+",
@@ -58156,7 +58156,7 @@
       "des": "Young's Literal Translation 3rd Revision 1898",
       "inf": "Young's Literal Translation 3rd Revision 1898 <br/>\r\nmaintained by the British and Foreign Bible Society <br/>\r\nBritish & Foreign Bible Society <br/>\r\nEnglish",
       "fil": "YLT1898",
-      "upd": "2023-01-17",
+      "upd": "2026-05-25",
       "cmt": "(2020-03-19) 1 Peter 4:19 god → God\n(2019-12-30) Published",
       "bkq": "66",
       "url": [
@@ -58168,7 +58168,7 @@
         "{1gb}YLT1898",
         "{p4}YLT1898"
       ],
-      "siz": "1.8M"
+      "siz": "1.7M"
     },
     {
       "abr": "en-es-B",
