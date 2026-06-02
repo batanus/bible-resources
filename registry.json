@@ -1,5 +1,5 @@
 {
-  "version": 7805533,
+  "version": 7814396,
   "hosts": [
     {
       "alias": "cdn",
@@ -3946,7 +3946,16 @@
         "{1gb}BTI-es",
         "{p4}BTI-es"
       ],
-      "siz": "2.5M"
+      "siz": "2.5M",
+      "hid": true
+    },
+    {
+      "abr": "BTI'08",
+      "url": [
+        "{cdn}",
+        "{cdn2}",
+        "{gh}"
+      ]
     },
     {
       "abr": "BTX",
@@ -16540,9 +16549,8 @@
       "lng": "en",
       "des": "Morning by Morning by Charles Haddon Spurgeon",
       "fil": "MbM-d.devotions",
-      "upd": "2016-12-23",
+      "upd": "2026-06-01",
       "cmt": "(2015-08-01) Fixed links\n(2015-03-06) Fixed links for Android 5.0\n(2014-10-08) Published",
-      "bkq": "d",
       "url": [
         "{cdn}MbM-d.devotions",
         "{cdn2}MbM-d.devotions",
@@ -16552,7 +16560,7 @@
         "{1gb}MbM-d.devotions",
         "{p4}MbM-d.devotions"
       ],
-      "siz": "272K"
+      "siz": "284K"
     },
     {
       "abr": "MBSI",
@@ -20715,7 +20723,7 @@
       "des": "Книги Ветхого Завета в переводе Павского",
       "inf": "Опытъ переложенія на русскій языкъ священныхъ книгъ Ветхаго Завѣта <p/>прот. Герасима Павскаго (съ масоретскаго текста).<p/>Протоіерей Герасимъ Петровичъ Павскій",
       "fil": "PAV",
-      "upd": "2025-01-28",
+      "upd": "2026-06-01",
       "cmt": "(2016-09-16) Добавлено Псалом\n(2015-12-30) Обновлен модуль\n(2015-04-10) Выложен.",
       "bkq": "19",
       "url": [
@@ -20727,7 +20735,7 @@
         "{1gb}PAV",
         "{p4}PAV"
       ],
-      "siz": "893K"
+      "siz": "919K"
     },
     {
       "abr": "PB-c",
@@ -38254,7 +38262,28 @@
         "{1gb}AFNT",
         "{p4}AFNT"
       ],
-      "siz": "518K"
+      "siz": "518K",
+      "hid": true
+    },
+    {
+      "abr": "BTI'78",
+      "lng": "es",
+      "des": "Biblia Traducción Interconfesional de 1978",
+      "inf": "Nuevo Testamento Biblia Traducción Interconfesional 1978 Por Biblioteca De Autores Cristianos, La Casa De La Biblia, Sociedades Bíblicas Unidas",
+      "fil": "BTI'78",
+      "upd": "2026-06-01",
+      "cmt": "(2026-06-01) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}BTI'78",
+        "{cdn2}BTI'78",
+        "{gh}BTI'78",
+        "{mz}BTI%2778",
+        "{inf}BTI%2778",
+        "{1gb}BTI%2778",
+        "{p4}BTI%2778"
+      ],
+      "siz": "562K"
     },
     {
       "abr": "Ausejo",
@@ -38273,6 +38302,27 @@
         "{inf}Ausejo",
         "{1gb}Ausejo",
         "{p4}Ausejo"
+      ],
+      "siz": "1.9M",
+      "hid": true
+    },
+    {
+      "abr": "LBP'75",
+      "lng": "es",
+      "des": "Serafín de Ausejo, 1975",
+      "inf": "<strong>Biblia Version de Serafin Ausejo </strong> <br/>Copyright © Serafín de Ausejo 1975.",
+      "fil": "LBP'75",
+      "upd": "2026-06-01",
+      "cmt": "(2026-06-01) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}LBP'75",
+        "{cdn2}LBP'75",
+        "{gh}LBP'75",
+        "{mz}LBP%2775",
+        "{inf}LBP%2775",
+        "{1gb}LBP%2775",
+        "{p4}LBP%2775"
       ],
       "siz": "1.9M"
     },
@@ -38293,6 +38343,27 @@
         "{inf}BAD%271989",
         "{1gb}BAD%271989",
         "{p4}BAD%271989"
+      ],
+      "siz": "1.9M",
+      "hid": true
+    },
+    {
+      "abr": "LBD'89",
+      "lng": "es",
+      "des": "Biblia al día, 1989",
+      "inf": "<strong>Biblia al Día (BAD) </strong> <br/>Copyright © Editorial \"Mundo Hispano\" en 1989, inspirada en la versión americana \"The Living Bible\".",
+      "fil": "LBD'89",
+      "upd": "2026-06-01",
+      "cmt": "(2026-06-01) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}LBD'89",
+        "{cdn2}LBD'89",
+        "{gh}LBD'89",
+        "{mz}LBD%2789",
+        "{inf}LBD%2789",
+        "{1gb}LBD%2789",
+        "{p4}LBD%2789"
       ],
       "siz": "1.9M"
     },
@@ -38675,7 +38746,8 @@
         "{1gb}Pesh-es",
         "{p4}Pesh-es"
       ],
-      "siz": "499K"
+      "siz": "499K",
+      "hid": true
     },
     {
       "abr": "RV'1858",
@@ -43764,7 +43836,7 @@
       "des": "Біблія в пер. Івана Огієнка, 1988",
       "inf": "Біблія або Книги Святого Письма Старого і Нового Заповіту, 1988 <br/>\nІван Іванович Огієнко <br/>\nExported from Wikisource",
       "fil": "UBIO'88",
-      "upd": "2025-07-03",
+      "upd": "2026-06-01",
       "cmt": "(2021-09-01) Пс. 42:4 же́ртівннка → же́ртівника\n(2020-07-20) Соф. 2:4 онусто́шенням → опусто́шенням \n(2020-06-29) вій → він / вій → свій \n(2020-06-10) Плач 3:22 нокінчи́лось → покінчи́лось \nЄз. 1:11 злучувалнся → злучувалися\nЄз. 23:31 РУку → руку\n2 Сам. 7:13 престо ла → престола\n(2020-04-27) Суд. 8:8 Пеиуїлу → Пенуїлу \n(2020-04-20) 5 М. 16:8 ие → не\n(2020-03-19) Іс. 37:9 почув вій → почув він\n(2020-02-28) 3 М. 20:11 I А → А\n3М. 13:27 проркази → прокази\n(2020-01-13) Несколько исправлений после сверки с печатным изданием 1988 г.\n(2019-12-16) Рим. 10:15 благовіссників → благовісників\n(2019-11-25) Єз. 46:5 ного → його\n(2019-11-19) Дії 23:6 спостерігшії → спостерігши\n(2019-09-25) Гал. 3:10 написано:, Прокля́тий → написано: „Прокля́тий\nЕзд. 6:21 иечистости → нечистости \nТит. 1:1 Заголовок Титлові → Титові \n(2019-09-16) Пр. 1:22 знания́ → знання́\n(2019-09-02) 2 Хр. 2:2 у батьком → з батьком\n2 Хр. 5:12 Левитн → Левити \n(2019-08-29) 1 Хр. 27:22 зве́рхники → зве́рхники\n(2019-08-26) Дії 2:27 позоставши → позоставиш\n(2019-08-13) 2 Цар. 21:15 він дня → від дня\n(2019-07-29) 2 Цар. 1:8 Де → Це\n(2019-07-22) Пс. 88:20 про мовляв → промовляв\nЄг. 22:19 про буває → пробуває\nЛк. 22:51 уздоро́вив → уздоро́вив \nКол. 1:24 і тілі → в тілі\n(2019-07-08) вій → він\n(2019-07-01) 2 Сам. 7:13 престо ла → престола\n(2019-05-28) Суд. 19:19 ослін → ослів\nЄг. 18:27 їрпеїл → Їрпеїл\n5 М. 20:17 Ханаанеяннна → Ханаанеянина\n3 М. 18:23 злижешся → зляжешся\nвиноградинка → виноградника\n(2019-03-11) Еф.2:19 це → не\n(2019-02-06) Як. 4:10 У покорі́ться → Упокорі́ться\n(2019-01-09) Об. 11:4 Воні → Вони\n(2018-12-10) 2 Хр. 34:15  Діафанові. → Шафанові. \nЕзд. 6:16 а радістю → з радістю\nЕзд 9:14  не позоставси → не позостався\n1 Хр. 19:7 Мааих → Маахи\n1 Хр. 27:31  мастку → маєтку\nПс.   33:14  говоренний → говорення \nПс.  34:27 звесе ляються → звеселяються \nПс.  42:4 п потіхи → й потіхи\nПс. 58:17 милісти →  милість\nПс. 93:20 беззакония → беззаконня\nПс. 100:5 обчорнюв → обчорнює\nПс.118:87 Івоїх → Твоїх \nПс.129:2 ночуй → почуй \nПс. 144:4 Івої → Твої\nЕкл. 11:3 залишитьсяна → залишиться на\nІс. 18:7 па Сіонській → на Сіонській\nІс.26:3 поклидає → покладає\nІс. 27:11 Створитесь → Створитель\nІс. 28:14 Єфусалимі → Єрусалимі\nДан. 10:4 нри → при \nЙоіл.4:13 кадкн → кадки\nАм. 5:16 голосільніщь → голосільниць\nЗах. 3:9 одном}камені → одному камені\nМт. 5:45 сходитн → сходити \nМт. 15:1 н сказали  →  й сказали\nМр. 14:68 нереддвір'я → переддвір'я\nЛк. 16:5 її → й\nЛк.23:5 аж посі → аж досі\nДії 19:20 Вожеє → Божеє \n1Ів. 3:10 нраведності → праведності\n1Ів.3:14 смертн → смерти\n2Ів. 1:1 поправці → поправді \n2Ів.1:2 пробував  → пробуває\nРим. 3:5 несправедгливий → несправедливий \n1Кор.14:3 умовлений → умовлення\n2Тим.4:20 позоставси → позостався\nЄвр. 1:14 служебці → служебні\nОб. 22:18 та накладе  → то накладе\n(2018-10-22) запарюва́ння → зацарюва́ння\n2 Цар. 11:18 прозбива́ли → порозбива́ли\n1 Цар. 18:42 нити → пити \nВог → Бог \n1 Цар. 2:46 номер → помер\n1 Сам. 22:6 прн → при\n1 Сам. 17:43 Чн → Чи\n1 Сам. 15:18 амалнки́тян → амалики́тян\n1 Сам. 14:6 Госиоде́ві → Господеві\nСуд. 21:11 ланку → жінку\n(2018-10-17) Єг. 11:5 іцоб → щоб\nЄг. 8:14 стен → степ\n(2018-10-16) Єз. 11:12 неї ходили → не ходили\n5 М. 32:47 Пордан → Йордан \n1 М. 6:12 тіла → тіло\n(2018-10-01) 2 Цар. 25:13 Вави лону → Вавилону\n(2018-09-26) Єр. 36:21 зверхнпків → зверхипків\n(2018-09-06) Ос. 6:4 І Бо → Бо\n(2018-08-10) 1 Тим. 4:5 Божим! → Божим\n(2018-07-23) Ам. 5:4 її живіть → й живіть\nАм. 5:13 розуміний → розумний \n(2018-07-11) Йов. 28:16 сапі́ру → сапфі́ру \nЙов. 17:10 зиахо́джу → знахо́джу\n(2018-07-04) Пр 29:11 уесь → увесь\nЙов 4:19 вион → вони\nОб 20:2 вій → він  \n(2018-07-02) алголів → анголів \n(2018-06-11) Дії 21:31 Єфусалим → Єрусалим \n(2018-06-04) 1 Хр. 17:12 тропа → трона\n(2018-05-30) 2 Сам. 20:6 сни → син\n(2018-05-23) 2 Сам 9:12 Цівн → Ціви\n(2018-04-19) Мт 9:6 Вій → Він\n(2018-03-07) Выложен",
       "bkq": "66",
       "url": [
@@ -54181,7 +54253,7 @@
       "des": "Biblia Tysiąclecia IV, 2003",
       "inf": "Wykorzystany w opracowaniu tekst IV wydania Biblii Tysiąclecia jest własnością Wydawnictwa Pallottinum w Poznaniu (ISBN 83-7014-218-4).\n<br/>\nTekst Biblii Tysiąclecia jest oficjalnym tekstem Kościoła w Polsce zatwierdzonym do stosowania w liturgii.",
       "fil": "BT'03",
-      "upd": "2019-03-29",
+      "upd": "2026-06-01",
       "cmt": "(2019-03-29) Published",
       "def": true,
       "bkq": "73",
@@ -81753,10 +81825,10 @@
       "abr": "JND",
       "lng": "fr",
       "des": "Traduction J. N. Darby, 1881",
-      "inf": "<h2>La Sainte Bible</h2>\n<b>Traduction J. N. Darby</b><p/>\nTexte biblique, alinéas et notes de traduction, conformes* à l'édition imprimée*<p/>\nModule JND v. 1.12 (2025-08-27)*\n<hr noshade size=1 color=\"#000000\"/>\n<i>*) voyez</i> <a href=\"https://bible.ecoreel.org/\">bible.ecoreel.org</a>",
+      "inf": "<h2>La Sainte Bible</h2>\n<b>Traduction J. N. Darby</b><p/>\nTexte biblique, alinéas et notes de traduction, conformes* à l'édition imprimée*<p/>\nModule JND v. 1.13 (2026-04-24)*\n<hr noshade size=1 color=\"#000000\"/>\n<i>*) voyez</i> <a href=\"https://bible.ecoreel.org/\">bible.ecoreel.org</a>",
       "fil": "JND",
-      "upd": "2025-08-29",
-      "cmt": "2025-08-27\n• Correction de la mise en couleur des paroles de Jésus en Luc 22:35.\n\n2025-08-23\n• Correction de l'année de traduction (1881 au lieu de 1959 qui était celle du Nouveau Testament seul).\n\n2025-07-05\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 1:43.\n\n2025-07-02\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 9:23.\n\n2025-02-21\n• Coupure 1Th 5:9-10 corrigée.\n\n2025-02-16\n• Remplacement de \"culpabilité\" par \"coulpe\" en Gn 26:10 ;\n• Ponctuation Gn 36;34 ; Gn 41:27 ; Nb 22:21 ; 24:25 ; 27:10 ; 31:46 ; 32:9 ; 33:56 ; 34:11 ; Dt 1:2 corrigée ;\n• Typographie Nb 34:19 ; 2Tm 1:3-4 corrigée ou ajustée ;\n• Coupure Gn 39:14-15 corrigée.\n\n2025-01-08\n• Coupure Hé 3:15-16 corrigée.\n\n2024-12-27\n• Coupures 1R 8:57-58 ; Ép 5:15-16 corrigées.\n\n2024-12-26\n• Coupure Ép 2:8-9 corrigée ;\n• Typographie de références bibliques corrigée dans plusieurs notes ;\n• Affichage de l'un des liens de la note Rm 15:16 homogénéisé à l'ensemble des liens bibliques ;\n• Ponctuation des notes Ex 9:7 ; Mt 27:35 corrigées ;\n• Remplacement de l'espace insécable après les \"«\" et avant les \";\", \"!\", \"?\", \"»\" par une espace fine incécable.\n\n2024-05-25\n• Coupures Ép 1:10-11.\n\n2023-05-10\n• Ponctuation 2R 7:3 corrigée.\n\n2022-09-25\n• Coupure 1P 2:8-9 corrigée.\n\n2022-01-19\n• Déplacement de l'appel de note erroné en 2Th 3:16, vers 2Th 3:18.\n\n2021-09-10\n• Coupure Est 6:5-6 corrigée.\n\n2021-04-13\n• Appel de note 2J 1:9 corrigé.\n\n2020-12-05\n• Coupure Ex 15:25-26 corrigée.\n\n2020-10-03\n• Note 2Co 3:18 corrigée.\n\n2020-09-12\n• Ajout d'un alinéa en tête du premier verset de chaque livre.\n\n2020-08-07\n• Ponctuation 1S 9:27 corrigée.\n\n2020-08-03\n• Coupure 2Co 4:1-2 corrigée.\n\n2020-07-30\n• Remplacement de \"^—\\x20\" par \"—\\xa0\" ;\n• Appels de note Mt 19:16 ; Lc 4:8 ; Col 3:24 ; 1P 5:8 déplacés d'un caractère à droite.\n\n2020-07-28\n• Remplacement de \"—\\xa0\" par \"—\\x20\".\n\n2020-07-18\n• Suppression de \"…\" en fin de information_string ;\n• Titre Ct 1:1 corrigé.\n\n2019-02-23\n• Coupure Hé 11:36-37 corrigée.\n\n2019-07-15\n• Lien note 2Co 2:16 corrigé.\n\n2019-06-23\n• Lien note Ap 20:4 corrigé.\n\n2019-06-08\n• Orthographe 1R 3:21 ; Jb 3:12 corrigée ;\n• Mc 6:8-9 coloré.\n\n2019-06-01\n• Notes És 62:11 ; Éz 40:40, 44 corrigées.\n\n2019-05-14\n• Note Mt 27:46 corrigée.\n\n2019-04-01\n• Coupure Jos 24:3-4 corrigée.\n\n2019-02-25\n• Première parution.",
+      "upd": "2026-06-01",
+      "cmt": "2026-04-24\n• Coupure Né 2:2-3 corrigée.\n\n2025-08-27\n• Correction de la mise en couleur des paroles de Jésus en Luc 22:35.\n\n2025-08-23\n• Correction de l'année de traduction (1881 au lieu de 1959 qui était celle du Nouveau Testament seul).\n\n2025-07-05\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 1:43.\n\n2025-07-02\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 9:23.\n\n2025-02-21\n• Coupure 1Th 5:9-10 corrigée.\n\n2025-02-16\n• Remplacement de \"culpabilité\" par \"coulpe\" en Gn 26:10 ;\n• Ponctuation Gn 36;34 ; Gn 41:27 ; Nb 22:21 ; 24:25 ; 27:10 ; 31:46 ; 32:9 ; 33:56 ; 34:11 ; Dt 1:2 corrigée ;\n• Typographie Nb 34:19 ; 2Tm 1:3-4 corrigée ou ajustée ;\n• Coupure Gn 39:14-15 corrigée.\n\n2025-01-08\n• Coupure Hé 3:15-16 corrigée.\n\n2024-12-27\n• Coupures 1R 8:57-58 ; Ép 5:15-16 corrigées.\n\n2024-12-26\n• Coupure Ép 2:8-9 corrigée ;\n• Typographie de références bibliques corrigée dans plusieurs notes ;\n• Affichage de l'un des liens de la note Rm 15:16 homogénéisé à l'ensemble des liens bibliques ;\n• Ponctuation des notes Ex 9:7 ; Mt 27:35 corrigées ;\n• Remplacement de l'espace insécable après les \"«\" et avant les \";\", \"!\", \"?\", \"»\" par une espace fine incécable.\n\n2024-05-25\n• Coupures Ép 1:10-11.\n\n2023-05-10\n• Ponctuation 2R 7:3 corrigée.\n\n2022-09-25\n• Coupure 1P 2:8-9 corrigée.\n\n2022-01-19\n• Déplacement de l'appel de note erroné en 2Th 3:16, vers 2Th 3:18.\n\n2021-09-10\n• Coupure Est 6:5-6 corrigée.\n\n2021-04-13\n• Appel de note 2J 1:9 corrigé.\n\n2020-12-05\n• Coupure Ex 15:25-26 corrigée.\n\n2020-10-03\n• Note 2Co 3:18 corrigée.\n\n2020-09-12\n• Ajout d'un alinéa en tête du premier verset de chaque livre.\n\n2020-08-07\n• Ponctuation 1S 9:27 corrigée.\n\n2020-08-03\n• Coupure 2Co 4:1-2 corrigée.\n\n2020-07-30\n• Remplacement de \"^—\\x20\" par \"—\\xa0\" ;\n• Appels de note Mt 19:16 ; Lc 4:8 ; Col 3:24 ; 1P 5:8 déplacés d'un caractère à droite.\n\n2020-07-28\n• Remplacement de \"—\\xa0\" par \"—\\x20\".\n\n2020-07-18\n• Suppression de \"…\" en fin de information_string ;\n• Titre Ct 1:1 corrigé.\n\n2019-02-23\n• Coupure Hé 11:36-37 corrigée.\n\n2019-07-15\n• Lien note 2Co 2:16 corrigé.\n\n2019-06-23\n• Lien note Ap 20:4 corrigé.\n\n2019-06-08\n• Orthographe 1R 3:21 ; Jb 3:12 corrigée ;\n• Mc 6:8-9 coloré.\n\n2019-06-01\n• Notes És 62:11 ; Éz 40:40, 44 corrigées.\n\n2019-05-14\n• Note Mt 27:46 corrigée.\n\n2019-04-01\n• Coupure Jos 24:3-4 corrigée.\n\n2019-02-25\n• Première parution.",
       "bkq": "66",
       "url": [
         "{cdn}JND",
@@ -82304,6 +82376,46 @@
         "{p4}BarclayPG.dictionary"
       ],
       "siz": "218K"
+    },
+    {
+      "abr": "MBSB",
+      "lng": "en",
+      "des": "Majority Standard Bible",
+      "inf": "Majority Standard Bible <br/>\r\nPublic Domain <br/>\r\nBSB Publishing, LLC <br/>\r\nEnglish",
+      "fil": "MBSB",
+      "upd": "2026-06-01",
+      "cmt": "(2026-06-01) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}MBSB",
+        "{cdn2}MBSB",
+        "{gh}MBSB",
+        "{mz}MBSB",
+        "{inf}MBSB",
+        "{1gb}MBSB",
+        "{p4}MBSB"
+      ],
+      "siz": "2.2M"
+    },
+    {
+      "abr": "NTFE'23",
+      "lng": "en",
+      "des": "The New Testament for Everyone",
+      "inf": "a.\tThe New Testament for Everyone, Third Edition. Copyright © 2011, 2018, 2019 by\r\nNicholas Thomas Wright, The Society for Promoting Christian Knowledge. All rights reserved. Published by Zondervan, 2023. <br/>\r\nThomas Nelson, Inc. <br/>\r\nEnglish",
+      "fil": "NTFE'23",
+      "upd": "2026-06-01",
+      "cmt": "(2026-06-01) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}NTFE'23",
+        "{cdn2}NTFE'23",
+        "{gh}NTFE'23",
+        "{mz}NTFE%2723",
+        "{inf}NTFE%2723",
+        "{1gb}NTFE%2723",
+        "{p4}NTFE%2723"
+      ],
+      "siz": "540K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
