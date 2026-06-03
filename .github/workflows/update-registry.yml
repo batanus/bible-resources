@@ -314,6 +314,9 @@ jobs:
           # Load old registry (with custom hosts and URLs)
           with open('registry.json', 'r', encoding='utf-8-sig') as f:
               old_registry = json.load(f)
+
+          with open('/tmp/local_registry_before_update.json', 'w', encoding='utf-8') as f:
+              json.dump(old_registry, f, ensure_ascii=False, indent=2)
           
           # Load new registry (from external source)
           with open('/tmp/registry.json', 'r', encoding='utf-8-sig') as f:
@@ -486,6 +489,8 @@ jobs:
           
           # Read modules list from output
           MODULES_LIST="${{ steps.check_candidates_for_update.outputs.modules_list }}"
+          : > /tmp/successful_modules.txt
+          : > /tmp/failed_modules.txt
           
           if [ -z "$MODULES_LIST" ]; then
             echo "⚠️  Module list is empty"
@@ -542,12 +547,15 @@ jobs:
             if [ -z "$MODULE_DATA" ]; then
               echo "❌ Module $module_abr not found in registry"
               FAILED_COUNT=$((FAILED_COUNT + 1))
+              printf '%s\n' "$module_abr" >> /tmp/failed_modules.txt
               continue
             fi
             
             # Get module filename
             MODULE_FILE=$(echo "$MODULE_DATA" | jq -r '.fil')
             OUTPUT_FILE="modules/${MODULE_FILE}.zip"
+            TEMP_OUTPUT_FILE="${OUTPUT_FILE}.download"
+            rm -f "$TEMP_OUTPUT_FILE"
             
             # Get ALL URLs from the module's url array
             URL_ARRAY=$(echo "$MODULE_DATA" | jq -r '.url[]' 2>/dev/null || echo "")
@@ -555,6 +563,7 @@ jobs:
             if [ -z "$URL_ARRAY" ]; then
               echo "❌ No URLs found for module $module_abr"
               FAILED_COUNT=$((FAILED_COUNT + 1))
+              printf '%s\n' "$module_abr" >> /tmp/failed_modules.txt
               continue
             fi
             
@@ -615,7 +624,7 @@ jobs:
               while [ $attempt -le $max_attempts ]; do
                 echo "  📥 Downloading from: $DOWNLOAD_URL"
                 
-                if curl -L -f -o "$OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
+                if curl -L -f -o "$TEMP_OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
                   echo "  ✅ Successfully downloaded from URL #$url_index"
                   download_success=true
                   break 2  # Exit both retry loop and URL loop
@@ -632,17 +641,20 @@ jobs:
             done <<< "$URL_ARRAY"
             
             # Check final result for this module
-            if [ "$download_success" = true ] && [ -f "$OUTPUT_FILE" ]; then
+            if [ "$download_success" = true ] && [ -f "$TEMP_OUTPUT_FILE" ]; then
+              mv "$TEMP_OUTPUT_FILE" "$OUTPUT_FILE"
               file_size=$(ls -lh "$OUTPUT_FILE" | awk '{print $5}')
               echo ""
               echo "✅ Module $module_abr downloaded successfully ($file_size)"
               SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
+              printf '%s\n' "$module_abr" >> /tmp/successful_modules.txt
             else
               echo ""
               echo "❌ Failed to download $module_abr from all available URLs"
               FAILED_COUNT=$((FAILED_COUNT + 1))
               # Clean up partial downloads
-              rm -f "$OUTPUT_FILE"
+              rm -f "$TEMP_OUTPUT_FILE"
+              printf '%s\n' "$module_abr" >> /tmp/failed_modules.txt
             fi
             
           done
@@ -675,7 +687,75 @@ jobs:
           EOF
           fi
           
-      # Step 6: Verify if files actually changed on disk
+      # Step 6: Exclude failed module downloads from registry.json
+      # Failed new modules are removed, failed updated modules keep the local registry entry.
+      - name: Exclude failed module downloads from registry.json
+        if: steps.check_candidates_for_update.outputs.has_changes == 'true' && steps.check_candidates_for_update.outputs.modules_count != '0'
+        run: |
+          if [ ! -s /tmp/failed_modules.txt ]; then
+            echo "✅ No failed module downloads to exclude"
+            exit 0
+          fi
+
+          python3 << 'PYTHON_FILTER'
+          import json
+          from pathlib import Path
+
+          failed_modules = [
+              line.strip()
+              for line in Path('/tmp/failed_modules.txt').read_text(encoding='utf-8').splitlines()
+              if line.strip()
+          ]
+          failed_set = set(failed_modules)
+
+          with open('registry.json', 'r', encoding='utf-8-sig') as f:
+              merged_registry = json.load(f)
+
+          with open('/tmp/local_registry_before_update.json', 'r', encoding='utf-8-sig') as f:
+              old_registry = json.load(f)
+
+          with open('/tmp/registry.json', 'r', encoding='utf-8-sig') as f:
+              new_registry = json.load(f)
+
+          old_modules = {item['abr']: item for item in old_registry.get('downloads', [])}
+          new_modules = {item['abr']: item for item in new_registry.get('downloads', [])}
+
+          filtered_downloads = []
+          for module in merged_registry.get('downloads', []):
+              abr = module.get('abr')
+              if abr not in failed_set:
+                  filtered_downloads.append(module)
+                  continue
+
+              if abr in old_modules:
+                  print(f"↩️ Keeping local registry entry for failed update: {abr}")
+                  filtered_downloads.append(old_modules[abr])
+              else:
+                  print(f"🚫 Removing failed new module from registry: {abr}")
+
+          merged_registry['downloads'] = filtered_downloads
+
+          with open('registry.json', 'w', encoding='utf-8') as f:
+              json.dump(merged_registry, f, ensure_ascii=False, indent=2)
+              f.write('\n')
+
+          summary_lines = [
+              "",
+              "## ⚠️ Failed Module Downloads",
+              "",
+              "These modules were excluded from `registry.json` because their ZIP files were not downloaded:",
+              "",
+          ]
+          for abr in failed_modules:
+              module = new_modules.get(abr) or old_modules.get(abr) or {}
+              summary_lines.append(f"- `{abr}` - {module.get('des', 'No description')}")
+
+          with open('/tmp/pr_summary.md', 'a', encoding='utf-8') as f:
+              f.write('\n'.join(summary_lines))
+              f.write('\n')
+          PYTHON_FILTER
+
+      # Step 7: Verify if files actually changed on disk
       # Checks git status to confirm real changes before creating PR
       # Prevents empty PRs if merges resulted in no effective changes
       - name: Verify Git Status for Real Changes
@@ -711,7 +791,7 @@ jobs:
             echo "ℹ️ No meaningful changes detected"
           fi
           
-      # Step 7: Package the updated registry.json into registry.zip
+      # Step 8: Package the updated registry.json into registry.zip
       - name: Recreate registry.zip with formatted registry
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         run: |
@@ -719,7 +799,7 @@ jobs:
           rm -f registry.zip
           zip -j registry.zip registry.json
           
-      # Step 8: Calculate repository statistics (size, count)
+      # Step 9: Calculate repository statistics (size, count)
       # Generates data for README updates
       - name: Update registry statistics
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
@@ -761,21 +841,32 @@ jobs:
               f.write(f"{len(languages)}\n")
           PYTHON_SCRIPT
           
-      # Step 9: Generate dynamic PR title with module names
+      # Step 10: Generate dynamic PR title with module names
       - name: Prepare PR title
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         id: create_pr
         run: |
           # Prepare PR title with module names
-          MODULES_LIST="${{ steps.check_candidates_for_update.outputs.modules_list }}"
-          MODULES_COUNT="${{ steps.check_candidates_for_update.outputs.modules_count }}"
+          if [ -s /tmp/successful_modules.txt ]; then
+            MODULES_LIST=$(paste -sd ',' /tmp/successful_modules.txt)
+          else
+            MODULES_LIST=""
+          fi
           
-          if [ "$MODULES_COUNT" -le 3 ]; then
+          if [ -n "$MODULES_LIST" ]; then
+            IFS=',' read -ra MODULES_ARRAY <<< "$MODULES_LIST"
+            MODULES_COUNT=${#MODULES_ARRAY[@]}
+          else
+            MODULES_COUNT=0
+          fi
+
+          if [ "$MODULES_COUNT" -eq 0 ]; then
+            PR_TITLE="🔄 Registry Metadata Update"
+          elif [ "$MODULES_COUNT" -le 3 ]; then
             # Show all modules if 3 or less
             PR_TITLE="🔄 Registry Update ($MODULES_LIST)"
           else
             # Show first 3 modules + count
-            IFS=',' read -ra MODULES_ARRAY <<< "$MODULES_LIST"
             FIRST_THREE="${MODULES_ARRAY[0]}, ${MODULES_ARRAY[1]}, ${MODULES_ARRAY[2]}"
             REMAINING=$((MODULES_COUNT - 3))
             PR_TITLE="🔄 Registry Update ($FIRST_THREE +$REMAINING more)"
@@ -783,7 +874,7 @@ jobs:
           
           echo "pr_title=$PR_TITLE" >> $GITHUB_OUTPUT
           
-      # Step 10: Create or update Pull Request with changes
+      # Step 11: Create or update Pull Request with changes
       - name: Create Pull Request
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         id: create_pr_action
@@ -806,7 +897,7 @@ jobs:
             registry.zip
             modules/*.zip
           
-      # Step 11: Output final execution summary
+      # Step 12: Output final execution summary
       - name: Summary
         if: always()
         run: |
