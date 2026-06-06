@@ -1,5 +1,5 @@
 {
-  "version": 7815771,
+  "version": 7820073,
   "hosts": [
     {
       "alias": "cdn",
@@ -5741,12 +5741,11 @@
     },
     {
       "abr": "CNT",
-      "lng": "Coptic",
-      "reg": "Egypt",
+      "lng": "small languages",
       "des": "Coptic New Testament",
       "fil": "CNT",
-      "upd": "2016-12-23",
-      "cmt": "(2015-12-30) The module is renewed\n(2014-02-04) Published",
+      "upd": "2026-06-05",
+      "cmt": "(2026-06-05) About 20 errors/typos were corrected by Magdi Meekhail <magdi.meekhail@gmail.com>\n(2015-12-30) The module is renewed\n(2014-02-04) Published",
       "bkq": "27",
       "url": [
         "{cdn}CNT",
@@ -5757,7 +5756,7 @@
         "{1gb}CNT",
         "{p4}CNT"
       ],
-      "siz": "541K"
+      "siz": "535K"
     },
     {
       "abr": "CNT3-p",
@@ -24498,7 +24497,7 @@
       "lng": "grc",
       "des": "Stephanus Textus Receptus with accents, Strongs and parsing info, 1550",
       "fil": "STR+",
-      "upd": "2024-12-26",
+      "upd": "2026-06-05",
       "cmt": "(2015-12-30) The module is renewed\n(2015-03-09) Strong number new code\n(2015-02-12) V-PXI-3S → V-PAI-3S\n(2015-02-02) Εβρ 13:5 παρουσιν 'V-PXP-DPN' → 'V-PAP-DPN'\n(2015-01-28) Ρωμ 8:8 'ὄντες V-PXP-NPM' → 'ὄντες V-PAP-NPM'\n(2015-01-21) Εφ 5:3 'πρεπει V-PQI-3S' → 'πρεπει V-PAI-3S'\n(2014-11-13) Published",
       "bkq": "27",
       "url": [
@@ -30386,7 +30385,7 @@
       "des": "Комментарии к учебной Библии Джона Мак-Артура",
       "inf": "Copyright © 1997. Word Publishing. Все права защищены.\n<br/>Russian Edition Copyright\n<br/>© 2003 Slavic Gospel Association\n<br/>Издание на русском языке\n<br/>© 2003 Славянское Евангельское Общество",
       "fil": "МакАрт-к.commentaries",
-      "upd": "2025-04-03",
+      "upd": "2026-06-05",
       "cmt": "(2024-02-01) Добавлены комментарии к Ветхому Завету\n(2020-01-09) Деян 26:20 по яснения → пояснения\n(2019-03-22) 1Тим 1:20 нt → не\n(2019-01-10) Ин 5:39 ссылка на ст. 45 → ст. 46\n(2018-04-23) Еф 6:18 восстановлен комментарий\n(2018-02-08) russian_numbering = true, добавлены ссылки\n(2017-09-28) Мк 10:11-12 объектиавная → объективная\n(2017-01-01) Чистка ссылок\n(2016-12-16) Чистка ссылок и стиля\n(2016-10-30) Коррекция ссылок 1-х и 3-х посланий\n(2016-10-16) Убраны двойные ссылки\n(2016-10-13) Исправление ссылок комментариев\n(2016-10-10) Чистка излишних и некорректных тегов\n(2016-09-26) Links corretion\n(2015-12-27) Исправлены ссылки на ВЗ с комментариев на Библию\n(2015-12-08) Исправлены ссылка на Иуду\n(2015-12-05) Исправлены ссылки\n(2015-11-18) чистка кода, коррекция ссылок\n(2015-11-06) Гал 5:17 ссылка Рим 17:14-25 → Рим 7:14-25\n(2015-10-30) Сноски на стихи стали ссылками\n(2015-10-22) Убраны лишние пробелы, добавлены ссылки на комментарии\n(2015-08-13) Чистка кода и ссылок",
       "url": [
         "{cdn}МакАрт-к.commentaries",
@@ -41442,7 +41441,7 @@
       "des": "Keil & Delitzsch Commentary on the Old Testament",
       "inf": "Johann (C.F.) Keil (1807-1888) & Franz Delitzsch (1813-1890)\n\n",
       "fil": "KD-c.commentaries",
-      "upd": "2023-11-03",
+      "upd": "2026-06-05",
       "cmt": "(2017-12-12) Published",
       "url": [
         "{cdn}KD-c.commentaries",
@@ -58220,7 +58219,7 @@
       "des": "Young's Literal Translation 3rd Revision 1898",
       "inf": "Young's Literal Translation 3rd Revision 1898 <br/>\r\nmaintained by the British and Foreign Bible Society <br/>\r\nBritish & Foreign Bible Society <br/>\r\nEnglish",
       "fil": "YLT1898",
-      "upd": "2026-05-25",
+      "upd": "2026-06-05",
       "cmt": "(2020-03-19) 1 Peter 4:19 god → God\n(2019-12-30) Published",
       "bkq": "66",
       "url": [
@@ -58232,7 +58231,7 @@
         "{1gb}YLT1898",
         "{p4}YLT1898"
       ],
-      "siz": "1.7M"
+      "siz": "1.8M"
     },
     {
       "abr": "en-es-B",
@@ -82427,6 +82426,46 @@
         "{p4}WCF-es.devotions"
       ],
       "siz": "48K"
+    },
+    {
+      "abr": "INDCB'25",
+      "lng": "id",
+      "des": "Kitab Kehidupan",
+      "inf": "Indonesian Contemporary Bible 2025 – Kitab Kehidupan <br/>\r\n© 2025 by Biblica, Inc. <br/>\r\nIndonesian — Bahasa Indonesia",
+      "fil": "INDCB'25",
+      "upd": "2026-06-05",
+      "cmt": "(2026-06-05) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}INDCB'25",
+        "{cdn2}INDCB'25",
+        "{gh}INDCB'25",
+        "{mz}INDCB%2725",
+        "{inf}INDCB%2725",
+        "{1gb}INDCB%2725",
+        "{p4}INDCB%2725"
+      ],
+      "siz": "542K"
+    },
+    {
+      "abr": "INDJG",
+      "lng": "id",
+      "des": "Alkitab Gratis untuk Semua",
+      "inf": "Alkitab Gratis Untuk Semua – Alkitab Gratis untuk Semua <br/>\r\nDr Jonathan Gallagher. Dirilis di bawah Creative Commons Attribution-ShareAlike 4.0 Unported License. Versi 1.2. <br/>\r\nFree Bible Ministry, Inc. <br/>\r\nIndonesian — Bahasa Indonesia",
+      "fil": "INDJG",
+      "upd": "2026-06-05",
+      "cmt": "(2026-06-05) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}INDJG",
+        "{cdn2}INDJG",
+        "{gh}INDJG",
+        "{mz}INDJG",
+        "{inf}INDJG",
+        "{1gb}INDJG",
+        "{p4}INDJG"
+      ],
+      "siz": "559K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
