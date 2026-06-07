@@ -1,5 +1,5 @@
 {
-  "version": 7815771,
+  "version": 7815772,
   "hosts": [
     {
       "alias": "cdn",
@@ -82485,6 +82485,20 @@
       "siz": "2K",
       "custom": true,
       "lng": "pt"
+    },
+    {
+      "abr": "Соб",
+      "des": "Соборные Послания",
+      "inf": "Послания соборные",
+      "fil": "Соб.plan",
+      "url": [
+        "{cdn}Соб.plan",
+        "{cdn2}Соб.plan",
+        "{gh}Соб.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "ru"
     }
   ]
 }
