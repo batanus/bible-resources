@@ -1,5 +1,5 @@
 {
-  "version": 7820074,
+  "version": 7824626,
   "hosts": [
     {
       "alias": "cdn",
@@ -82466,6 +82466,65 @@
         "{p4}INDJG"
       ],
       "siz": "559K"
+    },
+    {
+      "abr": "NTVP",
+      "lng": "pt",
+      "des": "O Novo Testamento: Vida do Pai",
+      "inf": "New Testament: The Father's Life Version – O Novo Testamento: Vida do Pai <br/>\r\nO texto do Novo Testamento Vida do Pai® (NTVP®), incluindo todos os versículos, notas e materiais complementares, é de propriedade de David W. Dyer e está licenciado sob a Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0). Você tem permissão para: <ul> <li>Baixar, copiar e redistribuir este material em qualquer meio ou formato</li> <li>Compartilhar a obra completa e inalterada</li> </ul> Sob as seguintes condições: <ul> <li>Atribuição: Você deve dar o devido crédito a David W. Dyer, fornecer um link para a licença e indicar se foram feitas alterações</li> <li>Uso Não Comercial: Você não pode usar este material para fins comerciais</li> <li>Sem Derivações: Você não pode remixar, transformar ou criar a partir do material</li> </ul> Esta obra é protegida pelas leis de direitos autorais do Brasil, dos Estados Unidos da América e por tratados internacionais. Licença completa disponível em: <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt\">https://creativecommons.org/licenses/by-nc-nd/4.0/deed.pt</a> <br/>\r\nWheat Grain Ministry <br/>\r\nPortuguese (Brazil) — Português (Brasil)",
+      "fil": "NTVP",
+      "upd": "2026-06-08",
+      "cmt": "(2026-06-08) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}NTVP",
+        "{cdn2}NTVP",
+        "{gh}NTVP",
+        "{mz}NTVP",
+        "{inf}NTVP",
+        "{1gb}NTVP",
+        "{p4}NTVP"
+      ],
+      "siz": "532K"
+    },
+    {
+      "abr": "SBIR'10",
+      "lng": "ro",
+      "des": "Română Noul Testament Interconfesional 2009",
+      "inf": "Romanian Interconfessional New Testament 2009 – Română Noul Testament Interconfesional 2009 <br/>\r\nNoul Testament Interconfesional © Societatea Biblică Interconfesională din România (SBIR) 2010. Interconfessional New Testament © Interconfessional Bible Society in Romania, 2010. <br/>\r\nInterconfessional Bible Society of Romania <br/>\r\nRomanian — Română",
+      "fil": "SBIR'10",
+      "upd": "2026-06-08",
+      "cmt": "(2026-06-08) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}SBIR'10",
+        "{cdn2}SBIR'10",
+        "{gh}SBIR'10",
+        "{mz}SBIR%2710",
+        "{inf}SBIR%2710",
+        "{1gb}SBIR%2710",
+        "{p4}SBIR%2710"
+      ],
+      "siz": "500K"
+    },
+    {
+      "abr": "WieckAT'26",
+      "lng": "de",
+      "des": "Gerlinger Altes Testament  von J. Wieck, wortwörtlich, 2026",
+      "fil": "WieckAT'26",
+      "upd": "2026-06-08",
+      "cmt": "(2026-06-08) Published",
+      "bkq": "39",
+      "url": [
+        "{cdn}WieckAT'26",
+        "{cdn2}WieckAT'26",
+        "{gh}WieckAT'26",
+        "{mz}WieckAT%2726",
+        "{inf}WieckAT%2726",
+        "{1gb}WieckAT%2726",
+        "{p4}WieckAT%2726"
+      ],
+      "siz": "1.4M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
