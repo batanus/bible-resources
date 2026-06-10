@@ -1,5 +1,5 @@
 {
-  "version": 7824626,
+  "version": 7825662,
   "hosts": [
     {
       "alias": "cdn",
@@ -23915,7 +23915,7 @@
       "lng": "en",
       "des": "Smith's Literal Translation",
       "fil": "SLT",
-      "upd": "2025-12-23",
+      "upd": "2026-06-09",
       "cmt": "(2022-06-22) 1Ths 4:13 hating → having\n(2019-04-02) Jn 16:30 earnest → camest \n(2017-02-24) Red Letter Edition\n(2016-10-15) Info table is fixed\n(2016-09-16) Added Psalm\n(2014-08-26) Published",
       "bkq": "66",
       "url": [
@@ -82512,7 +82512,7 @@
       "lng": "de",
       "des": "Gerlinger Altes Testament  von J. Wieck, wortwörtlich, 2026",
       "fil": "WieckAT'26",
-      "upd": "2026-06-08",
+      "upd": "2026-06-09",
       "cmt": "(2026-06-08) Published",
       "bkq": "39",
       "url": [
