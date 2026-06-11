@@ -1,5 +1,5 @@
 {
-  "version": 7825662,
+  "version": 7827372,
   "hosts": [
     {
       "alias": "cdn",
@@ -3948,6 +3948,26 @@
       ],
       "siz": "2.5M",
       "hid": true
+    },
+    {
+      "abr": "BTI'08",
+      "lng": "es",
+      "des": "La Biblia, Traducción Interconfesional, 2008",
+      "inf": "Copyright © Sociedad Bíblica de España, 2008",
+      "fil": "BTI'08",
+      "upd": "2026-06-10",
+      "cmt": "(2026-06-10) Published",
+      "bkq": "76",
+      "url": [
+        "{cdn}BTI'08",
+        "{cdn2}BTI'08",
+        "{gh}BTI'08",
+        "{mz}BTI%2708",
+        "{inf}BTI%2708",
+        "{1gb}BTI%2708",
+        "{p4}BTI%2708"
+      ],
+      "siz": "3.1M"
     },
     {
       "abr": "BTX",
@@ -82525,6 +82545,26 @@
         "{p4}WieckAT%2726"
       ],
       "siz": "1.4M"
+    },
+    {
+      "abr": "ARCGB'25",
+      "lng": "ar",
+      "des": "الترجمة الجليلية",
+      "inf": "الترجمة الجليلية <br/>\r\nColloquial Galilean Bible © 2025 The Arab Israeli Bible Society ترجمة الكتاب المقدس باللهجة العامية الجليلية © 2025 دار الكتاب المقدس في الناصرة <br/>\r\nArabic (Standard) — العربية",
+      "fil": "ARCGB'25",
+      "upd": "2026-06-10",
+      "cmt": "(2026-06-10) Published",
+      "bkq": "27",
+      "url": [
+        "{cdn}ARCGB'25",
+        "{cdn2}ARCGB'25",
+        "{gh}ARCGB'25",
+        "{mz}ARCGB%2725",
+        "{inf}ARCGB%2725",
+        "{1gb}ARCGB%2725",
+        "{p4}ARCGB%2725"
+      ],
+      "siz": "471K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
