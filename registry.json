@@ -1,5 +1,5 @@
 {
-  "version": 7835823,
+  "version": 7837426,
   "hosts": [
     {
       "alias": "cdn",
@@ -15724,7 +15724,7 @@
       "lng": "fr",
       "des": "La Bible Segond avec Strong 1910",
       "fil": "LSG+",
-      "upd": "2026-06-02",
+      "upd": "2026-06-17",
       "cmt": "(2026-06-02) Ps 52 was restored from LSG\n(2018-06-25) les fins de versets de 1 Chroniques 29 sont coupées\n(2017-08-17) Ep 6 and Tt 3: Strong's tags corrected\n(2016-09-17) Added Psalm\n(2015-11-29) Code cleaning\n(2015-07-18) Description is changed\n(2015-08-17) Description is renewed\n(2015-08-14) Changed to the requirements of MyBible 4.4\n(2015-05-08) Code cleaning\n(2015-03-20) Code is fixed\n(2015-03-09) Strong number new code\n(2014-11-18) Corrected code\n(2014-11-17) Published",
       "bkq": "66",
       "url": [
