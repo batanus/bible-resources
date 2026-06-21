@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1782022086475-4b4b85ac"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 580
+chapter_number: 2
+verse_number: 4
+old_text: "Это говорю я для того, чтобы ктонибудь не прельстил вас вкрадчивыми словами; <f>ⓓ</f> "
+new_text: "Это говорю я для того, чтобы кто-нибудь не прельстил вас вкрадчивыми словами; <f>ⓓ</f> "
+submitted_at: "2026-06-21T06:08:06.476Z"
