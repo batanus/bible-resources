@@ -1,5 +1,5 @@
 {
-  "version": 7840240,
+  "version": 7840241,
   "hosts": [
     {
       "alias": "cdn",
@@ -82663,6 +82663,20 @@
       "siz": "2K",
       "custom": true,
       "lng": "pt"
+    },
+    {
+      "abr": "Salmo Diario",
+      "des": "Salmos",
+      "inf": "Hola ",
+      "fil": "Salmo Diario.plan",
+      "url": [
+        "{cdn}Salmo Diario.plan",
+        "{cdn2}Salmo Diario.plan",
+        "{gh}Salmo Diario.plan"
+      ],
+      "siz": "2K",
+      "custom": true,
+      "lng": "es"
     }
   ]
 }
