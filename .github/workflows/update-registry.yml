@@ -755,7 +755,33 @@ jobs:
               f.write('\n')
           PYTHON_FILTER
 
-      # Step 7: Verify if files actually changed on disk
+      # Step 7: Reapply local accepted module proposals to downloaded module archives.
+      # This uses the same checkout and only touches modules that were downloaded successfully.
+      - name: Install Python dependencies for module proposals
+        if: steps.check_candidates_for_update.outputs.has_changes == 'true' && steps.check_candidates_for_update.outputs.modules_count != '0'
+        run: |
+          python3 -m pip install --disable-pip-version-check pyyaml
+
+      - name: Reapply local module proposals
+        if: steps.check_candidates_for_update.outputs.has_changes == 'true' && steps.check_candidates_for_update.outputs.modules_count != '0'
+        run: |
+          if [ ! -s /tmp/successful_modules.txt ]; then
+            echo "No successfully downloaded modules; skipping local proposal reapply."
+            exit 0
+          fi
+
+          MODULES_LIST="$(paste -sd ',' /tmp/successful_modules.txt)"
+          if [ -z "$MODULES_LIST" ]; then
+            echo "Successful module list is empty; skipping local proposal reapply."
+            exit 0
+          fi
+
+          echo "Reapplying local proposals for modules: $MODULES_LIST"
+          python3 .github/scripts/reapply_module_proposals.py \
+            --modules "$MODULES_LIST" \
+            --summary-path /tmp/pr_summary.md
+
+      # Step 8: Verify if files actually changed on disk
       # Checks git status to confirm real changes before creating PR
       # Prevents empty PRs if merges resulted in no effective changes
       - name: Verify Git Status for Real Changes
@@ -791,7 +817,7 @@ jobs:
             echo "ℹ️ No meaningful changes detected"
           fi
           
-      # Step 8: Package the updated registry.json into registry.zip
+      # Step 9: Package the updated registry.json into registry.zip
       - name: Recreate registry.zip with formatted registry
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         run: |
@@ -799,7 +825,7 @@ jobs:
           rm -f registry.zip
           zip -j registry.zip registry.json
           
-      # Step 9: Calculate repository statistics (size, count)
+      # Step 10: Calculate repository statistics (size, count)
       # Generates data for README updates
       - name: Update registry statistics
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
@@ -841,7 +867,7 @@ jobs:
               f.write(f"{len(languages)}\n")
           PYTHON_SCRIPT
           
-      # Step 10: Generate dynamic PR title with module names
+      # Step 11: Generate dynamic PR title with module names
       - name: Prepare PR title
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         id: create_pr
@@ -874,7 +900,7 @@ jobs:
           
           echo "pr_title=$PR_TITLE" >> $GITHUB_OUTPUT
           
-      # Step 11: Create or update Pull Request with changes
+      # Step 12: Create or update Pull Request with changes
       - name: Create Pull Request
         if: steps.verify_git_status.outputs.has_real_changes == 'true'
         id: create_pr_action
@@ -897,7 +923,7 @@ jobs:
             registry.zip
             modules/*.zip
           
-      # Step 12: Output final execution summary
+      # Step 13: Output final execution summary
       - name: Summary
         if: always()
         run: |
