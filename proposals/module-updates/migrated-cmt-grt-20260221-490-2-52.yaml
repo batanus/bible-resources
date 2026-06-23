@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20260221-490-2-52
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 490
+chapter_number: 2
+verse_number: 52
+old_text: Иисус же возростал в мудрости, и возмужании, и в <i></i>благосклонности у Бога и людей.
+new_text: Иисус же возрастал в мудрости, и возмужании, и в <i></i>благосклонности у Бога и людей.
+submitted_at: '2026-02-21T00:00:00.000Z'

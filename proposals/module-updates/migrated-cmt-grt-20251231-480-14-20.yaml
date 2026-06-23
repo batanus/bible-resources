@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20251231-480-14-20
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 480
+chapter_number: 14
+verse_number: 20
+old_text: 'АОн ответил им: <J>«Один из двенадцати, обмакивающий со Мною в блюдо.</J>'
+new_text: 'А Он ответил им: <J>«Один из двенадцати, обмакивающий со Мною в блюдо.</J>'
+submitted_at: '2025-12-31T00:00:00.000Z'
