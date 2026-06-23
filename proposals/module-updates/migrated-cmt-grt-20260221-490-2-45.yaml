@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20260221-490-2-45
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 490
+chapter_number: 2
+verse_number: 45
+old_text: И, не найдя Его, они возвра тились в Иерусалим, разыскивая Его.
+new_text: И, не найдя Его, они возвратились в Иерусалим, разыскивая Его.
+submitted_at: '2026-02-21T00:00:00.000Z'

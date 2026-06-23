@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20251212-310-3-65
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 310
+chapter_number: 3
+verse_number: 65
+old_text: Пошли им помрачение сердца и проклятие Твоё путь будет на них!
+new_text: Пошли им помрачение сердца и проклятие Твоё пусть будет на них!
+submitted_at: '2025-12-12T00:00:00.000Z'

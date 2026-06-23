@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20251211-240-9-11
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 240
+chapter_number: 9
+verse_number: 11
+old_text: потому что через меня умножатся дни твои, и будут прибавлены те.бе лета́ жизни.
+new_text: потому что через меня умножатся дни твои, и будут прибавлены тебе лета́ жизни.
+submitted_at: '2025-12-11T00:00:00.000Z'

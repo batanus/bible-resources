@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20260202-510-2-20
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 510
+chapter_number: 2
+verse_number: 20
+old_text: Солнце превратится вомглу,<f>(2)</f> и луна — в кровь, прежде чем наступит День Господен, великий и славный!
+new_text: Солнце превратится во мглу,<f>(2)</f> и луна — в кровь, прежде чем наступит День Господен, великий и славный!
+submitted_at: '2026-02-02T00:00:00.000Z'

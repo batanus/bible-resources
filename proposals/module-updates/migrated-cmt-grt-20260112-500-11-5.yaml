@@ -1,0 +1,11 @@
+proposal_type: module_verse_update
+request_id: migrated-cmt-grt-20260112-500-11-5
+module_name: Библия или Вечное Евангелие
+short_name: GRT
+requested_file_name: GRT
+book_number: 500
+chapter_number: 11
+verse_number: 5
+old_text: Иисус же любил Марфу, и се стру её, и Лазаря.
+new_text: Иисус же любил Марфу, и сестру её, и Лазаря.
+submitted_at: '2026-01-12T00:00:00.000Z'
