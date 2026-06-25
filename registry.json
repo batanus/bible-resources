@@ -1,5 +1,5 @@
 {
-  "version": 7844647,
+  "version": 7847626,
   "hosts": [
     {
       "alias": "cdn",
@@ -82605,6 +82605,24 @@
         "{p4}THNGV"
       ],
       "siz": "5.9M"
+    },
+    {
+      "abr": "Barclay-az",
+      "lng": "az",
+      "des": "Uilyam Barklinin Əhdi-Cədidə dair şərhləri",
+      "fil": "Barclay-az.commentaries",
+      "upd": "2026-06-24",
+      "cmt": "(2026-06-24) Published",
+      "url": [
+        "{cdn}Barclay-az.commentaries",
+        "{cdn2}Barclay-az.commentaries",
+        "{gh}Barclay-az.commentaries",
+        "{mz}Barclay-az.commentaries",
+        "{inf}Barclay-az.commentaries",
+        "{1gb}Barclay-az.commentaries",
+        "{p4}Barclay-az.commentaries"
+      ],
+      "siz": "1.8M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
