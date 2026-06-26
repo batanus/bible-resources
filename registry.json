@@ -1,5 +1,5 @@
 {
-  "version": 7847626,
+  "version": 7849024,
   "hosts": [
     {
       "alias": "cdn",
@@ -76583,11 +76583,11 @@
     {
       "abr": "BiDF",
       "lng": "de",
-      "des": "Die Bibel in deutscher Fassung",
-      "inf": "<h1>Die Bibel</h1>\n<h2>in deutscher Fassung</h2>\n<p>unter Berücksichtigung vieler anderer Übersetzungen</p>\n<p>Verantwortliche für die Fassung: Herbert Jantzen und Thomas Jettel</p>\n<p>Textstand: 2022-09-19</p>\n<p>Hinweis: Urherberrechte bei den Verfassern. Aus dem Text darf in Veröffentlichungen mit Quellenangabe zitiert werden. Der Text darf nicht verändert und nicht kommerziell verwendet werden.</p>\n<p>Die Buch-Ausgaben können bei <a href=\"https://www.verlag-friedensbote.de/shop\">Verlag FriedensBote</a> bezogen werden.</p>\n<p>MyBible-Modul erstellt am 2022-10-01 von p@pw.de.</p>",
+      "des": "Die Bibel in deutscher Fassung (Jantzen/Jettel)",
+      "inf": "<h1>Die Bibel</h1>\n<h2>in deutscher Fassung</h2>\n<p>unter Berücksichtigung vieler anderer Übersetzungen</p>\n<p>Verantwortliche für die Fassung: Herbert Jantzen und Thomas Jettel</p>\n<p>Textstand: 2026-06-17 (3. Buch-Auflage)</p>\n<p>Hinweis: Urherberrechte bei den Verfassern. Aus dem Text darf in Veröffentlichungen mit Quellenangabe zitiert werden. Der Text darf nicht verändert und nicht kommerziell verwendet werden.</p>\n<p>Die Buch-Ausgaben können bei <a href=\"https://www.verlag-friedensbote.de/shop\">Verlag FriedensBote</a> bezogen werden.</p>\n<p>MyBible-Modul erstellt am 2026-06-20 von p@pw.de.</p>",
       "fil": "BiDF",
-      "upd": "2022-10-07",
-      "cmt": "(2022-10-07) Published",
+      "upd": "2026-06-25",
+      "cmt": "(2026-06-25) Updated\n(2022-10-07) Published",
       "bkq": "66",
       "url": [
         "{cdn}BiDF",
@@ -76598,7 +76598,7 @@
         "{1gb}BiDF",
         "{p4}BiDF"
       ],
-      "siz": "2.6M"
+      "siz": "2.7M"
     },
     {
       "abr": "ТлумСл",
@@ -82623,6 +82623,27 @@
         "{p4}Barclay-az.commentaries"
       ],
       "siz": "1.8M"
+    },
+    {
+      "abr": "PCMB'19",
+      "lng": "Pidgin, Nigerian",
+      "reg": "Nigeria",
+      "des": "Holy Bible Nigerian Pidgin English",
+      "inf": "Holy Bible Nigerian Pidgin English <br/>\r\n© 2019, Wycliffe Bible Translators, Inc. in cooperation with The Nigerian Pidgin Translation Committee <br/>\r\nPidgin, Nigerian",
+      "fil": "PCMB'19",
+      "upd": "2026-06-25",
+      "cmt": "(2026-06-25) Published",
+      "bkq": "66",
+      "url": [
+        "{cdn}PCMB'19",
+        "{cdn2}PCMB'19",
+        "{gh}PCMB'19",
+        "{mz}PCMB%2719",
+        "{inf}PCMB%2719",
+        "{1gb}PCMB%2719",
+        "{p4}PCMB%2719"
+      ],
+      "siz": "1.7M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
