@@ -1,5 +1,5 @@
 {
-  "version": 7849024,
+  "version": 7849025,
   "hosts": [
     {
       "alias": "cdn",
@@ -82702,6 +82702,20 @@
       "siz": "2K",
       "custom": true,
       "lng": "pt"
+    },
+    {
+      "abr": "Leer biblia ",
+      "des": "Missio",
+      "inf": "Leer biblia urgente ",
+      "fil": "Leer biblia .plan",
+      "url": [
+        "{cdn}Leer biblia .plan",
+        "{cdn2}Leer biblia .plan",
+        "{gh}Leer biblia .plan"
+      ],
+      "siz": "3K",
+      "custom": true,
+      "lng": "es"
     }
   ]
 }
