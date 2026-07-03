@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1783057467039-4102395e"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 3
+verse_number: 11
+old_text: "Наказания ГОСПОДНЯ, сын мой, не отвергай и не тяготись обличени ем Его, <f>ⓗ</f> "
+new_text: "Наказания ГОСПОДНЯ, сын мой, не отвергай и не тяготись обличением Его, <f>ⓗ</f> "
+submitted_at: "2026-07-03T05:44:27.039Z"
