@@ -1,5 +1,5 @@
 {
-  "version": 7849028,
+  "version": 7849029,
   "hosts": [
     {
       "alias": "cdn",
@@ -82714,6 +82714,20 @@
         "{gh}ROM2WEEKS.plan"
       ],
       "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "Евангелие",
+      "des": "Евангелие на каждый день",
+      "inf": "на каждый день",
+      "fil": "Евангелие.plan",
+      "url": [
+        "{cdn}Евангелие.plan",
+        "{cdn2}Евангелие.plan",
+        "{gh}Евангелие.plan"
+      ],
+      "siz": "2K",
       "custom": true,
       "lng": "ru"
     }
