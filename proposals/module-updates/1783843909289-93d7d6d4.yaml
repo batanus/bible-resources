@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1783843909289-93d7d6d4"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 230
+chapter_number: 33
+verse_number: 8
+old_text: "Ангел ГОСПОДЕНЬ ополчается во круг боящихся Его и избавляет их. <f>ⓕ</f> "
+new_text: "Ангел ГОСПОДЕНЬ ополчается вокруг боящихся Его и избавляет их. <f>ⓕ</f> "
+submitted_at: "2026-07-12T08:11:49.289Z"
