@@ -1,5 +1,5 @@
 {
-  "version": 7849029,
+  "version": 7849030,
   "hosts": [
     {
       "alias": "cdn",
@@ -82716,6 +82716,20 @@
       "siz": "1K",
       "custom": true,
       "lng": "ru"
+    },
+    {
+      "abr": "John",
+      "des": "First letter of John",
+      "inf": "First letter of John ",
+      "fil": "John.plan",
+      "url": [
+        "{cdn}John.plan",
+        "{cdn2}John.plan",
+        "{gh}John.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "de"
     }
   ]
 }
