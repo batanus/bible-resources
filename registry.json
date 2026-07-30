@@ -1,5 +1,5 @@
 {
-  "version": 7849030,
+  "version": 7849031,
   "hosts": [
     {
       "alias": "cdn",
@@ -82716,6 +82716,20 @@
       "siz": "1K",
       "custom": true,
       "lng": "ru"
+    },
+    {
+      "abr": "Благодать ",
+      "des": "Щоденний",
+      "inf": "Про",
+      "fil": "Благодать .plan",
+      "url": [
+        "{cdn}Благодать .plan",
+        "{cdn2}Благодать .plan",
+        "{gh}Благодать .plan"
+      ],
+      "siz": "5K",
+      "custom": true,
+      "lng": "uk"
     }
   ]
 }
