@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1785558203096-69fe3f34"
+module_name: "Библия или Вечное Евангелие"
+short_name: "GRT"
+requested_file_name: "GRT"
+book_number: 350
+chapter_number: 11
+verse_number: 5
+old_text: "Не возвратится он в землю египетский, но Ассур — он станет его царём, потому что они не захотели обратиться <i>ко Мне</i>."
+new_text: "Не возвратится он в землю египетскую, но Ассур — он станет его царём, потому что они не захотели обратиться <i>ко Мне</i>."
+submitted_at: "2026-08-01T04:23:23.096Z"
