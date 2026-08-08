@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1786219719441-666f49d1"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 560
+chapter_number: 3
+verse_number: 21
+old_text: "<e>Тому слава в Церкви во Христе Иисусе во все sроды, от века до века. Аминь.</e> <f>ⓣ</f> "
+new_text: "<e>Тому слава в Церкви во Христе Иисусе во все роды, от века до века. Аминь.</e> <f>ⓣ</f> "
+submitted_at: "2026-08-08T20:08:39.441Z"
