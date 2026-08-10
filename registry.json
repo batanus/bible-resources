@@ -1,5 +1,5 @@
 {
-  "version": 7849032,
+  "version": 7849033,
   "hosts": [
     {
       "alias": "cdn",
@@ -82712,6 +82712,20 @@
         "{cdn}ROM2WEEKS.plan",
         "{cdn2}ROM2WEEKS.plan",
         "{gh}ROM2WEEKS.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "НЗ 2026",
+      "des": "Новый Завет до конца года",
+      "inf": "Чтение нового завета ",
+      "fil": "НЗ 2026.plan",
+      "url": [
+        "{cdn}НЗ 2026.plan",
+        "{cdn2}НЗ 2026.plan",
+        "{gh}НЗ 2026.plan"
       ],
       "siz": "1K",
       "custom": true,
