@@ -1,5 +1,5 @@
 {
-  "version": 7925393,
+  "version": 7925394,
   "hosts": [
     {
       "alias": "cdn",
@@ -42057,8 +42057,8 @@
       ],
       "inf": "© Валентин Фомин",
       "fil": "B234-p.plan",
-      "upd": "2018-07-04",
-      "cmt": "(2018-01-23) Published",
+      "upd": "2026-08-19",
+      "cmt": "(2026-08-19) User proposed: © Валентин Фомин\n(2018-01-23) Published",
       "url": [
         "{cdn}B234-p.plan",
         "{cdn2}B234-p.plan",
