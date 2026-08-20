@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1787168145668-fc3d7da4"
+module_name: "La Biblia Peshita"
+short_name: "PeshEs"
+requested_file_name: "PeshEs"
+book_number: 520
+chapter_number: 12
+verse_number: 21
+old_text: "No sean vencidos por el mal, sino venzan el bien con el mal."
+new_text: "No sean vencidos por el mal, sino venzan el mal con el bien."
+submitted_at: "2026-08-19T19:35:45.668Z"
