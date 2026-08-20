@@ -1,5 +1,5 @@
 {
-  "version": 7925393,
+  "version": 7925394,
   "hosts": [
     {
       "alias": "cdn",
@@ -68647,8 +68647,8 @@
       "lng": "es",
       "des": "La Biblia Peshita",
       "fil": "PeshEs",
-      "upd": "2025-11-28",
-      "cmt": "(2025-11-28) Published",
+      "upd": "2026-08-20",
+      "cmt": "(2026-08-20) User proposed: Module: `PeshEs`\nBook: `Romanos (520)`\nChapter: `12`\nVerse: `21`\n\n```\nNo sean vencidos por el mal, sino venzan el bien con el mal.\n```\n->\n```\nNo sean vencidos por el mal, sino venzan el mal con el bien.\n```\n(2025-11-28) Published",
       "bkq": "66",
       "url": [
         "{cdn}PeshEs",
