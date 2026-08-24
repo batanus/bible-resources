@@ -1,5 +1,5 @@
 {
-  "version": 7925394,
+  "version": 7925395,
   "hosts": [
     {
       "alias": "cdn",
@@ -82712,6 +82712,20 @@
         "{cdn}ROM2WEEKS.plan",
         "{cdn2}ROM2WEEKS.plan",
         "{gh}ROM2WEEKS.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "Ек ",
+      "des": "Ек",
+      "inf": "Ек ",
+      "fil": "Ек .plan",
+      "url": [
+        "{cdn}Ек .plan",
+        "{cdn2}Ек .plan",
+        "{gh}Ек .plan"
       ],
       "siz": "1K",
       "custom": true,
