@@ -1,5 +1,5 @@
 {
-  "version": 7925395,
+  "version": 7939615,
   "hosts": [
     {
       "alias": "cdn",
@@ -21931,7 +21931,7 @@
       "des": "A Reader’s Greek New Testament: Third Edition, 2015",
       "inf": "Copyright © 2003, 2007, 2015 by Richard J. Goodrich and Albert L. Lukaszewski",
       "fil": "RGNT+",
-      "upd": "2024-04-15",
+      "upd": "2026-08-27",
       "cmt": "(2017-09-14) Signs † removed\n(2017-03-15) Lexicon included\n(2016-09-03) Published",
       "bkq": "27",
       "url": [
@@ -58239,7 +58239,7 @@
       "des": "Young's Literal Translation 3rd Revision 1898",
       "inf": "Young's Literal Translation 3rd Revision 1898 <br/>\r\nmaintained by the British and Foreign Bible Society <br/>\r\nBritish & Foreign Bible Society <br/>\r\nEnglish",
       "fil": "YLT1898",
-      "upd": "2026-06-15",
+      "upd": "2026-08-27",
       "cmt": "(2020-03-19) 1 Peter 4:19 god → God\n(2019-12-30) Published",
       "bkq": "66",
       "url": [
@@ -58251,7 +58251,7 @@
         "{1gb}YLT1898",
         "{p4}YLT1898"
       ],
-      "siz": "1.8M"
+      "siz": "1.7M"
     },
     {
       "abr": "en-es-B",
@@ -77006,7 +77006,7 @@
       "des": "Греческо-русский словарь Нового Завета",
       "inf": "Греческо-русский словарь Нового Завета: Пер. Краткого греческо-английского словаря Нового Завета Баркли М. Ньюмана / Перевод и редактирование В. Н. Кузнецовой при участии Е. Б. Смагиной и И. С. Козырева. — М. : Российское Библейское общество, 2008. — 240 с.",
       "fil": "Ньюман.dictionary",
-      "upd": "2025-10-03",
+      "upd": "2026-08-27",
       "cmt": "(2022-12-02) Published",
       "aln": "ru",
       "url": [
@@ -77673,7 +77673,7 @@
       "des": "Библейские переводы Андрея Десницкого",
       "inf": "Вы можете свободно читать и в любых объемах цитировать мои переводы в некоммерческих изданиях, указав авторство. Использовать их в коммерческих изданиях (тех, за которые вы получаете деньги) вы можете только по моему письменному разрешению, пишите на адрес ailoyros@gmail.com. Изменять (т.е. редактировать) эти переводы запрещено.\n<br/>Эл. почта: <a href='mailto:ailoyros@gmail.com'>ailoyros@gmail.com</a>\n<br/>Cайт: <a href='http://Desnitsky.net'>Desnitsky.net</a>",
       "fil": "Десн",
-      "upd": "2026-06-16",
+      "upd": "2026-08-27",
       "cmt": "(2024-04-26) Добавлено Откровение. Версия перевода обновлена.\n(2023-02-28) Выложен",
       "bkq": "50",
       "url": [
