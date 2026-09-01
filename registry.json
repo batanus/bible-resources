@@ -1,5 +1,5 @@
 {
-  "version": 7939615,
+  "version": 7939616,
   "hosts": [
     {
       "alias": "cdn",
@@ -82716,6 +82716,20 @@
       "siz": "1K",
       "custom": true,
       "lng": "ru"
+    },
+    {
+      "abr": "План",
+      "des": "План",
+      "inf": "Біблія",
+      "fil": "План.plan",
+      "url": [
+        "{cdn}План.plan",
+        "{cdn2}План.plan",
+        "{gh}План.plan"
+      ],
+      "siz": "5K",
+      "custom": true,
+      "lng": "uk"
     }
   ]
 }
