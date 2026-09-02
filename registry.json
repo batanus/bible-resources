@@ -1,5 +1,5 @@
 {
-  "version": 7939615,
+  "version": 7939616,
   "hosts": [
     {
       "alias": "cdn",
@@ -82712,6 +82712,20 @@
         "{cdn}ROM2WEEKS.plan",
         "{cdn2}ROM2WEEKS.plan",
         "{gh}ROM2WEEKS.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "New Testament ",
+      "des": "New Testament",
+      "inf": "Bible ",
+      "fil": "New Testament .plan",
+      "url": [
+        "{cdn}New Testament .plan",
+        "{cdn2}New Testament .plan",
+        "{gh}New Testament .plan"
       ],
       "siz": "1K",
       "custom": true,
