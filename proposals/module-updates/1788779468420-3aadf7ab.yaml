@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1788779468420-3aadf7ab"
+module_name: "Библия Юбилейная"
+short_name: "JBL"
+requested_file_name: "JBL"
+book_number: 290
+chapter_number: 66
+verse_number: 9
+old_text: "<pb/>«Доведу ли Я до родов и не дам родить? – говорит Господь. – Или, давая силу родить, заключу ли [утробу?»<pb/>] – говорит Бог твой."
+new_text: "<pb/>«Доведу ли Я до родов и не дам родить? – говорит Господь. – Или, давая силу родить, заключу ли [утробу?»]<pb/> – говорит Бог твой."
+submitted_at: "2026-09-07T11:11:08.420Z"
