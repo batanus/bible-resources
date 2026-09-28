@@ -756,6 +756,7 @@ jobs:
           PYTHON_FILTER
 
       # Step 7: Reapply local accepted module proposals to downloaded module archives.
+      # When upstream changed a verse differently, keep the downloaded text and skip that proposal.
       # This uses the same checkout and only touches modules that were downloaded successfully.
       - name: Install Python dependencies for module proposals
         if: steps.check_candidates_for_update.outputs.has_changes == 'true' && steps.check_candidates_for_update.outputs.modules_count != '0'

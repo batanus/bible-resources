@@ -28,8 +28,8 @@ def append_markdown_summary(summary_path: Path, summary: dict) -> None:
 
     conflicts = summary.get("conflicts") or []
     if conflicts:
-        lines.extend(["", "### Proposal Conflicts", ""])
-        lines.append("These proposals need manual review because upstream changed the same verse differently:")
+        lines.extend(["", "### Proposals Superseded by Upstream", ""])
+        lines.append("Upstream changed these verses differently. The downloaded verse text was kept and these proposals were skipped:")
         lines.append("")
         for conflict in conflicts:
             lines.append(f"- `{conflict['reference']}` from `{conflict['proposal_path']}`")
@@ -68,9 +68,6 @@ def main() -> None:
         sys.exit(1)
 
     print(json.dumps(summary, ensure_ascii=False, indent=2))
-    if summary.get("conflicts"):
-        print("Local proposal conflicts require manual review.", file=sys.stderr)
-        sys.exit(1)
 
 
 if __name__ == "__main__":

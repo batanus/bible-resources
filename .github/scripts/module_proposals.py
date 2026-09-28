@@ -490,11 +490,6 @@ def reapply_proposals_for_modules(repo_root: Path, module_abrs: list[str]) -> di
             }
         )
 
-    if summary["conflicts"]:
-        summary["registry_changed"] = False
-        summary["module_archives_changed"] = False
-        return summary
-
     for plan in module_plans:
         module_entry = plan["module_entry"]
         module_file = plan["module_file"]
