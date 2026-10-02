@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1790942299486-1c069fe6"
+module_name: "Библия (Синодальный перевод)"
+short_name: "RST+"
+requested_file_name: "RST+"
+book_number: 10
+chapter_number: 1
+verse_number: 1
+old_text: "<pb/>В начале<S>7225</S> сотворил<S>1254</S><S>853</S> Бог<S>430</S> небо<S>8064</S> и<S>853</S> землю.<S>776</S>"
+new_text: "<pb/>В начале<S>7225</S> орлоолооосотворил<S>1254</S><S>853</S> Бог<S>430</S> небо<S>8064</S> и<S>853</S> землю.<S>776</S>"
+submitted_at: "2026-10-02T11:58:19.487Z"
