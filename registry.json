@@ -1,5 +1,5 @@
 {
-  "version": 7981310,
+  "version": 7981311,
   "hosts": [
     {
       "alias": "cdn",
@@ -82726,7 +82726,9 @@
       ],
       "siz": "1K",
       "custom": true,
-      "lng": "pt"
+      "lng": "pt",
+      "cmt": "(2026-10-04) User proposed: Leitura Mensal Completa da Bíblia",
+      "upd": "2026-10-04"
     },
     {
       "abr": "P5",
