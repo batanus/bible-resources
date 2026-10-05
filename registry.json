@@ -1,5 +1,5 @@
 {
-  "version": 7981311,
+  "version": 7981312,
   "hosts": [
     {
       "alias": "cdn",
@@ -82755,6 +82755,20 @@
         "{gh}ROM2WEEKS.plan"
       ],
       "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "Нов",
+      "des": "Новый",
+      "inf": "Новый",
+      "fil": "Нов.plan",
+      "url": [
+        "{cdn}Нов.plan",
+        "{cdn2}Нов.plan",
+        "{gh}Нов.plan"
+      ],
+      "siz": "5K",
       "custom": true,
       "lng": "ru"
     }
