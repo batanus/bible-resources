@@ -1,0 +1,11 @@
+proposal_type: "module_verse_update"
+request_id: "1791732024750-ee3c0f6a"
+module_name: "Библия Болеслава Гёце (SK)"
+short_name: "Гёце-SK"
+requested_file_name: "Гёце-SK"
+book_number: 240
+chapter_number: 11
+verse_number: 25
+old_text: "Благотворительная душа будет насыщена; и кто напоит других, тот и сам напоен будет. <f>ⓠ</f> "
+new_text: "Благотворительная душа будет насыщена; и кто напоит других, тот и сам напоён будет. <f>ⓠ</f> "
+submitted_at: "2026-10-11T15:20:24.750Z"
