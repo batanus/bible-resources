@@ -624,10 +624,14 @@ jobs:
               while [ $attempt -le $max_attempts ]; do
                 echo "  📥 Downloading from: $DOWNLOAD_URL"
                 
-                if curl -L -f -o "$TEMP_OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 2>/dev/null; then
+                # GitHub rejects pushes with files over 100 MB, so such modules are treated as failed
+                if curl_error=$(curl -sS -L -f -o "$TEMP_OUTPUT_FILE" "$DOWNLOAD_URL" --connect-timeout 30 --max-time 300 --max-filesize 100M 2>&1); then
                   echo "  ✅ Successfully downloaded from URL #$url_index"
                   download_success=true
                   break 2  # Exit both retry loop and URL loop
+                elif [[ "$curl_error" == *"Maximum file size exceeded"* ]]; then
+                  echo "  ❌ File exceeds GitHub's 100 MB limit, skipping module"
+                  break 2
                 else
                   echo "  ❌ Failed (attempt $attempt/$max_attempts)"
                   if [ $attempt -lt $max_attempts ]; then
