@@ -1,5 +1,5 @@
 {
-  "version": 8027317,
+  "version": 8030461,
   "hosts": [
     {
       "alias": "cdn",
@@ -82703,6 +82703,24 @@
         "{p4}FIARK"
       ],
       "siz": "1.8M"
+    },
+    {
+      "abr": "Ussher-d",
+      "des": "Dates (Ussher)",
+      "inf": "Ussher’s Biblical chronology (4004 BC – AD 73) as dated headings for a Bible in any language, including the Apocrypha",
+      "fil": "Ussher-d.subheadings",
+      "upd": "2026-10-29",
+      "cmt": "(2026-10-29) Published",
+      "url": [
+        "{cdn}Ussher-d.subheadings",
+        "{cdn2}Ussher-d.subheadings",
+        "{gh}Ussher-d.subheadings",
+        "{mz}Ussher-d.subheadings",
+        "{inf}Ussher-d.subheadings",
+        "{1gb}Ussher-d.subheadings",
+        "{p4}Ussher-d.subheadings"
+      ],
+      "siz": "9K"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
