@@ -1,5 +1,5 @@
 {
-  "version": 8030461,
+  "version": 8046205,
   "hosts": [
     {
       "alias": "cdn",
@@ -58879,7 +58879,9 @@
         "{1gb}LTV%2765",
         "{p4}LTV%2765"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "UMT'07",
@@ -73873,7 +73875,9 @@
         "{1gb}LTV%2797",
         "{p4}LTV%2797"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "DA1907",
@@ -75805,7 +75809,9 @@
         "{1gb}LVSD%2712",
         "{p4}LVSD%2712"
       ],
-      "siz": "2.5M"
+      "siz": "2.5M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "LVSB'12",
@@ -75825,7 +75831,9 @@
         "{1gb}LVSB%2712",
         "{p4}LVSB%2712"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "NTV'10",
@@ -80822,7 +80830,9 @@
         "{1gb}LVSB%2724",
         "{p4}LVSB%2724"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "IrOrda",
