@@ -1,5 +1,5 @@
 {
-  "version": 8030461,
+  "version": 8049219,
   "hosts": [
     {
       "alias": "cdn",
@@ -41238,7 +41238,8 @@
         "{1gb}YKT%2716",
         "{p4}YKT%2716"
       ],
-      "siz": "848K"
+      "siz": "848K",
+      "hid": true
     },
     {
       "abr": "ABG'92",
@@ -58879,7 +58880,9 @@
         "{1gb}LTV%2765",
         "{p4}LTV%2765"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "UMT'07",
@@ -68739,7 +68742,8 @@
         "{1gb}YKT%2721",
         "{p4}YKT%2721"
       ],
-      "siz": "915K"
+      "siz": "915K",
+      "hid": true
     },
     {
       "abr": "KAMD'11",
@@ -73873,7 +73877,9 @@
         "{1gb}LTV%2797",
         "{p4}LTV%2797"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "DA1907",
@@ -75805,7 +75811,9 @@
         "{1gb}LVSD%2712",
         "{p4}LVSD%2712"
       ],
-      "siz": "2.5M"
+      "siz": "2.5M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "LVSB'12",
@@ -75825,7 +75833,9 @@
         "{1gb}LVSB%2712",
         "{p4}LVSB%2712"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "NTV'10",
@@ -80822,7 +80832,9 @@
         "{1gb}LVSB%2724",
         "{p4}LVSB%2724"
       ],
-      "siz": "2M"
+      "siz": "2M",
+      "hid": true,
+      "lic": "<h4>Latvijas Bībeles biedrība</h4>\nPēteris Eisāns\n<br/>LBB ģenerālsekretārs\n<br/>Latvijas Bībeles biedrība\n<br/>Tomsona iela 2-16,\n<br/>Rīga, LV-1013\n<br/>tālr. 67412141\n<br/>email: <a href='mailto:lbb@apollo.lv'>lbb@apollo.lv</a>\n"
     },
     {
       "abr": "IrOrda",
@@ -81855,10 +81867,10 @@
       "abr": "JND",
       "lng": "fr",
       "des": "Traduction J. N. Darby, 1881",
-      "inf": "<h2>La Sainte Bible</h2>\n<b>Traduction J. N. Darby</b><p/>\nTexte biblique, alinéas et notes de traduction, conformes* à l'édition imprimée*<p/>\nModule JND v. 1.13 (2026-04-24)*\n<hr noshade size=1 color=\"#000000\"/>\n<i>*) voyez</i> <a href=\"https://bible.ecoreel.org/\">bible.ecoreel.org</a>",
+      "inf": "<h2>La Sainte Bible</h2>\n<b>Traduction J. N. Darby</b><p/>\nTexte biblique, alinéas et notes de traduction, conformes* à l'édition imprimée*<p/>\nModule JND v. 1.14 (2026-11-09)*\n<hr noshade size=1 color=\"#000000\"/>\n<i>*) voyez</i> <a href=\"https://bible.ecoreel.org/\">bible.ecoreel.org</a>",
       "fil": "JND",
-      "upd": "2026-06-01",
-      "cmt": "2026-04-24\n• Coupure Né 2:2-3 corrigée.\n\n2025-08-27\n• Correction de la mise en couleur des paroles de Jésus en Luc 22:35.\n\n2025-08-23\n• Correction de l'année de traduction (1881 au lieu de 1959 qui était celle du Nouveau Testament seul).\n\n2025-07-05\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 1:43.\n\n2025-07-02\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 9:23.\n\n2025-02-21\n• Coupure 1Th 5:9-10 corrigée.\n\n2025-02-16\n• Remplacement de \"culpabilité\" par \"coulpe\" en Gn 26:10 ;\n• Ponctuation Gn 36;34 ; Gn 41:27 ; Nb 22:21 ; 24:25 ; 27:10 ; 31:46 ; 32:9 ; 33:56 ; 34:11 ; Dt 1:2 corrigée ;\n• Typographie Nb 34:19 ; 2Tm 1:3-4 corrigée ou ajustée ;\n• Coupure Gn 39:14-15 corrigée.\n\n2025-01-08\n• Coupure Hé 3:15-16 corrigée.\n\n2024-12-27\n• Coupures 1R 8:57-58 ; Ép 5:15-16 corrigées.\n\n2024-12-26\n• Coupure Ép 2:8-9 corrigée ;\n• Typographie de références bibliques corrigée dans plusieurs notes ;\n• Affichage de l'un des liens de la note Rm 15:16 homogénéisé à l'ensemble des liens bibliques ;\n• Ponctuation des notes Ex 9:7 ; Mt 27:35 corrigées ;\n• Remplacement de l'espace insécable après les \"«\" et avant les \";\", \"!\", \"?\", \"»\" par une espace fine incécable.\n\n2024-05-25\n• Coupures Ép 1:10-11.\n\n2023-05-10\n• Ponctuation 2R 7:3 corrigée.\n\n2022-09-25\n• Coupure 1P 2:8-9 corrigée.\n\n2022-01-19\n• Déplacement de l'appel de note erroné en 2Th 3:16, vers 2Th 3:18.\n\n2021-09-10\n• Coupure Est 6:5-6 corrigée.\n\n2021-04-13\n• Appel de note 2J 1:9 corrigé.\n\n2020-12-05\n• Coupure Ex 15:25-26 corrigée.\n\n2020-10-03\n• Note 2Co 3:18 corrigée.\n\n2020-09-12\n• Ajout d'un alinéa en tête du premier verset de chaque livre.\n\n2020-08-07\n• Ponctuation 1S 9:27 corrigée.\n\n2020-08-03\n• Coupure 2Co 4:1-2 corrigée.\n\n2020-07-30\n• Remplacement de \"^—\\x20\" par \"—\\xa0\" ;\n• Appels de note Mt 19:16 ; Lc 4:8 ; Col 3:24 ; 1P 5:8 déplacés d'un caractère à droite.\n\n2020-07-28\n• Remplacement de \"—\\xa0\" par \"—\\x20\".\n\n2020-07-18\n• Suppression de \"…\" en fin de information_string ;\n• Titre Ct 1:1 corrigé.\n\n2019-02-23\n• Coupure Hé 11:36-37 corrigée.\n\n2019-07-15\n• Lien note 2Co 2:16 corrigé.\n\n2019-06-23\n• Lien note Ap 20:4 corrigé.\n\n2019-06-08\n• Orthographe 1R 3:21 ; Jb 3:12 corrigée ;\n• Mc 6:8-9 coloré.\n\n2019-06-01\n• Notes És 62:11 ; Éz 40:40, 44 corrigées.\n\n2019-05-14\n• Note Mt 27:46 corrigée.\n\n2019-04-01\n• Coupure Jos 24:3-4 corrigée.\n\n2019-02-25\n• Première parution.",
+      "upd": "2026-11-11",
+      "cmt": "2026-11-11 \n• Micah 5:4‑5: Corrected the verse break.\n• Zechariah 6:14: Harmonized the footnote with other notes of similar content.\n• Ephesians 3:17‑18: Adjusted the verse break to match the Pau-Vevey edition (1872).\n\n2026-04-24\n• Coupure Né 2:2-3 corrigée.\n\n2025-08-27\n• Correction de la mise en couleur des paroles de Jésus en Luc 22:35.\n\n2025-08-23\n• Correction de l'année de traduction (1881 au lieu de 1959 qui était celle du Nouveau Testament seul).\n\n2025-07-05\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 1:43.\n\n2025-07-02\n• Ajout du pronom réfléchi \"vous\" manquant en Dt 9:23.\n\n2025-02-21\n• Coupure 1Th 5:9-10 corrigée.\n\n2025-02-16\n• Remplacement de \"culpabilité\" par \"coulpe\" en Gn 26:10 ;\n• Ponctuation Gn 36;34 ; Gn 41:27 ; Nb 22:21 ; 24:25 ; 27:10 ; 31:46 ; 32:9 ; 33:56 ; 34:11 ; Dt 1:2 corrigée ;\n• Typographie Nb 34:19 ; 2Tm 1:3-4 corrigée ou ajustée ;\n• Coupure Gn 39:14-15 corrigée.\n\n2025-01-08\n• Coupure Hé 3:15-16 corrigée.\n\n2024-12-27\n• Coupures 1R 8:57-58 ; Ép 5:15-16 corrigées.\n\n2024-12-26\n• Coupure Ép 2:8-9 corrigée ;\n• Typographie de références bibliques corrigée dans plusieurs notes ;\n• Affichage de l'un des liens de la note Rm 15:16 homogénéisé à l'ensemble des liens bibliques ;\n• Ponctuation des notes Ex 9:7 ; Mt 27:35 corrigées ;\n• Remplacement de l'espace insécable après les \"«\" et avant les \";\", \"!\", \"?\", \"»\" par une espace fine incécable.\n\n2024-05-25\n• Coupures Ép 1:10-11.\n\n2023-05-10\n• Ponctuation 2R 7:3 corrigée.\n\n2022-09-25\n• Coupure 1P 2:8-9 corrigée.\n\n2022-01-19\n• Déplacement de l'appel de note erroné en 2Th 3:16, vers 2Th 3:18.\n\n2021-09-10\n• Coupure Est 6:5-6 corrigée.\n\n2021-04-13\n• Appel de note 2J 1:9 corrigé.\n\n2020-12-05\n• Coupure Ex 15:25-26 corrigée.\n\n2020-10-03\n• Note 2Co 3:18 corrigée.\n\n2020-09-12\n• Ajout d'un alinéa en tête du premier verset de chaque livre.\n\n2020-08-07\n• Ponctuation 1S 9:27 corrigée.\n\n2020-08-03\n• Coupure 2Co 4:1-2 corrigée.\n\n2020-07-30\n• Remplacement de \"^—\\x20\" par \"—\\xa0\" ;\n• Appels de note Mt 19:16 ; Lc 4:8 ; Col 3:24 ; 1P 5:8 déplacés d'un caractère à droite.\n\n2020-07-28\n• Remplacement de \"—\\xa0\" par \"—\\x20\".\n\n2020-07-18\n• Suppression de \"…\" en fin de information_string ;\n• Titre Ct 1:1 corrigé.\n\n2019-02-23\n• Coupure Hé 11:36-37 corrigée.\n\n2019-07-15\n• Lien note 2Co 2:16 corrigé.\n\n2019-06-23\n• Lien note Ap 20:4 corrigé.\n\n2019-06-08\n• Orthographe 1R 3:21 ; Jb 3:12 corrigée ;\n• Mc 6:8-9 coloré.\n\n2019-06-01\n• Notes És 62:11 ; Éz 40:40, 44 corrigées.\n\n2019-05-14\n• Note Mt 27:46 corrigée.\n\n2019-04-01\n• Coupure Jos 24:3-4 corrigée.\n\n2019-02-25\n• Première parution.",
       "bkq": "66",
       "url": [
         "{cdn}JND",
@@ -82721,6 +82733,26 @@
         "{p4}Ussher-d.subheadings"
       ],
       "siz": "9K"
+    },
+    {
+      "abr": "YKT'26",
+      "lng": "sah",
+      "des": "Сибэтиэй Биибилийэ кинигэлэрэ",
+      "inf": "Yakut Holy Scriptures – Сибэтиэй Биибилийэ кинигэлэрэ <br/>\r\n© Институт перевода Библии, 2008-2026 <br/>\r\nInstitute for Bible Translation, Russia <br/>\r\nYakut — Саха тыла",
+      "fil": "YKT'26",
+      "upd": "2026-11-11",
+      "cmt": "(2026-11-11) Published",
+      "bkq": "36",
+      "url": [
+        "{cdn}YKT'26",
+        "{cdn2}YKT'26",
+        "{gh}YKT'26",
+        "{mz}YKT%2726",
+        "{inf}YKT%2726",
+        "{1gb}YKT%2726",
+        "{p4}YKT%2726"
+      ],
+      "siz": "1.1M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
