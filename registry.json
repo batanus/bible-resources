@@ -1,5 +1,5 @@
 {
-  "version": 8049220,
+  "version": 8050592,
   "hosts": [
     {
       "alias": "cdn",
@@ -27608,7 +27608,8 @@
         "{1gb}VIN-el%2B",
         "{p4}VIN-el%2B"
       ],
-      "siz": "3.7M"
+      "siz": "3.7M",
+      "hid": true
     },
     {
       "abr": "VineNT",
@@ -82753,6 +82754,146 @@
         "{p4}YKT%2726"
       ],
       "siz": "1.1M"
+    },
+    {
+      "abr": "VinG-en+",
+      "lng": "grc",
+      "des": "Interlinear Bible from the Greek (Vynokurov): Greek text with English word glosses",
+      "inf": "<p>An interlinear translation of the Bible from the Greek: the Greek text of the Septuagint and the New Testament with an English rendering of every word.</p><p>The rendering of a word follows it and is marked as an “explanation”. Explanations can be hidden in the settings of the program, leaving the bare text of the original.</p><p>The section headings above the verses are not part of the biblical text: they are a guide for the reader. They can be hidden in the settings of the program.</p><p>Strong’s numbers are shown and hidden by a double tap on the module button; a tap on a number opens the entry of the installed Strong’s dictionary.</p><p>The Greek text. New Testament: the fifth edition of the United Bible Societies’ Greek New Testament (UBS5, 2014), textually identical to the 28th edition of Nestle–Aland (NA28). Old Testament: the text collated with Septuaginta, ed. Alfred Rahlfs, Stuttgart, 1952. Strong’s numbers by the place of the word: New Testament from TAGNT (STEPBible.org, CC BY 4.0), Old Testament from lxx-morph (OpenScriptorium, CC BY 4.0) and CATSS.</p><p>The book of Daniel is given in both Greek forms: Theodotion (as in the Russian Synodal Bible) and the Old Greek (“DanLXX”). So is Tobit: the shorter text of Vaticanus and Alexandrinus and the longer text of Codex Sinaiticus (“TobS”). So is Judges: the A text and the B text of Codex Vaticanus (“JudgB”).</p><p>Translation by Oleksii Vynokurov. © Oleksii Vynokurov. Licensed under Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0): the module may be freely copied and shared for non-commercial use, keeping the author’s name and a link to the source.</p><p>The interlinear and literary translations, PDF and module updates: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Module version of 07.11.2026.</i></p>",
+      "fil": "VinG-en+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "83",
+      "url": [
+        "{cdn}VinG-en+",
+        "{cdn2}VinG-en+",
+        "{gh}VinG-en+",
+        "{mz}VinG-en%2B",
+        "{inf}VinG-en%2B",
+        "{1gb}VinG-en%2B",
+        "{p4}VinG-en%2B"
+      ],
+      "siz": "6.1M"
+    },
+    {
+      "abr": "VinG-ru+",
+      "lng": "grc",
+      "des": "Подстрочный перевод Библии с греческого (Винокуров): греческий текст с переводом слов на русский",
+      "inf": "<p>Подстрочный перевод Библии с греческого: греческий текст Септуагинты и Нового Завета, у каждого слова — его перевод на русский язык.</p><p>Перевод слова стоит сразу после него и выделен как «пояснение». Пояснения можно скрыть в настройках программы — тогда останется чистый текст оригинала.</p><p>Заголовки разделов над стихами не входят в библейский текст: это указатель для читателя. Их можно скрыть в настройках программы.</p><p>Номера Стронга показываются и скрываются двойным нажатием на кнопку модуля; нажатие на номер открывает статью установленного словаря Стронга.</p><p>Греческий текст. Новый Завет — 5-е издание Греческого Нового Завета Объединённых библейских обществ (UBS5, 2014), текстуально совпадающее с 28-м изданием Нестле — Аланда (NA28). Ветхий Завет — текст, сверенный с изданием Septuaginta, ed. Alfred Rahlfs, Stuttgart, 1952. Номера Стронга по месту слова: Новый Завет — по данным TAGNT (STEPBible.org, CC BY 4.0), Ветхий Завет — по данным lxx-morph (OpenScriptorium, CC BY 4.0) и CATSS.</p><p>Книга Даниила дана в двух греческих редакциях: по Феодотиону (как в синодальном переводе) и по Септуагинте («ДанLXX»). Книга Товита — тоже в двух: краткой (Ватиканский и Александрийский кодексы) и длинной по Синайскому кодексу («Тов(С)»). Книга Судей — тоже в двух: по тексту A и по тексту B — Ватиканскому кодексу («Суд(В)»).</p><p>Перевод — Алексей Вячеславович Винокуров. © Алексей Вячеславович Винокуров. Распространяется по лицензии Creative Commons «С указанием авторства — Некоммерческая» 4.0 (CC BY-NC 4.0): модуль можно свободно копировать и передавать для некоммерческого использования, сохраняя имя автора и ссылку на источник.</p><p>Подстрочный и литературный переводы, PDF и обновления модулей: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Версия модуля от 07.11.2026.</i></p>",
+      "fil": "VinG-ru+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "83",
+      "url": [
+        "{cdn}VinG-ru+",
+        "{cdn2}VinG-ru+",
+        "{gh}VinG-ru+",
+        "{mz}VinG-ru%2B",
+        "{inf}VinG-ru%2B",
+        "{1gb}VinG-ru%2B",
+        "{p4}VinG-ru%2B"
+      ],
+      "siz": "6.4M"
+    },
+    {
+      "abr": "VinG-uk+",
+      "lng": "grc",
+      "des": "Підрядковий переклад Біблії з грецької (Винокуров): грецький текст із перекладом слів українською",
+      "inf": "<p>Підрядковий переклад Біблії з грецької: грецький текст Септуагінти й Нового Завіту, біля кожного слова — його переклад українською мовою.</p><p>Переклад слова стоїть одразу після нього й виділений як «пояснення». Пояснення можна сховати в налаштуваннях програми — тоді залишиться чистий текст оригіналу.</p><p>Заголовки розділів над віршами не входять до біблійного тексту: це покажчик для читача. Їх можна сховати в налаштуваннях програми.</p><p>Номери Стронга показуються й ховаються подвійним натисканням на кнопку модуля; натискання на номер відкриває статтю встановленого словника Стронга.</p><p>Грецький текст. Новий Завіт — 5-те видання Грецького Нового Завіту Об’єднаних біблійних товариств (UBS5, 2014), текстуально тотожне 28-му виданню Нестле — Аланда (NA28). Старий Завіт — текст, звірений з виданням Septuaginta, ed. Alfred Rahlfs, Stuttgart, 1952. Номери Стронга за місцем слова: Новий Завіт — за даними TAGNT (STEPBible.org, CC BY 4.0), Старий Завіт — за даними lxx-morph (OpenScriptorium, CC BY 4.0) і CATSS.</p><p>Книгу Даниїла подано у двох грецьких редакціях: за Феодотіоном (як у синодальному перекладі) і за Септуагінтою («ДанLXX»). Книгу Товита — теж у двох: короткій (Ватиканський і Александрійський кодекси) і довгій за Синайським кодексом («Тов(С)»). Книгу Суддів — теж у двох: за текстом A і за текстом B — Ватиканським кодексом («Суд(В)»).</p><p>Переклад — Олексій В’ячеславович Винокуров. © Олексій В’ячеславович Винокуров. Поширюється за ліцензією Creative Commons «Зазначення авторства — Некомерційна» 4.0 (CC BY-NC 4.0): модуль можна вільно копіювати й передавати для некомерційного використання, зберігаючи ім’я автора й посилання на джерело.</p><p>Підрядковий і літературний переклади, PDF та оновлення модулів: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Версія модуля від 07.11.2026.</i></p>",
+      "fil": "VinG-uk+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "83",
+      "url": [
+        "{cdn}VinG-uk+",
+        "{cdn2}VinG-uk+",
+        "{gh}VinG-uk+",
+        "{mz}VinG-uk%2B",
+        "{inf}VinG-uk%2B",
+        "{1gb}VinG-uk%2B",
+        "{p4}VinG-uk%2B"
+      ],
+      "siz": "6.4M"
+    },
+    {
+      "abr": "VinH-en+",
+      "lng": "iw",
+      "des": "Interlinear Old Testament from the Hebrew (Vynokurov): Hebrew text with English word glosses",
+      "inf": "<p>An interlinear translation of the Old Testament from the Hebrew: the Masoretic text with an English rendering of every word.</p><p>The rendering of a word follows it and is marked as an “explanation”. Explanations can be hidden in the settings of the program, leaving the bare text of the original.</p><p>The section headings above the verses are not part of the biblical text: they are a guide for the reader. They can be hidden in the settings of the program.</p><p>Strong’s numbers are shown and hidden by a double tap on the module button; a tap on a number opens the entry of the installed Strong’s dictionary.</p><p>The Hebrew text is the Leningrad Codex as given in TAHOT (STEPBible.org, CC BY 4.0), the source of the Strong’s numbers as well. Chapters and verses are numbered as in the King James Version; the titles of the psalms stand before the first verse.</p><p>Translation by Oleksii Vynokurov. © Oleksii Vynokurov. Licensed under Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0): the module may be freely copied and shared for non-commercial use, keeping the author’s name and a link to the source.</p><p>The interlinear and literary translations, PDF and module updates: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Module version of 07.11.2026.</i></p>",
+      "fil": "VinH-en+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "39",
+      "url": [
+        "{cdn}VinH-en+",
+        "{cdn2}VinH-en+",
+        "{gh}VinH-en+",
+        "{mz}VinH-en%2B",
+        "{inf}VinH-en%2B",
+        "{1gb}VinH-en%2B",
+        "{p4}VinH-en%2B"
+      ],
+      "siz": "3.7M"
+    },
+    {
+      "abr": "VinH-ru+",
+      "lng": "iw",
+      "des": "Подстрочный перевод Ветхого Завета с еврейского (Винокуров): еврейский текст с переводом слов на русский",
+      "inf": "<p>Подстрочный перевод Ветхого Завета с еврейского: масоретский текст, у каждого слова — его перевод на русский язык.</p><p>Перевод слова стоит сразу после него и выделен как «пояснение». Пояснения можно скрыть в настройках программы — тогда останется чистый текст оригинала.</p><p>Заголовки разделов над стихами не входят в библейский текст: это указатель для читателя. Их можно скрыть в настройках программы.</p><p>Номера Стронга показываются и скрываются двойным нажатием на кнопку модуля; нажатие на номер открывает статью установленного словаря Стронга.</p><p>Еврейский текст — Ленинградский кодекс по данным TAHOT (STEPBible.org, CC BY 4.0), оттуда же номера Стронга. Главы и стихи пронумерованы, как в английской Библии короля Иакова (KJV); надписания псалмов стоят перед первым стихом.</p><p>Перевод — Алексей Вячеславович Винокуров. © Алексей Вячеславович Винокуров. Распространяется по лицензии Creative Commons «С указанием авторства — Некоммерческая» 4.0 (CC BY-NC 4.0): модуль можно свободно копировать и передавать для некоммерческого использования, сохраняя имя автора и ссылку на источник.</p><p>Подстрочный и литературный переводы, PDF и обновления модулей: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Версия модуля от 07.11.2026.</i></p>",
+      "fil": "VinH-ru+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "39",
+      "url": [
+        "{cdn}VinH-ru+",
+        "{cdn2}VinH-ru+",
+        "{gh}VinH-ru+",
+        "{mz}VinH-ru%2B",
+        "{inf}VinH-ru%2B",
+        "{1gb}VinH-ru%2B",
+        "{p4}VinH-ru%2B"
+      ],
+      "siz": "3.8M"
+    },
+    {
+      "abr": "VinH-uk+",
+      "lng": "iw",
+      "des": "Підрядковий переклад Старого Завіту з єврейської (Винокуров): єврейський текст із перекладом слів українською",
+      "inf": "<p>Підрядковий переклад Старого Завіту з єврейської: масоретський текст, біля кожного слова — його переклад українською мовою.</p><p>Переклад слова стоїть одразу після нього й виділений як «пояснення». Пояснення можна сховати в налаштуваннях програми — тоді залишиться чистий текст оригіналу.</p><p>Заголовки розділів над віршами не входять до біблійного тексту: це покажчик для читача. Їх можна сховати в налаштуваннях програми.</p><p>Номери Стронга показуються й ховаються подвійним натисканням на кнопку модуля; натискання на номер відкриває статтю встановленого словника Стронга.</p><p>Єврейський текст — Ленінградський кодекс за даними TAHOT (STEPBible.org, CC BY 4.0), звідти ж номери Стронга. Розділи й вірші пронумеровано, як в англійській Біблії короля Якова (KJV); написи псалмів стоять перед першим віршем.</p><p>Переклад — Олексій В’ячеславович Винокуров. © Олексій В’ячеславович Винокуров. Поширюється за ліцензією Creative Commons «Зазначення авторства — Некомерційна» 4.0 (CC BY-NC 4.0): модуль можна вільно копіювати й передавати для некомерційного використання, зберігаючи ім’я автора й посилання на джерело.</p><p>Підрядковий і літературний переклади, PDF та оновлення модулів: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Версія модуля від 07.11.2026.</i></p>",
+      "fil": "VinH-uk+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Published",
+      "bkq": "39",
+      "url": [
+        "{cdn}VinH-uk+",
+        "{cdn2}VinH-uk+",
+        "{gh}VinH-uk+",
+        "{mz}VinH-uk%2B",
+        "{inf}VinH-uk%2B",
+        "{1gb}VinH-uk%2B",
+        "{p4}VinH-uk%2B"
+      ],
+      "siz": "3.8M"
+    },
+    {
+      "abr": "VinLXX+",
+      "lng": "ru",
+      "des": "Литературный перевод Ветхого Завета с греческого (Винокуров) с номерами Стронга",
+      "inf": "<p>Литературный перевод Ветхого Завета с греческого (Септуагинты). Перевод выполнен по подстрочнику того же автора, и каждое слово связано с греческим словом номером Стронга. Где греческий текст допускает другое понимание, вариант дан сноской.</p><p>Сноски с вариантами перевода можно скрыть в настройках программы.</p><p>Заголовки разделов над стихами не входят в библейский текст: это указатель для читателя. Их можно скрыть в настройках программы.</p><p>Номера Стронга показываются и скрываются двойным нажатием на кнопку модуля; нажатие на номер открывает статью установленного словаря Стронга.</p><p>Перевод сделан по Септуагинте в издании Ральфса (Septuaginta, ed. Alfred Rahlfs, Stuttgart, 1952); книга 3 Ездры, чей греческий оригинал утрачен, — с латинского текста Вульгаты (изд. Вебера — Грисона). Номера Стронга — те же, что в подстрочнике.</p><p>Книга Даниила дана в двух греческих редакциях: по Феодотиону (как в синодальном переводе) и по Септуагинте («ДанLXX»). Книга Товита — тоже в двух: краткой и длинной по Синайскому кодексу («Тов(С)»); в длинной нет стихов 4:8–18 и 13:8–10 — Синайский кодекс их потерял.</p><p>Перевод — Алексей Вячеславович Винокуров. © Алексей Вячеславович Винокуров. Распространяется по лицензии Creative Commons «С указанием авторства — Некоммерческая» 4.0 (CC BY-NC 4.0): модуль можно свободно копировать и передавать для некоммерческого использования, сохраняя имя автора и ссылку на источник.</p><p>Подстрочный и литературный переводы, PDF и обновления модулей: <a href=\"https://www.bible.in.ua/underl/\">https://www.bible.in.ua/underl/</a></p><p><i>Версия модуля от 07.11.2026.</i></p>",
+      "fil": "VinLXX+",
+      "upd": "2026-11-12",
+      "cmt": "(2026-11-12) Выложен",
+      "bkq": "56",
+      "url": [
+        "{cdn}VinLXX+",
+        "{cdn2}VinLXX+",
+        "{gh}VinLXX+",
+        "{mz}VinLXX%2B",
+        "{inf}VinLXX%2B",
+        "{1gb}VinLXX%2B",
+        "{p4}VinLXX%2B"
+      ],
+      "siz": "3.4M"
     },
     {
       "abr": "BiblioChronos Bozhenko 2025",
