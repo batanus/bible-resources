@@ -1,5 +1,5 @@
 {
-  "version": 8050593,
+  "version": 8050594,
   "hosts": [
     {
       "alias": "cdn",
@@ -82964,6 +82964,20 @@
         "{cdn}ROM2WEEKS.plan",
         "{cdn2}ROM2WEEKS.plan",
         "{gh}ROM2WEEKS.plan"
+      ],
+      "siz": "1K",
+      "custom": true,
+      "lng": "ru"
+    },
+    {
+      "abr": "Млд 2",
+      "des": "Млд 2",
+      "inf": "Млд 2",
+      "fil": "user-6AFA936A-E199-4E61-BDC5-DACE9A6724B2.plan",
+      "url": [
+        "{cdn}user-6AFA936A-E199-4E61-BDC5-DACE9A6724B2.plan",
+        "{cdn2}user-6AFA936A-E199-4E61-BDC5-DACE9A6724B2.plan",
+        "{gh}user-6AFA936A-E199-4E61-BDC5-DACE9A6724B2.plan"
       ],
       "siz": "1K",
       "custom": true,
