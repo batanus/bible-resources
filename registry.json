@@ -1,5 +1,5 @@
 {
-  "version": 8050594,
+  "version": 8050595,
   "hosts": [
     {
       "alias": "cdn",
@@ -45248,7 +45248,7 @@
       "inf": "<h2>Русская Открытая Библия</h2>\n<br/>Russian Open Bible aligned to unfoldingWord® Greek New Testament\n<br/>creator: Door43 World Missions Community\n<br/>contributor:\n<br/> - Ivan Pavlii, PhD in World Literature, Baku Slavic University\n<br/> - Maria Karyakina, PhD, University of Pretoria, MTh in New Testament, University of South Africa\n<br/> - Aleksey Voskresenskiy, MTh in New Testament, University of Cardiff, Wales\n<br/> - Yuri Tamurkin, BTh,  St.Petersburg Christian University\n<br/> - Anna Savitskaya\n<br/> - Samuel Kim\n<br/> - Door43 World Missions Community\n<br/>modified: 2020-10-12\n",
       "fil": "РОБ'20",
       "upd": "2026-11-27",
-      "cmt": "(2026-11-27) User proposed: Module: `РОБ'20`\nBook: `От Матфея (470)`\nChapter: `13`\nVerse: `55`\n\n```\nРазве Он не Сын плотника? Разве не Его мать зовутМарией? И разве не Его братья Иаков, Иосий, Симон и Иуда?\n```\n->\n```\nРазве Он не Сын плотника? Разве не Его мать зовут Марией? И разве не Его братья Иаков, Иосий, Симон и Иуда?\n```\n(2026-01-26) Выложен",
+      "cmt": "(2026-11-27) User proposed: Module: `РОБ'20`\nBook: `Песня Песней (260)`\nChapter: `8`\nVerse: `7`\n\n```\nМножество воды не может потушить любови, и реки не зальют её. Если бы кто отдавал всё богатство своего дома за любовь, он был бы отвергнут с презрением.\n```\n->\n```\nМножество воды не может потушить любви, и реки не зальют её. Если бы кто отдавал всё богатство своего дома за любовь, он был бы отвергнут с презрением.\n```\n(2026-11-27) User proposed: Module: `РОБ'20`\nBook: `От Матфея (470)`\nChapter: `13`\nVerse: `55`\n\n```\nРазве Он не Сын плотника? Разве не Его мать зовутМарией? И разве не Его братья Иаков, Иосий, Симон и Иуда?\n```\n->\n```\nРазве Он не Сын плотника? Разве не Его мать зовут Марией? И разве не Его братья Иаков, Иосий, Симон и Иуда?\n```\n(2026-01-26) Выложен",
       "bkq": "66",
       "url": [
         "{cdn}РОБ'20",
